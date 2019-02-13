@@ -1,4 +1,4 @@
-/*____________________STANDARD SETTINGS____________________*/
+/*STANDARD SETTINGS______________________________________________________________________*/
 body {
     margin: 0;
     text-align: center;
@@ -8,6 +8,7 @@ h1,
 h2, 
 h3,
 h4,
+h5,
 p, 
 .button {
     margin: 0;
@@ -16,19 +17,23 @@ p,
 }
 
 h1 {
-    font-size: 1.15em;
+    font-size: 1.9em;
 }
 
 h2 {
-    font-size: 1.05em;
+    font-size: 1.63em;
 }
 
 h3 {
-    font-size: 0.95em;
+    font-size: 1.3em;
 }
 
 h4 {
-    font-size: 0.85em;
+    font-size: 1.0em;
+}
+
+h5 {
+    font-size: 0.7em;
 }
 
 img:hover {
@@ -37,23 +42,27 @@ img:hover {
 
 p,
 .button {
-    font-size: 0.85em;
+    font-size: 0.9em;
 }
-/*____________________/STANDARD SETTINGS____________________*/
+/*/STANDARD SETTINGS_____________________________________________________________________*/
 
 
-/*____________________/CLASS SETTINGS____________________*/
-.wrapwrap {
-    width: 55vw;
-    padding: 2.5vh;
+/*CLASS SETTINGS_________________________________________________________________________*/
+.wrapwrapwrap {
+    width: 90%;
     margin: auto;
-    display: inline-flex;
+}
+
+.wrapwrap {
+    width: 750px;
+    padding: 25px;
+    margin: auto;
+    display: flex;
 }
 
 .wrapper {
     text-align: left;
-    width: 20vw;
-    min-width: 300px;
+    min-width: 350px;
     border-radius: 5px;
     padding: 5px;
     border: 3px solid rgb(110, 110, 110);
@@ -61,6 +70,7 @@ p,
     background-color: rgb(170, 170, 170);
 }
 
+#unitbox,
 .box {
     border: 2px solid rgb(140, 140, 140);
     border-radius: 5px;
@@ -105,25 +115,23 @@ p,
     box-shadow: -2px 2px 4px -1px rgba(0,0,0,0.75);
     background-color: rgb(230, 230, 230);
 }
-/*____________________/CLASS SETTINGS____________________*/
+/*/CLASS SETTINGS________________________________________________________________________*/
 
 
-/*____________________EXCEPTIONS____________________*/
+/*EXCEPTIONS_____________________________________________________________________________*/
 .wrapper:first-child {
-    margin: 0 0.5vw 0 4.5vw;
+    margin: 0 0.5% 0 4.5%;
 }
 
 .wrapper:nth-child(2) {
-    margin: 0 4.5vw 0 0.5vw;
+    margin: 0 4.5% 0 0.5%;
 }
 
-.box:nth-child(3) > .outerbox >.innerbox > p:nth-child(2),
-.box:nth-child(4) > .innerbox > p:nth-child(3) {
+#unitbox > .innerbox > p:nth-child(3) {
     margin: 10px 0 5px 0;
 }
 
-.box:nth-child(3) > .outerbox >.innerbox > .button,
-.box:nth-child(4) > .innerbox > .button {
+#unitbox > .innerbox > .button {
     margin: 0 0 5px 0;
 }
 
@@ -131,7 +139,7 @@ p,
     margin-bottom: 5px;
 }
 
-.box:last-child,
+#unitbox,
 .innerbox:last-child {
     margin-bottom: 0;
 }
@@ -139,4 +147,4 @@ p,
 .box:first-child {
     margin-top: 0;
 }
-/*____________________/EXCEPTIONS____________________*/
+/*/EXCEPTIONS____________________________________________________________________________*/
