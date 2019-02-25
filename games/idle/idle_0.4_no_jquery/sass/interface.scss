@@ -1,0 +1,260 @@
+/*STANDARD SETTINGS____________________________________________________________*/
+body {
+    margin: 0;
+}
+
+h1, h2, h3, 
+h4, h5, h6,
+p, b, table, .button {
+    margin: 0;
+    font-family: 'Major Mono Display', monospace;
+    user-select: none;
+}
+
+
+img:hover {
+    cursor: pointer;
+}
+
+p, table,
+.button, .hire {
+    font-size: 0.85em;
+}
+/*_____________________________________________________________________________*/
+
+/*COLOURS______________________________________________________________________*/
+$mainColour: hsl(100deg, 0%, 50%);
+$lightenAmount: 15%;
+$darkenAmount: 20%;
+
+$wrapBorderCoulour: darken($mainColour, $darkenAmount);
+$wrapBGColour: lighten($mainColour, $lightenAmount);
+
+$boxBorderColour: darken($wrapBGColour, $darkenAmount);
+$boxBGColour: lighten($wrapBGColour, $lightenAmount);
+
+$innerBoxBorderColour: darken($mainColour, $darkenAmount);
+$innerBoxBGColour: lighten($boxBGColour, $lightenAmount);
+
+$buttonBorderColour: darken($wrapBGColour, $darkenAmount);
+$buttonBGColour: lighten($innerBoxBGColour, $lightenAmount);
+$buttonBGHoverColour: lighten($buttonBGColour, $lightenAmount);
+$buttonBGActiveColour: darken($innerBoxBGColour, $darkenAmount);
+
+$upgradeBoxBorderColour: darken($wrapBGColour, $darkenAmount);
+$upgradeBoxBGColour: lighten($wrapBGColour, $lightenAmount);
+
+$upgradeBorderColour: darken($boxBGColour, $darkenAmount);
+$upgradeBGColour: lighten($boxBGColour, $lightenAmount);
+/*_____________________________________________________________________________*/
+
+/*VARIABLES____________________________________________________________________*/
+$wrapwrapWidth: 90vw;
+$wrapWidth: $wrapwrapWidth / 2;
+$borderStyle: solid;
+$wBoxShadow: -10px 10px 20px -5px black;
+$bBoxShadow: -2px 2px 4px -1px black;
+/*_____________________________________________________________________________*/
+
+/*CLASS SETTINGS_______________________________________________________________*/
+.wrapwrapwrap {
+    width: 100vw;
+    .wrapwrap {
+        width: $wrapwrapWidth;
+        display: flex;
+        padding:  30px;
+        .wrap {
+            width: $wrapWidth;
+            background-color: $wrapBGColour;
+            border: 1px $borderStyle $wrapBorderCoulour;
+            border-radius: 5px;
+            box-shadow: $wBoxShadow;
+            padding: 3.5px 3.5px 5px 5px;
+            .unitBoxWrap,
+            .upgradeBox,
+            .box {
+                border: 1px $borderStyle $boxBorderColour;
+                background-color: $boxBGColour;
+                box-shadow: $bBoxShadow;
+                padding: 5px;
+                .unit,
+                .innerBox {
+                    border: 1px $borderStyle $innerBoxBorderColour;
+                    background-color: $innerBoxBGColour;
+                    box-shadow: $bBoxShadow;
+                    padding: 5px;
+                    .button,
+                    .hire {
+                        background: $buttonBGColour;
+                        border: 1px solid $buttonBorderColour;
+                        display: inline-block;
+                        padding: 3px;
+                    }
+                    .button:hover,
+                    .hire:hover {
+                        background: $buttonBGHoverColour;
+                        cursor: pointer;
+                    }
+                    .button:active,
+                    .hire:active {
+                        background: $buttonBGActiveColour;
+                    }
+                    
+                }
+            }
+            .box {
+                p {
+                    margin: 5px 0;
+                }
+                h3 {
+                    margin: 5px 0;
+                }
+            }
+
+            .unitBoxWrap {
+                h5 {
+                    margin: 5px 0;
+                }
+                .unitBox {
+                    .unit {
+                        .titleTable {
+                            height: 27px;
+                            border-bottom: 1px dashed black;
+                            margin-bottom: 5px;
+                            table {
+                                width: 100%;
+                                tbody {
+                                    tr {
+                                        td {
+                                            padding: 0;
+                                            width: auto;
+                                            text-align: right;
+                                            .hire {
+                                                width: 42px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .statBox {
+                            display: inline-flex;
+                            width: 100%;
+                            .arrow {
+                                width: 10%;
+                                max-width: 40px;
+                                text-align: center;
+                                img {
+                                    margin: auto;
+                                }
+                                p {
+                                    writing-mode: vertical-rl;
+                                    text-orientation: upright;
+                                    margin: auto;
+                                }
+                            }
+                            .stats {
+                                display: inline-flex;
+                                width: 100%;
+                                table {
+                                    width: 100%;
+                                    border-left: 1px solid black;
+                                    tbody {
+                                        tr {
+                                            td {
+                                                border-bottom: 1px solid black;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .upgradeBox {
+                background-color: $upgradeBoxBGColour;
+                border: 2px solid $upgradeBoxBorderColour;
+                .upgrade {
+                    background-color: $upgradeBGColour;
+                    border: 1px solid $upgradeBorderColour;
+                }
+            }    
+        }
+    }
+}
+/*/CLASS SETTINGS______________________________________________________________*/
+
+
+/*EXCEPTIONS___________________________________________________________________*/
+.wrapwrapwrap {
+    .wrapwrap {
+        .wrap {
+            .box {
+                margin-bottom: 3.5px;
+            }
+            .box:first-child {
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            .box::last-child {
+                margin-bottom: 0;
+            }
+        }
+        .wrap:nth-child(1) {
+            margin-right: 1vw;
+            .box:last-child {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+            .unitBoxWrap {
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                .unitBox {
+                    .unit {
+                        margin-bottom: 5px;
+                        .titleTable,
+                        .stats {
+                            table {
+                                tbody {
+                                    tr {
+                                        td:first-child {
+                                            text-align: left;
+                                        }
+                                        td:nth-child(2) {
+                                            text-align: right;
+                                            width: 50px;
+                                        }
+                                        td:last-child {
+                                            width: 60px;
+                                        }
+                                        td:first-child > p {
+                                            font-size: 1em;
+                                        }
+                                    }
+                                }   
+                            }
+                        }
+                    }
+                    .unit:first-child {
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                    }
+                    .unit:last-child {
+                        margin-bottom: 0;
+                        border-bottom-left-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        .stats {
+                            border-bottom-left-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .wrap:nth-child(2) {
+            margin-left: 1vw;
+        }
+    }
+}
+/*/EXCEPTIONS__________________________________________________________________*/

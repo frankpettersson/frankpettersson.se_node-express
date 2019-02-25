@@ -1,0 +1,234 @@
+/*STANDARD SETTINGS____________________________________________________________*/
+body {
+  margin: 0;
+}
+
+h1, h2, h3,
+h4, h5, h6,
+p, b, table, .button {
+  margin: 0;
+  font-family: "Major Mono Display", monospace;
+  user-select: none;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+p, table,
+.button, .hire {
+  font-size: 0.85em;
+}
+
+/*_____________________________________________________________________________*/
+/*COLOURS______________________________________________________________________*/
+/*_____________________________________________________________________________*/
+/*VARIABLES____________________________________________________________________*/
+/*_____________________________________________________________________________*/
+/*CLASS SETTINGS_______________________________________________________________*/
+.wrapwrapwrap {
+  width: 100vw;
+}
+.wrapwrapwrap .wrapwrap {
+  width: 90vw;
+  display: flex;
+  padding: 30px;
+}
+.wrapwrapwrap .wrapwrap .wrap {
+  width: 45vw;
+  background-color: #a6a6a6;
+  border: 1px solid #4d4d4d;
+  border-radius: 5px;
+  box-shadow: -10px 10px 20px -5px black;
+  padding: 3.5px 3.5px 5px 5px;
+}
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap,
+.wrapwrapwrap .wrapwrap .wrap .upgradeBox,
+.wrapwrapwrap .wrapwrap .wrap .box {
+  border: 1px solid #737373;
+  background-color: #cccccc;
+  box-shadow: -2px 2px 4px -1px black;
+  padding: 5px;
+}
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unit,
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .innerBox,
+.wrapwrapwrap .wrapwrap .wrap .upgradeBox .unit,
+.wrapwrapwrap .wrapwrap .wrap .upgradeBox .innerBox,
+.wrapwrapwrap .wrapwrap .wrap .box .unit,
+.wrapwrapwrap .wrapwrap .wrap .box .innerBox {
+  border: 1px solid #4d4d4d;
+  background-color: #f2f2f2;
+  box-shadow: -2px 2px 4px -1px black;
+  padding: 5px;
+}
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unit .button,
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unit .hire,
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .innerBox .button,
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .innerBox .hire,
+.wrapwrapwrap .wrapwrap .wrap .upgradeBox .unit .button,
+.wrapwrapwrap .wrapwrap .wrap .upgradeBox .unit .hire,
+.wrapwrapwrap .wrapwrap .wrap .upgradeBox .innerBox .button,
+.wrapwrapwrap .wrapwrap .wrap .upgradeBox .innerBox .hire,
+.wrapwrapwrap .wrapwrap .wrap .box .unit .button,
+.wrapwrapwrap .wrapwrap .wrap .box .unit .hire,
+.wrapwrapwrap .wrapwrap .wrap .box .innerBox .button,
+.wrapwrapwrap .wrapwrap .wrap .box .innerBox .hire {
+  background: white;
+  border: 1px solid #737373;
+  display: inline-block;
+  padding: 3px;
+}
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unit .button:hover,
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unit .hire:hover,
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .innerBox .button:hover,
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .innerBox .hire:hover,
+.wrapwrapwrap .wrapwrap .wrap .upgradeBox .unit .button:hover,
+.wrapwrapwrap .wrapwrap .wrap .upgradeBox .unit .hire:hover,
+.wrapwrapwrap .wrapwrap .wrap .upgradeBox .innerBox .button:hover,
+.wrapwrapwrap .wrapwrap .wrap .upgradeBox .innerBox .hire:hover,
+.wrapwrapwrap .wrapwrap .wrap .box .unit .button:hover,
+.wrapwrapwrap .wrapwrap .wrap .box .unit .hire:hover,
+.wrapwrapwrap .wrapwrap .wrap .box .innerBox .button:hover,
+.wrapwrapwrap .wrapwrap .wrap .box .innerBox .hire:hover {
+  background: white;
+  cursor: pointer;
+}
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unit .button:active,
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unit .hire:active,
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .innerBox .button:active,
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .innerBox .hire:active,
+.wrapwrapwrap .wrapwrap .wrap .upgradeBox .unit .button:active,
+.wrapwrapwrap .wrapwrap .wrap .upgradeBox .unit .hire:active,
+.wrapwrapwrap .wrapwrap .wrap .upgradeBox .innerBox .button:active,
+.wrapwrapwrap .wrapwrap .wrap .upgradeBox .innerBox .hire:active,
+.wrapwrapwrap .wrapwrap .wrap .box .unit .button:active,
+.wrapwrapwrap .wrapwrap .wrap .box .unit .hire:active,
+.wrapwrapwrap .wrapwrap .wrap .box .innerBox .button:active,
+.wrapwrapwrap .wrapwrap .wrap .box .innerBox .hire:active {
+  background: #bfbfbf;
+}
+.wrapwrapwrap .wrapwrap .wrap .box p {
+  margin: 5px 0;
+}
+.wrapwrapwrap .wrapwrap .wrap .box h3 {
+  margin: 5px 0;
+}
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap h5 {
+  margin: 5px 0;
+}
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .titleTable {
+  height: 27px;
+  border-bottom: 1px dashed black;
+  margin-bottom: 5px;
+}
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .titleTable table {
+  width: 100%;
+}
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .titleTable table tbody tr td {
+  padding: 0;
+  width: auto;
+  text-align: right;
+}
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .titleTable table tbody tr td .hire {
+  width: 42px;
+}
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .statBox {
+  display: inline-flex;
+  width: 100%;
+}
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .statBox .arrow {
+  width: 10%;
+  max-width: 40px;
+  text-align: center;
+}
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .statBox .arrow img {
+  margin: auto;
+}
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .statBox .arrow p {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  margin: auto;
+}
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .statBox .stats {
+  display: inline-flex;
+  width: 100%;
+}
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .statBox .stats table {
+  width: 100%;
+  border-left: 1px solid black;
+}
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .statBox .stats table tbody tr td {
+  border-bottom: 1px solid black;
+}
+.wrapwrapwrap .wrapwrap .wrap .upgradeBox {
+  background-color: #cccccc;
+  border: 2px solid #737373;
+}
+.wrapwrapwrap .wrapwrap .wrap .upgradeBox .upgrade {
+  background-color: #f2f2f2;
+  border: 1px solid #999999;
+}
+
+/*/CLASS SETTINGS______________________________________________________________*/
+/*EXCEPTIONS___________________________________________________________________*/
+.wrapwrapwrap .wrapwrap .wrap .box {
+  margin-bottom: 3.5px;
+}
+.wrapwrapwrap .wrapwrap .wrap .box:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.wrapwrapwrap .wrapwrap .wrap .box::last-child {
+  margin-bottom: 0;
+}
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) {
+  margin-right: 1vw;
+}
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .box:last-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit {
+  margin-bottom: 5px;
+}
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .titleTable table tbody tr td:first-child,
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .stats table tbody tr td:first-child {
+  text-align: left;
+}
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .titleTable table tbody tr td:nth-child(2),
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .stats table tbody tr td:nth-child(2) {
+  text-align: right;
+  width: 50px;
+}
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .titleTable table tbody tr td:last-child,
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .stats table tbody tr td:last-child {
+  width: 60px;
+}
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .titleTable table tbody tr td:first-child > p,
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .stats table tbody tr td:first-child > p {
+  font-size: 1em;
+}
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit:last-child {
+  margin-bottom: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit:last-child .stats {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.wrapwrapwrap .wrapwrap .wrap:nth-child(2) {
+  margin-left: 1vw;
+}
+
+/*/EXCEPTIONS__________________________________________________________________*/
+
+/*# sourceMappingURL=interface.css.map */
