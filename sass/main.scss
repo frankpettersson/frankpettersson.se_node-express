@@ -1,0 +1,29 @@
+//Standard_______________________________________
+body {
+    margin: 0;
+}
+//_______________________________________________
+
+//Main___________________________________________
+.wrap {
+    width: 800px;
+    max-width: 90%;
+    margin: auto;
+    .title {
+        width: 100%;
+        a {
+            display: inline-flex;
+            width: 100%;
+            #titleImage {
+                background: url('/images/fp_green.png');
+                background-size: 100% 100%; 
+                display: table-cell; 
+                vertical-align: middle;
+            }
+            h1 {
+                width: 70%;
+            }
+        }
+    }
+}
+//_______________________________________________
