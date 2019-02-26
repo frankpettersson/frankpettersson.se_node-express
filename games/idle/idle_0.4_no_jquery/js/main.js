@@ -127,8 +127,6 @@ let box1 = document.createElement('div');
 let box2 = document.createElement('div');
 let unitBoxWrap = document.createElement('div');
 let unitBox = document.createElement('div');
-let w2 = document.createElement('div');
-let upgradeBox = document.createElement('div');
 
 www.className = 'wrapwrapwrap';
 ww.className = 'wrapwrap';
@@ -155,11 +153,10 @@ box2.innerHTML = '<h3>give me '+game.name+'!</h3>'+
 unitBoxWrap.className = 'unitBoxWrap';
 unitBoxWrap.innerHTML = '<h4>hire '+game.hires+'!</h4>'+
                         '<h5>'+
-                            '<img src="images/arrow_open.svg" style="width: 13px; height: 13px;" class="arrows" id="arrow0">'+
+                            '<img src="/images/arrow_open.svg" style="width: 13px; height: 13px;" class="arrows" id="arrow0">'+
                         ' '+game.hires+'</h5>';
 unitBox.className = 'unitBox';
-w2.className = 'wrap';
-upgradeBox.className = 'upgradeBox';
+unitBox.id = 'unitBox';
 
 www.appendChild(ww);
 ww.appendChild(w1);
@@ -167,8 +164,6 @@ w1.appendChild(box1);
 w1.appendChild(box2);
 w1.appendChild(unitBoxWrap);
 unitBoxWrap.appendChild(unitBox);
-ww.appendChild(w2);
-w2.appendChild(upgradeBox);
 
 let unit = [];
 for(let i = 0; i < uLen; i++) {
@@ -199,50 +194,40 @@ for(let i = 0; i < uLen; i++) {
                         '</div>'+
                         '<div class="statBox">'+
                             '<div class="arrow">'+
-                                '<img src="images/arrow_open.svg" style="width: 15px; height: 15px;" class="arrows" id="arrow'+(i+1)+'">'+
-                                '<p id=p1"'+i+'">stats</p>'+
+                                '<img src="/images/arrow_open.svg" style="width: 15px; height: 15px;" class="arrows" id="arrow'+(i+1)+'">'+
+                                '<p id="p1'+i+'">stats</p>'+
                             '</div>'+
-                            '<p id=p2"'+i+'" style="display: none">stats</p>'+
+                            '<p id="p2'+i+'" style="display: none">stats</p>'+
                             '<div class="stats" id="stats'+i+'">'+
                                 '<table>'+
                                     '<tr>'+
                                         '<td>hired:</td>'+
                                         '<td>'+
-                                            '<b>'+
-                                                '<span id="hired'+i+'">'+0+'</span> '+
-                                            '</b>'+
+                                            '<b id="hired'+i+'">'+0+'</b>'+
                                         '</td>'+
                                     '</tr>'+
                                     '<tr>'+
                                         '<td>'+game.name+' earned:</td>'+
                                         '<td>'+
-                                            '<b>'+
-                                                '<span id="earned'+i+'">'+0+'</span> '+
-                                            '</b>'+
+                                            '<b id="earned'+i+'">'+0+'</b>'+
                                         '</td>'+
                                     '</tr>'+
                                     '<tr>'+
                                         '<td>total '+game.nsName+':</td>'+
                                         '<td>'+
-                                            '<b>'+
-                                                '<span id="tick'+i+'">'+0+'</span> '+
-                                            '</b>'+
+                                            '<b id="tick'+i+'">'+0+'</b>'+
                                         '</td>'+
                                     '</tr>'+
                                     '<tr>'+
                                         '<td>average '+game.nsName+':</td>'+
                                         '<td>'+
-                                            '<b>'+
-                                                '<span id="tickAverage'+i+'">'+0+'</span> '+
-                                            '</b>'+
+                                            '<b id="tickAverage'+i+'">'+0+'</b>'+
                                         '</td>'+
                                     '</tr>'+
                                     '<tr>'+
                                         '<td>time active:</td>'+
                                         '<td>'+
-                                            '<b>'+
-                                                '<span id="active'+i+'">'+0+'</span> '+
-                                            '</b>'+
+                                            '<b id="active'+i+'">'+0+'</b>'+
                                         '</td>'+
                                     '</tr>'+
                                 '</table>'+
@@ -334,47 +319,55 @@ window.setInterval(function() {
     }
     refreshValues();
 }, 1000);
-
 //_____________________________________________________________________________
 
 //Hide & Show Function_________________________________________________________
+//Stores state of arrow direction/hidden or shown
 let arrows = new Map();
 for (let i = 0; i <= 10; i++) {
     arrows.set(`arrow${i}`, 0);
 }
+//Listens for click
 let selectedArrow = document.getElementsByClassName('arrows');
-for (let i = 0; i < uLen+1; i++) {
+for (let i = 0; i <= uLen; i++) {
     selectedArrow[i].addEventListener('click', function unitBuy() {
-        if ('arrow'+i === event.target.getAttribute('id')) {
-            //alert('Pressed '+event.target.getAttribute('id'));
+        if ('arrow0' === event.target.getAttribute('id')) {
             let id = event.target.getAttribute('id');
-            let target = 'stats'+(i-1);
-            //let text1 = event.target.querySelector('p#p0'+i).id;
-            //let text2 = event.target.querySelector('p#p1'+i).id;
+            let div = event.target.parentElement.nextElementSibling.getAttribute('id');
             if(arrows.has(id) === true) {
                 if(arrows.get(id) === 1) {
-                    document.getElementById(id).setAttribute('src', 'images/arrow_open.svg');
+                    document.getElementById(id).setAttribute('src', '/images/arrow_open.svg');
                     arrows.set(id, 0);
-                    document.getElementById(target).style.display = 'block';
-                    document.getElementById('p1'+(i-1)).style.display = 'block';
-                    document.getElementById('p2'+(i-1)).style.display = 'none';
+                    document.getElementById(div).style.display = 'block';
                 } else if(arrows.get(id) === 0) {
-                    document.getElementById(id).setAttribute('src', 'images/arrow_closed.svg');
+                    document.getElementById(id).setAttribute('src', '/images/arrow_closed.svg');
                     arrows.set(id, 1);
-                    document.getElementById(target).style.display = 'none';
-                    document.getElementById('p1'+(i-1)).style.display = 'none';
-                    document.getElementById('p2'+(i-1)).style.display = 'block';
+                    document.getElementById(div).style.display = 'none';
                 }
-                document.getElementById(id).style.width = '15px';
-                document.getElementById(id).style.height = '15px';
-                document.getElementById(id).style.cursor = 'pointer';
-                //$('#'+id).attr('onClick', 'rotate(this.id, "'+target+'", "'+text1+'", "'+text2+'")');
-                document.getElementById(id).setAttribute('id', id);
+            }
+        } else if ('arrow'+i === event.target.getAttribute('id')) {
+            let id = event.target.getAttribute('id');
+            let div = event.target.parentElement.nextElementSibling.nextElementSibling.getAttribute('id');
+            let text1 = event.target.nextElementSibling.getAttribute('id');
+            let text2 = event.target.parentElement.nextElementSibling.getAttribute('id');
+            if(arrows.has(id) === true) {
+                if(arrows.get(id) === 1) {
+                    document.getElementById(id).setAttribute('src', '/images/arrow_open.svg');
+                    arrows.set(id, 0);
+                    document.getElementById(div).style.display = 'block';
+                    document.getElementById(text1).style.display = 'block';
+                    document.getElementById(text2).style.display = 'none';
+                } else if(arrows.get(id) === 0) {
+                    document.getElementById(id).setAttribute('src', '/images/arrow_closed.svg');
+                    arrows.set(id, 1);
+                    document.getElementById(div).style.display = 'none';
+                    document.getElementById(text1).style.display = 'none';
+                    document.getElementById(text2).style.display = 'block';
+                }
             }
         }
     });
 }
-
 //_____________________________________________________________________________
 
 //Set Values Once______________________________________________________________

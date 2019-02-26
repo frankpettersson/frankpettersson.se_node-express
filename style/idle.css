@@ -30,12 +30,16 @@ p, table,
   width: 100vw;
 }
 .wrapwrapwrap .wrapwrap {
-  width: 90vw;
+  width: 1000px;
+  max-width: 70%;
+  margin: auto;
   display: flex;
   padding: 30px;
 }
 .wrapwrapwrap .wrapwrap .wrap {
-  width: 45vw;
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
   background-color: #a6a6a6;
   border: 1px solid #4d4d4d;
   border-radius: 5px;
@@ -124,12 +128,12 @@ p, table,
 .wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .titleTable table {
   width: 100%;
 }
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .titleTable table tbody tr td {
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .titleTable table tr td {
   padding: 0;
   width: auto;
   text-align: right;
 }
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .titleTable table tbody tr td .hire {
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .titleTable table tr td .hire {
   width: 42px;
 }
 .wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .statBox {
@@ -157,7 +161,7 @@ p, table,
   width: 100%;
   border-left: 1px solid black;
 }
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .statBox .stats table tbody tr td {
+.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .statBox .stats table tr td {
   border-bottom: 1px solid black;
 }
 .wrapwrapwrap .wrapwrap .wrap .upgradeBox {
@@ -195,21 +199,21 @@ p, table,
 .wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit {
   margin-bottom: 5px;
 }
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .titleTable table tbody tr td:first-child,
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .stats table tbody tr td:first-child {
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .titleTable table tr td:first-child,
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .stats table tr td:first-child {
   text-align: left;
 }
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .titleTable table tbody tr td:nth-child(2),
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .stats table tbody tr td:nth-child(2) {
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .titleTable table tr td:nth-child(2),
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .stats table tr td:nth-child(2) {
   text-align: right;
   width: 50px;
 }
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .titleTable table tbody tr td:last-child,
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .stats table tbody tr td:last-child {
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .titleTable table tr td:last-child,
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .stats table tr td:last-child {
   width: 60px;
 }
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .titleTable table tbody tr td:first-child > p,
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .stats table tbody tr td:first-child > p {
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .titleTable table tr td:first-child > p,
+.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .stats table tr td:first-child > p {
   font-size: 1em;
 }
 .wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit:first-child {
@@ -231,4 +235,4 @@ p, table,
 
 /*/EXCEPTIONS__________________________________________________________________*/
 
-/*# sourceMappingURL=interface.css.map */
+/*# sourceMappingURL=idle.css.map */

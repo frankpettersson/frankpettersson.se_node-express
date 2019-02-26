@@ -49,8 +49,6 @@ $upgradeBGColour: lighten($boxBGColour, $lightenAmount);
 /*_____________________________________________________________________________*/
 
 /*VARIABLES____________________________________________________________________*/
-$wrapwrapWidth: 90vw;
-$wrapWidth: $wrapwrapWidth / 2;
 $borderStyle: solid;
 $wBoxShadow: -10px 10px 20px -5px black;
 $bBoxShadow: -2px 2px 4px -1px black;
@@ -60,11 +58,15 @@ $bBoxShadow: -2px 2px 4px -1px black;
 .wrapwrapwrap {
     width: 100vw;
     .wrapwrap {
-        width: $wrapwrapWidth;
+        width: 1000px;
+        max-width: 70%;
+        margin: auto;
         display: flex;
-        padding:  30px;
+        padding: 30px;
         .wrap {
-            width: $wrapWidth;
+            width: 500px;
+            max-width: 90%;
+            margin: auto;
             background-color: $wrapBGColour;
             border: 1px $borderStyle $wrapBorderCoulour;
             border-radius: 5px;
@@ -123,15 +125,13 @@ $bBoxShadow: -2px 2px 4px -1px black;
                             margin-bottom: 5px;
                             table {
                                 width: 100%;
-                                tbody {
-                                    tr {
-                                        td {
-                                            padding: 0;
-                                            width: auto;
-                                            text-align: right;
-                                            .hire {
-                                                width: 42px;
-                                            }
+                                tr {
+                                    td {
+                                        padding: 0;
+                                        width: auto;
+                                        text-align: right;
+                                        .hire {
+                                            width: 42px;
                                         }
                                     }
                                 }
@@ -142,7 +142,7 @@ $bBoxShadow: -2px 2px 4px -1px black;
                             width: 100%;
                             .arrow {
                                 width: 10%;
-                                max-width: 40px;
+                                max-width: 30px;
                                 text-align: center;
                                 img {
                                     margin: auto;
@@ -159,11 +159,9 @@ $bBoxShadow: -2px 2px 4px -1px black;
                                 table {
                                     width: 100%;
                                     border-left: 1px solid black;
-                                    tbody {
-                                        tr {
-                                            td {
-                                                border-bottom: 1px solid black;
-                                            }
+                                    tr {
+                                        td {
+                                            border-bottom: 1px solid black;
                                         }
                                     }
                                 }
@@ -202,7 +200,6 @@ $bBoxShadow: -2px 2px 4px -1px black;
             }
         }
         .wrap:nth-child(1) {
-            margin-right: 1vw;
             .box:last-child {
                 border-top-left-radius: 0;
                 border-top-right-radius: 0;
@@ -216,21 +213,19 @@ $bBoxShadow: -2px 2px 4px -1px black;
                         .titleTable,
                         .stats {
                             table {
-                                tbody {
-                                    tr {
-                                        td:first-child {
-                                            text-align: left;
-                                        }
-                                        td:nth-child(2) {
-                                            text-align: right;
-                                            width: 50px;
-                                        }
-                                        td:last-child {
-                                            width: 60px;
-                                        }
-                                        td:first-child > p {
-                                            font-size: 1em;
-                                        }
+                                tr {
+                                    td:first-child {
+                                        text-align: left;
+                                    }
+                                    td:nth-child(2) {
+                                        text-align: right;
+                                        width: 50px;
+                                    }
+                                    td:last-child {
+                                        width: 60px;
+                                    }
+                                    td:first-child > p {
+                                        font-size: 1em;
                                     }
                                 }   
                             }

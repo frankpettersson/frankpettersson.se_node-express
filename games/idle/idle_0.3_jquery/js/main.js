@@ -31,7 +31,7 @@ let things = {
         addNumberID: 'addNumber',
         clickUpCostID: 'clickUpCost',
         manualClickTotalID: 'manualClickTotal',
-        unitbox: 'unitbox',
+        unitbox: 'unitBox',
         baseTickID: 'basetick',
         costID: 'cost',
         tickID: 'tick',
@@ -47,10 +47,8 @@ let things = {
         wrapwrap: 'wrapwrap',
         wrap: 'wrap',
         box: 'box',
-        unitbox: 'unitbox',
+        unitbox: 'unitBox',
         innerbox: 'innerbox',
-        upgradebox: 'upgradebox',
-        upgrade: 'upgrade',
         button: 'button',
         hire: 'hire'
     },
@@ -281,12 +279,11 @@ $('body').append($('<div>', {
                     .text('give me '+gn+'!')
                 )
                 .append($('<div>', {
-                    class: classes.innerbox
+                    class: 'innerBox'
                 })
                     .append($('<div>', {
                         class: classes.button,
                         id: 'click'
-                        //onclick: 'addClick()'
                     })
                         .append('+')
                         .append($('<span>', {
@@ -295,45 +292,36 @@ $('body').append($('<div>', {
                         .append(' '+gn)
                     )
                     .append($('<p>')
-                        .append($('<p>')
-                            .append($('<b>')
-                                .append($('<span>', {
-                                    id: ids.manualClickTotalID
-                                }))
-                            )
-                            .append(' '+gn+' by clicks')
+                        .append($('<b>')
+                            .append($('<span>', {
+                                id: ids.manualClickTotalID
+                            }))
                         )
+                        .append(' '+gn+' by clicks')
                     )
                     
                 )
             )
             .append($('<div>', {
-                id: ids.unitbox
+                class: 'unitBoxWrap'
             })
                 .append($('<h4>')
                     .append('hire '+gh+'!')
                 )
                 .append($('<h5>')
                     .append($('<img>', {
-                        src: 'images/arrow_open.svg',
+                        src: '/images/arrow_open.svg',
                         style: 'width: 13px; height: 13px;',
-                        id: 'arrow1',
-                        //onclick: `rotate(this.id, '.${classes.unitbox}')`
+                        class: 'arrow',
+                        id: 'arrow1'
                     }))
-                    .append(' clickos')
+                    .append(' '+game.hires)
                 )
                 .append($('<div>', {
-                    class: classes.unitbox
+                    class: classes.unitbox,
+                    id: 'units'
                 })
                 )
-            )
-        )
-        .append($('<div>', {
-            class: classes.wrap
-        })
-            .append($('<div>', {
-                class: classes.upgradebox
-            })
             )
         )
     )
@@ -343,7 +331,7 @@ $('body').append($('<div>', {
 //Create Unit Elements_________________________________________________________
 for(let i = 0; i < uLen; i++) {
     $('.'+classes.unitbox).append($('<div>', {
-        class: classes.innerbox
+        class: 'unit'
     })  
         .append($('<div>', {
             class: 'titleTable'
@@ -360,8 +348,7 @@ for(let i = 0; i < uLen; i++) {
                     .append($('<td>')
                         .append($('<div>', {
                             class: classes.hire,
-                            id: ids.buyID+i,
-                            //onclick: 'unitBuy(this.id)'
+                            id: ids.buyID+i
                         })
                             .append('hire!')
                         )
@@ -384,10 +371,9 @@ for(let i = 0; i < uLen; i++) {
                 class: 'arrow'
             })
                 .append($('<img>', {
-                    src: 'images/arrow_open.svg',
+                    src: '/images/arrow_open.svg',
                     style: 'width: 15px; height: 15px;',
-                    id: 'arrow'+(i+2),
-                    //onclick: `rotate(this.id, '#stats${i}', '#p1${i}', '#p2${i}')`
+                    id: 'arrow'+(i+2)
                 }))
                 .append($('<p>', {
                     id: 'p1'+i
@@ -480,28 +466,28 @@ for (let i = 0; i <= 10; i++) {
 }
 
 $(document).ready(function() { 
-    $('').click(function hideShow() {
+    $('.arrow').click(function hideShow() {
         let id = event.target.id;
-        let target = event.target.parent().next().class;
-        let text1 = event.target.find('p').id;
-        let text2 = event.target.parent().next().id;
+        let container = $(event.target).parent().next('div').attr('id');
+        let target = $(event.target).parent().next().next().attr('id');
+        let text1 = $(event.target).next().attr('id');
+        let text2 = $(event.target).parent().next('p').attr('id');
         if(arrows.has(id) === true) {
             if(arrows.get(id) === 1) {
-                $('#'+id).attr('src', 'images/arrow_open.svg');
+                $('#'+id).attr('src', '/images/arrow_open.svg');
                 arrows.set(id, 0);
-                $(target).show(1000);
-                $(text1).show(1000);
-                $(text2).hide(1);
+                $('#'+container).show('slow');
+                $('#'+target).show(1000);
+                $('#'+text1).show(1000);
+                $('#'+text2).hide(1);
             } else if(arrows.get(id) === 0) {
-                $('#'+id).attr('src', 'images/arrow_closed.svg');
+                $('#'+id).attr('src', '/images/arrow_closed.svg');
                 arrows.set(id, 1);
-                $(target).hide(1);
-                $(text1).hide(1);
-                $(text2).show(1000);
+                $('#'+container).hide('slow');
+                $('#'+target).hide(1);
+                $('#'+text1).hide(1);
+                $('#'+text2).show(1000);
             }
-            $('#'+id).css({'width': '15px', 'height': '15px', 'cursor': 'pointer'});
-            //$('#'+id).attr('onClick', 'rotate(this.id, "'+target+'", "'+text1+'", "'+text2+'")');
-            $('#'+id).attr('id', id);
         }
     });
 });
