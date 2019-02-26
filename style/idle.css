@@ -38,7 +38,7 @@ p, table,
 }
 .wrapwrapwrap .wrapwrap .wrap {
   width: 500px;
-  max-width: 100%;
+  max-width: 90%;
   margin: auto;
   background-color: #a6a6a6;
   border: 1px solid #4d4d4d;
@@ -142,7 +142,7 @@ p, table,
 }
 .wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .statBox .arrow {
   width: 10%;
-  max-width: 40px;
+  max-width: 30px;
   text-align: center;
 }
 .wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .statBox .arrow img {
@@ -184,9 +184,6 @@ p, table,
 }
 .wrapwrapwrap .wrapwrap .wrap .box::last-child {
   margin-bottom: 0;
-}
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) {
-  margin-right: 1vw;
 }
 .wrapwrapwrap .wrapwrap .wrap:nth-child(1) .box:last-child {
   border-top-left-radius: 0;
