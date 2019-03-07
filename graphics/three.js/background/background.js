@@ -2,7 +2,7 @@
 var scene = new THREE.Scene();
 scene.background = 0xfdffc1;
 var aspect = window.innerWidth / window.innerHeight;
-var camera = new THREE.PerspectiveCamera(70, aspect, 0.1, 10000);
+var camera = new THREE.PerspectiveCamera(10, aspect, 0.1, 10000);
 camera.position.set(0, 0, 2000);
 camera.rotation.set(1, 1, 1);
 
@@ -29,13 +29,10 @@ renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
-//IMPORT CAMERA CONTROL
-var controls = new THREE.OrbitControls(camera, renderer.domElement);
-
 //SHAPES
 var shapes = new THREE.Group();
-var count = 1000;
-var area = count / 4;
+var count = 2000;
+var area = count / 8;
 var radius = 20; //1-20
 var detail = 1; //0-5
 for (var i = 0; i < count; i++) {
@@ -69,6 +66,9 @@ var render = function () {
     for (var i = 0; i < count; i++) {
         shapes.children[i].rotation.y += 0.1;
     }
+    camera.rotation.y += 0.001;
+    camera.rotation.x += 0.001;
+    camera.rotation.z += 0.001;
 
     renderer.render(scene, camera);
 };

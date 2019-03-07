@@ -5,14 +5,19 @@ body {
 }
 
 .wrap {
+  background: #fff none repeat scroll 0 0;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
   align-items: center;
   width: 90%;
   max-width: 520px;
-  margin: 30px auto;
   padding: 10px;  border: 1px solid black;
   -webkit-box-shadow: -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
   box-shadow: -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+  z-index: 1;
 }
 
 .box {
@@ -92,4 +97,11 @@ ul li ul li:first-child .project {
   width: 208px;
   height: 30px;
   margin: auto;
+}
+
+canvas { 
+  width: 100vw; 
+  height: 100vh;
+  position: absolute; 
+  z-index: 0;
 }
