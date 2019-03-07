@@ -5,36 +5,84 @@ body {
 }
 
 .wrap {
-  width: 800px;
-  max-width: 90%;
+  align-items: center;
+  width: 90%;
+  max-width: 520px;
   margin: 30px auto;
+  padding: 10px;  border: 1px solid black;
+  -webkit-box-shadow: -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
 }
-.wrap .box {
-  width: 500px;
-  max-width: 70%;
-  margin: 15px auto;
+
+.box {
   border: 1px solid black;
+  margin: 15px 0;
   text-align: center;
   -webkit-box-shadow: -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
   box-shadow: -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
 }
-.wrap .box .title {
+
+.box:first-child {
+  margin-top: 0;
+}
+
+.box:last-child {
+  margin-bottom: 0;
+}
+
+.title {
   display: inline-flex;
   margin: auto;
 }
-.wrap .box .title .titleImage {
+
+.titleImage {
   background-image: url("/images/fp_green.png");
   background-size: 100% 100%;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
-.wrap .box .title h1 {
+
+.title h1 {
   width: 70%;
   text-shadow: -1px 1px 0px #969696;
 }
-.wrap .box ul {
+
+.box ul {
   text-align: left;
 }
 
-/*# sourceMappingURL=main.css.map */
+.boxHeader {
+  text-align: left;
+  margin: 16px 0 0 5%;
+  font-size: 1.5em;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul {
+  padding-left: 5%;
+}
+
+#projects p {
+  margin: 0;
+}
+
+.project {
+  margin-top: 10px;
+}
+
+ul li ul li:first-child .project {
+  margin-top: 0;
+}
+
+.category {
+  margin-top: 5px;
+}
+
+#footer p {
+  margin: 10px 0 0 0;
+}

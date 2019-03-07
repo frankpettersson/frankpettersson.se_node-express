@@ -1,4 +1,4 @@
-/*STANDARD SETTINGS____________________________________________________________*/
+/*STANDARD SETTINGS*/
 body {
   margin: 0;
 }
@@ -20,23 +20,20 @@ p, table,
   font-size: 0.85em;
 }
 
-/*_____________________________________________________________________________*/
-/*COLOURS______________________________________________________________________*/
-/*_____________________________________________________________________________*/
-/*VARIABLES____________________________________________________________________*/
-/*_____________________________________________________________________________*/
-/*CLASS SETTINGS_______________________________________________________________*/
+/*CLASS SETTINGS*/
 .wrapwrapwrap {
   width: 100vw;
 }
-.wrapwrapwrap .wrapwrap {
+
+.wrapwrap {
   width: 1000px;
   max-width: 70%;
   margin: auto;
   display: flex;
   padding: 30px;
 }
-.wrapwrapwrap .wrapwrap .wrap {
+
+.wrap {
   width: 500px;
   max-width: 90%;
   margin: auto;
@@ -46,190 +43,168 @@ p, table,
   box-shadow: -10px 10px 20px -5px black;
   padding: 3.5px 3.5px 5px 5px;
 }
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap,
-.wrapwrapwrap .wrapwrap .wrap .upgradeBox,
-.wrapwrapwrap .wrapwrap .wrap .box {
+
+.unitBoxWrap,
+.upgradeBox,
+.box {
   border: 1px solid #737373;
   background-color: #cccccc;
   box-shadow: -2px 2px 4px -1px black;
   padding: 5px;
 }
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unit,
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .innerBox,
-.wrapwrapwrap .wrapwrap .wrap .upgradeBox .unit,
-.wrapwrapwrap .wrapwrap .wrap .upgradeBox .innerBox,
-.wrapwrapwrap .wrapwrap .wrap .box .unit,
-.wrapwrapwrap .wrapwrap .wrap .box .innerBox {
+
+.unit,
+.innerBox {
   border: 1px solid #4d4d4d;
   background-color: #f2f2f2;
   box-shadow: -2px 2px 4px -1px black;
   padding: 5px;
 }
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unit .button,
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unit .hire,
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .innerBox .button,
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .innerBox .hire,
-.wrapwrapwrap .wrapwrap .wrap .upgradeBox .unit .button,
-.wrapwrapwrap .wrapwrap .wrap .upgradeBox .unit .hire,
-.wrapwrapwrap .wrapwrap .wrap .upgradeBox .innerBox .button,
-.wrapwrapwrap .wrapwrap .wrap .upgradeBox .innerBox .hire,
-.wrapwrapwrap .wrapwrap .wrap .box .unit .button,
-.wrapwrapwrap .wrapwrap .wrap .box .unit .hire,
-.wrapwrapwrap .wrapwrap .wrap .box .innerBox .button,
-.wrapwrapwrap .wrapwrap .wrap .box .innerBox .hire {
+
+.button,
+.hire {
   background: white;
   border: 1px solid #737373;
   display: inline-block;
   padding: 3px;
 }
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unit .button:hover,
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unit .hire:hover,
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .innerBox .button:hover,
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .innerBox .hire:hover,
-.wrapwrapwrap .wrapwrap .wrap .upgradeBox .unit .button:hover,
-.wrapwrapwrap .wrapwrap .wrap .upgradeBox .unit .hire:hover,
-.wrapwrapwrap .wrapwrap .wrap .upgradeBox .innerBox .button:hover,
-.wrapwrapwrap .wrapwrap .wrap .upgradeBox .innerBox .hire:hover,
-.wrapwrapwrap .wrapwrap .wrap .box .unit .button:hover,
-.wrapwrapwrap .wrapwrap .wrap .box .unit .hire:hover,
-.wrapwrapwrap .wrapwrap .wrap .box .innerBox .button:hover,
-.wrapwrapwrap .wrapwrap .wrap .box .innerBox .hire:hover {
+
+.button:hover,
+.hire:hover {
   background: white;
   cursor: pointer;
 }
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unit .button:active,
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unit .hire:active,
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .innerBox .button:active,
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .innerBox .hire:active,
-.wrapwrapwrap .wrapwrap .wrap .upgradeBox .unit .button:active,
-.wrapwrapwrap .wrapwrap .wrap .upgradeBox .unit .hire:active,
-.wrapwrapwrap .wrapwrap .wrap .upgradeBox .innerBox .button:active,
-.wrapwrapwrap .wrapwrap .wrap .upgradeBox .innerBox .hire:active,
-.wrapwrapwrap .wrapwrap .wrap .box .unit .button:active,
-.wrapwrapwrap .wrapwrap .wrap .box .unit .hire:active,
-.wrapwrapwrap .wrapwrap .wrap .box .innerBox .button:active,
-.wrapwrapwrap .wrapwrap .wrap .box .innerBox .hire:active {
+
+.button:active,
+.hire:active {
   background: #bfbfbf;
 }
-.wrapwrapwrap .wrapwrap .wrap .box p {
+
+.box p {
+  margin: 5px 0 3.5px 0;
+}
+
+.box h3 {
   margin: 5px 0;
 }
-.wrapwrapwrap .wrapwrap .wrap .box h3 {
+
+.unitBoxWrap h5 {
   margin: 5px 0;
 }
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap h5 {
-  margin: 5px 0;
-}
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .titleTable {
+
+.titleTable {
   height: 27px;
   border-bottom: 1px dashed black;
   margin-bottom: 5px;
 }
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .titleTable table {
+
+.titleTable table {
   width: 100%;
 }
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .titleTable table tr td {
+
+.titleTable table tr td {
   padding: 0;
   width: auto;
   text-align: right;
 }
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .titleTable table tr td .hire {
+
+.titleTable table tr td .hire {
   width: 42px;
 }
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .statBox {
+
+.statBox {
   display: inline-flex;
   width: 100%;
 }
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .statBox .arrow {
+
+.statBox .arrow {
   width: 10%;
   max-width: 30px;
   text-align: center;
 }
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .statBox .arrow img {
+
+.statBox .arrow img {
   margin: auto;
 }
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .statBox .arrow p {
+
+.statBox .arrow p {
   writing-mode: vertical-rl;
   text-orientation: upright;
   margin: auto;
 }
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .statBox .stats {
+
+.statBox .stats {
   display: inline-flex;
   width: 100%;
 }
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .statBox .stats table {
+
+.statBox .stats table {
   width: 100%;
   border-left: 1px solid black;
 }
-.wrapwrapwrap .wrapwrap .wrap .unitBoxWrap .unitBox .unit .statBox .stats table tr td {
+
+.statBox .stats table tr td {
   border-bottom: 1px solid black;
 }
-.wrapwrapwrap .wrapwrap .wrap .upgradeBox {
+
+.upgradeBox {
   background-color: #cccccc;
   border: 2px solid #737373;
 }
-.wrapwrapwrap .wrapwrap .wrap .upgradeBox .upgrade {
+
+.upgrade {
   background-color: #f2f2f2;
   border: 1px solid #999999;
 }
 
-/*/CLASS SETTINGS______________________________________________________________*/
-/*EXCEPTIONS___________________________________________________________________*/
-.wrapwrapwrap .wrapwrap .wrap .box {
-  margin-bottom: 3.5px;
-}
-.wrapwrapwrap .wrapwrap .wrap .box:first-child {
+/*EXCEPTIONS*/
+.box:first-child {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.wrapwrapwrap .wrapwrap .wrap .box::last-child {
+.box::last-child {
   margin-bottom: 0;
-}
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .box:last-child {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap {
+.unitBoxWrap {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit {
+
+.unitBoxWrap .unitBox .unit {
   margin-bottom: 5px;
 }
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .titleTable table tr td:first-child,
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .stats table tr td:first-child {
+
+table tr td:first-child {
   text-align: left;
 }
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .titleTable table tr td:nth-child(2),
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .stats table tr td:nth-child(2) {
+
+table tr td:nth-child(2) {
   text-align: right;
   width: 50px;
 }
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .titleTable table tr td:last-child,
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .stats table tr td:last-child {
+
+table tr td:last-child {
   width: 60px;
 }
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .titleTable table tr td:first-child > p,
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit .stats table tr td:first-child > p {
+
+table tr td:first-child > p {
   font-size: 1em;
 }
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit:first-child {
+
+.unit:first-child {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit:last-child {
+
+.unit:last-child {
   margin-bottom: 0;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.wrapwrapwrap .wrapwrap .wrap:nth-child(1) .unitBoxWrap .unitBox .unit:last-child .stats {
+
+.unit:last-child .stats {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.wrapwrapwrap .wrapwrap .wrap:nth-child(2) {
-  margin-left: 1vw;
-}
-
-/*/EXCEPTIONS__________________________________________________________________*/
-
-/*# sourceMappingURL=idle.css.map */

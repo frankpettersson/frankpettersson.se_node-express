@@ -16,43 +16,70 @@
                 <h1>portfolio</h1>
             </div>
         </div>
-        <div class="box">
+        <div class="box" id="content">
+            <div class="boxHeader">Content</div>
+            <ul>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#graphics">Graphics</a></li>
+            </ul>
+        </div>
+        <div class="box" id="projects">
+            <div class="boxHeader">Projects</div>
             <ul>
                 <li>
-                    games
+                    <div class="category" id="games">Games</div>
                     <ul>
                         <li>
-                            idle
-                            <ul>
-                                <li><a href="games/idle/idle_0.4_no_jquery/index.html">idle_plain_javascript</a></li>
-                                <li><a href="games/idle/idle_0.3_jquery/index.html">idle_jquery</a></li>
-                            </ul>
+                            <div class="project">
+                                <p><b>Idle Game</b> - 2019-02-25</p>
+                                <ul>
+                                    <li><a href="games/idle/idle_0.3_jquery/index.html">Idle Game, jQuery</a></li>
+                                    <li><a href="games/idle/idle_0.4_no_jquery/index.html">Idle Game, Plain JavaScript</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    graphics
+                    <div class="category" id="graphics">Graphics</div>
                     <ul>
                         <li>
-                            pixi.js
-                            <ul>
-                                <li><a href="graphics/pixi_js/webgl_test1/index.html">webgl_test1</a></li>
-                                <li><a href="graphics/pixi_js/webgl_test2/index.html">webgl_test2</a></li>
-                                <li><a href="graphics/pixi_js/webgl_test3/index.html">webgl_test3</a></li>
-                            </ul>
+                            <div class="project">
+                                <p><b>PixiJS</b> - 2019-02-28</p>
+                                <ul>
+                                    <li><a href="graphics/pixi_js/webgl_test1/index.html">Rotating Rectangle</a></li>
+                                    <li><a href="graphics/pixi_js/webgl_test2/index.html">Rotating Polygons</a></li>
+                                    <li><a href="graphics/pixi_js/webgl_test3/index.html">Random Polygon Positions</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
-                            paper.js
-                            <ul>
-                                <li><a href="graphics/paper.js/paper1/index.html">paper.js_test1</a></li>
-                                <li><a href="graphics/paper.js/paper2/index.html">paper.js_test2</a></li>
-                                <li><a href="graphics/paper.js/paper3/index.html">paper.js_test3</a></li>
-                                <li><a href="graphics/paper.js/paper4/index.html">paper.js_test4</a></li>
-                            </ul>
+                            <div class="project">
+                                <p><b>Paper.js</b> - 2019-03-01</p>
+                                <ul>
+                                    <li><a href="graphics/paper.js/paper1/index.html">Bubbles</a></li>
+                                    <li><a href="graphics/paper.js/paper2/index.html">Pixel Grid, Random Colours, Blurry</a></li>
+                                    <li><a href="graphics/paper.js/paper3/index.html">Pixel Grid, Random Colours, Clear</a></li>
+                                    <li><a href="graphics/paper.js/paper4/index.html">Langtons Ant Attempt</a></li>
+                                    <li><a href="graphics/paper.js/paper5/index.html">Langtons Ant</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project">
+                                <p><b>three.js</b> - 2019-03-07</p>
+                                <ul>
+                                    <li><a href="graphics/three.js/three_canvas_1/index.html">Rotating 3D Spheres</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </li>
             </ul>
+        </div>
+        <div class="box" id="footer">
+            <p>Frank Pettersson - 2019</p>
+            <img src="images/mail.png" alt="email">
         </div>
     </div>
 </body>
