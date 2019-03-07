@@ -66,9 +66,9 @@ var render = function () {
     for (var i = 0; i < count; i++) {
         shapes.children[i].rotation.y += 0.1;
     }
-    camera.rotation.y += 0.001;
-    camera.rotation.x += 0.001;
-    camera.rotation.z += 0.001;
+    camera.rotation.y += 0.0005;
+    camera.rotation.x += 0.0005;
+    camera.rotation.z += 0.0005;
 
     renderer.render(scene, camera);
 };
