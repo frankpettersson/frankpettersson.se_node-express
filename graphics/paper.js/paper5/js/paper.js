@@ -11,8 +11,7 @@ for (var i = 0; i < xPixels; i++) {
 		var pixel = new Path.Rectangle({
 			point: [xPos, yPos],
 			size: [factor, factor],
-			fillColor: 'white',
-			strokeColor: 'black'
+			fillColor: 'white'
 		});
 		yArray.push(pixel);
 		yPos += factor;

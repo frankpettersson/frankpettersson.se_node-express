@@ -86,3 +86,10 @@ ul li ul li:first-child .project {
 #footer p {
   margin: 10px 0 0 0;
 }
+
+#email {
+  background-image: url("/images/mail.png");
+  width: 208px;
+  height: 30px;
+  margin: auto;
+}
