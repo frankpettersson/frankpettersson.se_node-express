@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 body {
+  width: 100%;
+  height: 100%;
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -99,7 +101,8 @@ ul li ul li:first-child .project {
   margin: auto;
 }
 
-canvas { 
+iframe { 
+  border: none;
   width: 100vw; 
   height: 100vh;
   position: absolute; 
