@@ -1,19 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 body {
-  width: 100vw;
-  height: 100vh;
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.wrap {
-  background: #fff none repeat scroll 0 0;
-  left: 50%;
+#wrapwrap {
   position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  align-items: center;
+  width: 100%;
+}
+
+#wrap {
+  background: #fff none repeat scroll 0 0;
   width: 90%;
+  margin: 1% auto;
   max-width: 520px;
   padding: 10px;  border: 1px solid black;
   -webkit-box-shadow: -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
@@ -45,7 +44,7 @@ body {
 }
 
 .titleImage {
-  background-image: url("/images/fp_green.png");
+  background-image: url("/resources/images/fp_green.png");
   background-size: 100% 100%;
   width: 80px;
   height: 80px;
@@ -95,7 +94,7 @@ ul li ul li:first-child .project {
 }
 
 #email {
-  background-image: url("/images/mail.png");
+  background-image: url("/resources/images/mail.png");
   width: 208px;
   height: 30px;
   margin: auto;
@@ -103,8 +102,6 @@ ul li ul li:first-child .project {
 
 iframe { 
   border: none;
-  width: 100vw; 
-  height: 100vh;
-  position: absolute; 
+  position: absolute;
   z-index: 0;
 }

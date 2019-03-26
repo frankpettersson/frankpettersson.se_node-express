@@ -310,7 +310,7 @@ $('body').append($('<div>', {
                 )
                 .append($('<h5>')
                     .append($('<img>', {
-                        src: '/images/arrow_open.svg',
+                        src: '/resources/images/arrow_open.svg',
                         style: 'width: 13px; height: 13px;',
                         class: 'arrow',
                         id: 'arrow1'
@@ -371,7 +371,7 @@ for(let i = 0; i < uLen; i++) {
                 class: 'arrow'
             })
                 .append($('<img>', {
-                    src: '/images/arrow_open.svg',
+                    src: '/resources/images/arrow_open.svg',
                     style: 'width: 15px; height: 15px;',
                     id: 'arrow'+(i+2)
                 }))

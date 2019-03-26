@@ -23,7 +23,6 @@ for (var i = 0; i < xPixels; i++) {
 	xArray.push(yArray);
 	yArray = [];
 }
-console.log()
 
 function onFrame(event) {
 	for (var i = 0; i < xPixels; i++) {
