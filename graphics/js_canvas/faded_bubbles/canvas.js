@@ -67,7 +67,6 @@ function loop() {
     window.requestAnimationFrame(loop);
     ctx.fillStyle = 'rgb(255, 255, 255)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    canvas.id.style.zIndex = "0";
     for (let i = 0; i < bubbles.length; i++) {
         bubbles[i].update();
         bubbles[i].x += bubbles[i].radius/Math.clz32(bubbles[i].radius);
