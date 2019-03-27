@@ -44,7 +44,7 @@ body {
 }
 
 .titleImage {
-  background-image: url("../resources/images/fp_green.png");
+  background-image: url("../images/fp_green.png");
   background-size: 100% 100%;
   width: 80px;
   height: 80px;
@@ -94,7 +94,7 @@ ul li ul li:first-child .project {
 }
 
 #email {
-  background-image: url("../resources/images/mail.png");
+  background-image: url("../images/mail.png");
   width: 208px;
   height: 30px;
   margin: auto;

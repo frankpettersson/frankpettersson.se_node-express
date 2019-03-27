@@ -310,7 +310,7 @@ $('body').append($('<div>', {
                 )
                 .append($('<h5>')
                     .append($('<img>', {
-                        src: '/resources/images/arrow_open.svg',
+                        src: '../resources/images/arrow_open.svg',
                         style: 'width: 13px; height: 13px;',
                         class: 'arrow',
                         id: 'arrow1'
@@ -371,7 +371,7 @@ for(let i = 0; i < uLen; i++) {
                 class: 'arrow'
             })
                 .append($('<img>', {
-                    src: '/resources/images/arrow_open.svg',
+                    src: '../resources/images/arrow_open.svg',
                     style: 'width: 15px; height: 15px;',
                     id: 'arrow'+(i+2)
                 }))
@@ -474,14 +474,14 @@ $(document).ready(function() {
         let text2 = $(event.target).parent().next('p').attr('id');
         if(arrows.has(id) === true) {
             if(arrows.get(id) === 1) {
-                $('#'+id).attr('src', '/images/arrow_open.svg');
+                $('#'+id).attr('src', '../resources/images/arrow_open.svg');
                 arrows.set(id, 0);
                 $('#'+container).show('slow');
                 $('#'+target).show(1000);
                 $('#'+text1).show(1000);
                 $('#'+text2).hide(1);
             } else if(arrows.get(id) === 0) {
-                $('#'+id).attr('src', '/images/arrow_closed.svg');
+                $('#'+id).attr('src', '../resources/images/arrow_closed.svg');
                 arrows.set(id, 1);
                 $('#'+container).hide('slow');
                 $('#'+target).hide(1);

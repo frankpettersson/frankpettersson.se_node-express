@@ -153,7 +153,7 @@ box2.innerHTML = '<h3>give me '+game.name+'!</h3>'+
 unitBoxWrap.className = 'unitBoxWrap';
 unitBoxWrap.innerHTML = '<h4>hire '+game.hires+'!</h4>'+
                         '<h5>'+
-                            '<img src="/resources/images/arrow_open.svg" style="width: 13px; height: 13px;" class="arrows" id="arrow0">'+
+                            '<img src="../resources/images/arrow_open.svg" style="width: 13px; height: 13px;" class="arrows" id="arrow0">'+
                         ' '+game.hires+'</h5>';
 unitBox.className = 'unitBox';
 unitBox.id = 'unitBox';
@@ -194,7 +194,7 @@ for(let i = 0; i < uLen; i++) {
                         '</div>'+
                         '<div class="statBox">'+
                             '<div class="arrow">'+
-                                '<img src="/resources/images/arrow_open.svg" style="width: 15px; height: 15px;" class="arrows" id="arrow'+(i+1)+'">'+
+                                '<img src="../resources/images/arrow_open.svg" style="width: 15px; height: 15px;" class="arrows" id="arrow'+(i+1)+'">'+
                                 '<p id="p1'+i+'">stats</p>'+
                             '</div>'+
                             '<p id="p2'+i+'" style="display: none">stats</p>'+
@@ -336,11 +336,11 @@ for (let i = 0; i <= uLen; i++) {
             let div = event.target.parentElement.nextElementSibling.getAttribute('id');
             if(arrows.has(id) === true) {
                 if(arrows.get(id) === 1) {
-                    document.getElementById(id).setAttribute('src', '/images/arrow_open.svg');
+                    document.getElementById(id).setAttribute('src', '../resources/images/arrow_open.svg');
                     arrows.set(id, 0);
                     document.getElementById(div).style.display = 'block';
                 } else if(arrows.get(id) === 0) {
-                    document.getElementById(id).setAttribute('src', '/images/arrow_closed.svg');
+                    document.getElementById(id).setAttribute('src', '../resources/images/arrow_closed.svg');
                     arrows.set(id, 1);
                     document.getElementById(div).style.display = 'none';
                 }
@@ -352,13 +352,13 @@ for (let i = 0; i <= uLen; i++) {
             let text2 = event.target.parentElement.nextElementSibling.getAttribute('id');
             if(arrows.has(id) === true) {
                 if(arrows.get(id) === 1) {
-                    document.getElementById(id).setAttribute('src', '/images/arrow_open.svg');
+                    document.getElementById(id).setAttribute('src', '../resources/images/arrow_open.svg');
                     arrows.set(id, 0);
                     document.getElementById(div).style.display = 'block';
                     document.getElementById(text1).style.display = 'block';
                     document.getElementById(text2).style.display = 'none';
                 } else if(arrows.get(id) === 0) {
-                    document.getElementById(id).setAttribute('src', '/images/arrow_closed.svg');
+                    document.getElementById(id).setAttribute('src', '../resources/images/arrow_closed.svg');
                     arrows.set(id, 1);
                     document.getElementById(div).style.display = 'none';
                     document.getElementById(text1).style.display = 'none';
