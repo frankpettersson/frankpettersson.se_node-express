@@ -105,3 +105,11 @@ iframe {
   position: absolute;
   z-index: 0;
 }
+
+.thumbnail, .thumbnail img {
+  max-height: 100px;
+}
+
+.thumbnail img {
+  border: 1px solid black;
+}
