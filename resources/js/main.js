@@ -30,10 +30,12 @@ let state = 0;
 document.getElementById('darkMode').addEventListener('click', function darkMode() {
     if (state < 3) {
         document.getElementById('wrap').style.background = 'rgb(40, 40, 40)';
+        document.getElementById('bg').style.background = 'rgb(20, 20, 20)';
         document.getElementById('background').src = 'graphics/js_canvas/faded_bubbles_dark/index.html';
         state++;
     } else if (state >= 3) {
         document.getElementById('wrap').style.background = 'rgb(255, 255, 255)';
+        document.getElementById('bg').style.background = 'rgb(255, 255, 255)';
         document.getElementById('background').src = 'graphics/js_canvas/faded_bubbles/index.html';
         state = 0;
     }
