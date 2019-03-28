@@ -55,13 +55,18 @@ body {
   text-shadow: -1px 1px 0px #969696;
 }
 
+#description p {
+  text-align: left;
+  margin: 10px 5% 16px 5%;
+}
+
 .box ul {
   text-align: left;
 }
 
 .boxHeader {
   text-align: left;
-  margin: 16px 0 0 5%;
+  margin: 16px 5% 0 5%;
   font-size: 1.5em;
 }
 
@@ -126,7 +131,7 @@ iframe {
   height: 100px;
 }
 
-#projects > ul > li > ul > li {
+#projects ul li ul li {
   margin-bottom: 10px;
 }
 
