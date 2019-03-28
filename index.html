@@ -12,6 +12,7 @@
             document.getElementById('background').src = bg;
         }
     </script>
+    <script src="resources/main.js" async></script>
 </head>
 <body>
     <iframe src="graphics/three.js/3Dspheres_BG/index.html" id="background" scrolling="no"></iframe>
@@ -34,83 +35,130 @@
             <div class="box" id="projects">
                 <div class="boxHeader">Projects</div>
                 <ul>
-                    <li>
-                        <div class="category" id="games">Games</div>
+                    <div class="category" id="games">
+                        <img src="resources/images/arrow_open.svg" style="width: 12px; height: 12px;" class="arrows" id="arrow0">
+                        Games
+                    </div>
+                    <li id="game" style="display: block">
                         <ul>
                             <li>
-                                <div class="project">
-                                    <p><b>Idle game</b> - 2019-02-25</p>
-                                    <ul>
-                                        <li><a href="games/idle/idle_0.3_jquery/index.html">Idle game, jQuery</a></li>
-                                        <li class="thumbnail"><img src="resources/images/thumbnail/idle.png" alt=""></li>
-                                        <li><a href="games/idle/idle_0.4_no_jquery/index.html">Idle game, plain JavaScript</a></li>
-                                        <li class="thumbnail"><img src="resources/images/thumbnail/idle.png" alt=""></li>
-                                    </ul>
+                                <div>
+                                    <img src="resources/images/arrow_open.svg" style="width: 12px; height: 12px;" class="arrows" id="arrow1">
+                                    <b>Idle game</b> - 2019-02-25
+                                </div>
+                                <div class="project" id="idle">
+                                    <a href="games/idle/idle_0.3_jquery/index.html">
+                                        <div class="thumbnail"><img src="resources/images/thumbnail/idle.png" alt=""></div>
+                                        <p>Idle game, jQuery</p>
+                                    </a>
+                                    <a href="games/idle/idle_0.4_no_jquery/index.html">
+                                        <div class="thumbnail"><img src="resources/images/thumbnail/idle.png" alt=""></div>
+                                        <p>Idle game, plain JavaScript</p>
+                                    </a>
                                 </div>
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <div class="category" id="graphics">Graphics</div>
+                    <div class="category" id="graphics">
+                        <img src="resources/images/arrow_open.svg" style="width: 12px; height: 12px;" class="arrows" id="arrow2">
+                        Graphics
+                    </div>
+                    <li id="graphic" style="display: block">
                         <ul>
                             <li>
-                                <div class="project">
-                                    <p><b>PixiJS</b> - 2019-02-28</p>
-                                    <ul>
-                                        <li><a href="graphics/pixi_js/rotatingRectangle/index.html">Rotating rectangle</a></li>
-                                        <li class="thumbnail"><img src="resources/images/thumbnail/rotating_rectangle.png" alt=""></li>
-                                        <li><a href="graphics/pixi_js/rotatingPolygons/index.html">Rotating polygons</a></li>
-                                        <li class="thumbnail"><img src="resources/images/thumbnail/rotating_polygon.png" alt=""></li>
-                                        <li><a href="graphics/pixi_js/randomPolygonPositions/index.html">Random polygon positions</a></li>
-                                        <li class="thumbnail"><img src="resources/images/thumbnail/random_polygons.png" alt=""></li>
-                                    </ul>
+                                <div>
+                                    <img src="resources/images/arrow_open.svg" style="width: 12px; height: 12px;" class="arrows" id="arrow3">
+                                    <b>PixiJS</b> - 2019-02-28
+                                </div>
+                                <div class="project" id="pixijs">
+                                    <a href="graphics/pixi_js/rotatingRectangle/index.html">
+                                        <div class="thumbnail"><img src="resources/images/thumbnail/rotating_rectangle.png" alt=""></div>
+                                        <p>Rotating rectangle</p>
+                                    </a>
+                                    <a href="graphics/pixi_js/rotatingPolygons/index.html">
+                                        <div class="thumbnail"><img src="resources/images/thumbnail/rotating_polygon.png" alt=""></div>
+                                        <p>Rotating polygons</p>
+                                    </a>
+                                    <a href="graphics/pixi_js/randomPolygonPositions/index.html">
+                                        <div class="thumbnail"><img src="resources/images/thumbnail/random_polygons.png" alt=""></div>
+                                        <p>Random polygon positions</p>
+                                    </a>
                                 </div>
                             </li>
                             <li>
-                                <div class="project">
-                                    <p><b>Paper.js</b> - 2019-03-01</p>
-                                    <ul>
-                                        <li><a href="graphics/paper.js/bubbles/index.html">Bubbles</a></li>
-                                        <li class="thumbnail"><img src="resources/images/thumbnail/bubbles_paper.png" alt=""></li>
-                                        <li><a href="graphics/paper.js/pixelGrid1/index.html">Pixel grid, blurry</a></li>
-                                        <li class="thumbnail"><img src="resources/images/thumbnail/pixels_blurry.png" alt=""></li>
-                                        <li><a href="graphics/paper.js/pixelGrid2/index.html">Pixel grid, clear, fullscren</a></li>
-                                        <li class="thumbnail"><img src="resources/images/thumbnail/pixels_clear.png" alt=""></li>
-                                        <li><a href="graphics/paper.js/langtonsAttempt/index.html">Langtons ant attempt</a></li>
-                                        <li class="thumbnail"><img src="resources/images/thumbnail/langton_attempt.png" alt=""></li>
-                                        <li><a href="graphics/paper.js/langtonsAnt/index.html">Langtons ant</a></li>
-                                        <li class="thumbnail"><img src="resources/images/thumbnail/langtons_ant.png" alt=""></li>
-                                    </ul>
+                                <div>
+                                    <img src="resources/images/arrow_open.svg" style="width: 12px; height: 12px;" class="arrows" id="arrow4">
+                                    <b>Paper.js</b> - 2019-03-01
+                                </div>
+                                <div class="project" id="paperjs">
+                                    <a href="graphics/paper.js/bubbles/index.html">
+                                        <div class="thumbnail"><img src="resources/images/thumbnail/bubbles_paper.png" alt=""></div>
+                                        <p>Bubbles</p>
+                                    </a>
+                                    <a href="graphics/paper.js/pixelGrid1/index.html">
+                                        <div class="thumbnail"><img src="resources/images/thumbnail/pixels_blurry.png" alt=""></div>
+                                        <p>Pixel grid, blurry</p>
+                                    </a>
+                                    <a href="graphics/paper.js/pixelGrid2/index.html">
+                                        <div class="thumbnail"><img src="resources/images/thumbnail/pixels_clear.png" alt=""></div>
+                                        <p>Pixel grid, clear, fullscren</p>
+                                    </a>
+                                    <a href="graphics/paper.js/langtonsAttempt/index.html">
+                                        <div class="thumbnail"><img src="resources/images/thumbnail/langton_attempt.png" alt=""></div>
+                                        <p>Langtons ant attempt</p>
+                                    </a>
+                                    <a href="graphics/paper.js/langtonsAnt/index.html">
+                                        <div class="thumbnail"><img src="resources/images/thumbnail/langtons_ant.png" alt=""></div>
+                                        <p>Langtons ant</p>
+                                    </a>
                                 </div>
                             </li>
                             <li>
-                                <div class="project">
-                                    <p><b>three.js</b> - 2019-03-07</p>
-                                    <ul>
-                                        <li><a href="graphics/three.js/3Dspheres/index.html">Rotating 3D spheres with camera controls</a></li>
-                                        <li class="thumbnail"><img src="resources/images/thumbnail/spheres.png" alt=""></li>
-                                        <li><a href="graphics/three.js/3Dspheres_BG/index.html">Rotating 3D spheres as background</a></li>
-                                        <li class="thumbnail"><img src="resources/images/thumbnail/sphere_BG.png" alt=""></li>
-                                    </ul>
+                                <div>
+                                    <img src="resources/images/arrow_open.svg" style="width: 12px; height: 12px;" class="arrows" id="arrow5">
+                                    <b>three.js</b> - 2019-03-07
+                                </div>
+                                <div class="project" id="threejs">
+                                    <a href="graphics/three.js/3Dspheres/index.html">
+                                        <div class="thumbnail"><img src="resources/images/thumbnail/spheres.png" alt=""></div>
+                                        <p>Rotating 3D spheres with camera controls</p>
+                                    </a>
+                                    <a href="graphics/three.js/3Dspheres_BG/index.html">
+                                        <div class="thumbnail"><img src="resources/images/thumbnail/sphere_BG.png" alt=""></div>
+                                        <p>Rotating 3D spheres as background</p>
+                                    </a>
                                 </div>
                             </li>
                             <li>
-                                <div class="project">
-                                    <p><b>JavaScript canvas</b> - 2019-03-22</p>
-                                    <ul>
-                                        <li><a href="graphics/js_canvas/colours/index.html">Colours</a></li>
-                                        <li class="thumbnail"><img src="resources/images/thumbnail/colours.png" alt=""></li>
-                                        <li><a href="graphics/js_canvas/black_hole/index.html">Black hole</a></li>
-                                        <li class="thumbnail"><img src="resources/images/thumbnail/black_hole.png" alt=""></li>
-                                        <li><a href="graphics/js_canvas/bubbles/index.html">Bubbles</a></li>
-                                        <li class="thumbnail"><img src="resources/images/thumbnail/bubbles.png" alt=""></li>
-                                        <li><a href="graphics/js_canvas/faded_bubbles/index.html">Faded bubbles</a></li>
-                                        <li class="thumbnail"><img src="resources/images/thumbnail/faded_bubbles.png" alt=""></li>
-                                        <li><a href="graphics/js_canvas/black_donut/index.html">Black donut</a></li>
-                                        <li class="thumbnail"><img src="resources/images/thumbnail/black_donut.png" alt=""></li>
-                                        <li><a href="graphics/js_canvas/look_in_the_middle/index.html">Look in the middle</a></li>
-                                        <li class="thumbnail"><img src="resources/images/thumbnail/look.png" alt=""></li>
-                                    </ul>
+                                <div>
+                                    <img src="resources/images/arrow_open.svg" style="width: 12px; height: 12px;" class="arrows" id="arrow6">
+                                    <b>JavaScript canvas</b> - 2019-03-22
+                                </div>
+                                <div class="project" id="jscanvas">
+                                    <a href="graphics/js_canvas/colours/index.html">
+                                        <div class="thumbnail"><img src="resources/images/thumbnail/colours.png" alt=""></div>
+                                        <p>Colours</p>
+                                    </a>
+                                    <a href="graphics/js_canvas/black_hole/index.html">
+                                        <div class="thumbnail"><img src="resources/images/thumbnail/black_hole.png" alt=""></div>
+                                        <p>Black hole</p>
+                                    </a>
+                                    <a href="graphics/js_canvas/bubbles/index.html">
+                                        <div class="thumbnail"><img src="resources/images/thumbnail/bubbles.png" alt=""></div>
+                                        <p>Bubbles</p>
+                                    </a>
+                                    <a href="graphics/js_canvas/faded_bubbles/index.html">
+                                        <div class="thumbnail"><img src="resources/images/thumbnail/faded_bubbles.png" alt=""></div>
+                                        <p>Faded bubbles</p>
+                                    </a>
+                                    <a href="graphics/js_canvas/black_donut/index.html">
+                                        <div class="thumbnail"><img src="resources/images/thumbnail/black_donut.png" alt=""></div>
+                                        <p>Black donut</p>
+                                    </a>
+                                    <a href="graphics/js_canvas/look_in_the_middle/index.html">
+                                        <div class="thumbnail"><img src="resources/images/thumbnail/look.png" alt=""></div>
+                                        <p>Look in the middle</p>
+                                    </a>
                                 </div>
                             </li>
                         </ul>
