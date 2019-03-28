@@ -88,8 +88,11 @@ ul {
   margin-top: 5px;
 }
 
-#footer p {
+#footer p:first-child {
   margin: 10px 0 0 0;
+}
+#footer p:last-child {
+  margin: 0 0 10px 0;
 }
 
 #email {
