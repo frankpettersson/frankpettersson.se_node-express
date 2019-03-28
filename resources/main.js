@@ -14,7 +14,7 @@ for (let i = 0; i <= 6; i++) {
             if(arrows.get(id) === 1) {
                 document.getElementById(id).setAttribute('src', 'resources/images/arrow_open.svg');
                 arrows.set(id, 0);
-                document.getElementById(target).style.display = 'block';
+                document.getElementById(target).style.display = 'grid';
             } else if(arrows.get(id) === 0) {
                 document.getElementById(id).setAttribute('src', 'resources/images/arrow_closed.svg');
                 arrows.set(id, 1);
