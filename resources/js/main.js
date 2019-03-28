@@ -7,7 +7,7 @@ for (let i = 0; i <= 10; i++) {
 //Listens for click
 let selectedArrow = document.getElementsByClassName('arrows');
 for (let i = 0; i <= 6; i++) {
-    selectedArrow[i].addEventListener('click', function unitBuy() {
+    selectedArrow[i].addEventListener('click', function arrow() {
         let id = event.target.getAttribute('id');
         let target = event.target.parentElement.nextElementSibling.getAttribute('id');
         if(arrows.has(id) === true) {
@@ -23,4 +23,19 @@ for (let i = 0; i <= 6; i++) {
         }
     });
 }
+//_____________________________________________________________________________
+
+//Dark Mode____________________________________________________________________
+let state = 0;
+document.getElementById('darkMode').addEventListener('click', function darkMode() {
+    if (state < 3) {
+        document.getElementById('wrap').style.background = 'rgb(40, 40, 40)';
+        document.getElementById('background').src = 'graphics/js_canvas/faded_bubbles_dark/index.html';
+        state++;
+    } else if (state >= 3) {
+        document.getElementById('wrap').style.background = 'rgb(255, 255, 255)';
+        document.getElementById('background').src = 'graphics/js_canvas/faded_bubbles/index.html';
+        state = 0;
+    }
+});
 //_____________________________________________________________________________
