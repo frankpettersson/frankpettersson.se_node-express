@@ -140,6 +140,7 @@ iframe {
 
 .thumbnail img {
   height: 100px;
+  width: 100%;
   max-width: 100px;
 }
 
