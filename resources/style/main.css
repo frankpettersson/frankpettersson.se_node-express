@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
@@ -53,7 +54,7 @@ body {
 }
 
 #titleImage {
-  background-image: url("../images/fp_green.png");
+  background-image: url("../images/icon/fp_green_512.png");
   background-size: 100% 100%;
   width: 180px;
   height: 180px;

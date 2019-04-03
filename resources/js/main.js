@@ -12,11 +12,11 @@ for (let i = 0; i <= 7; i++) {
         let target = event.target.parentElement.nextElementSibling.getAttribute('id');
         if(arrows.has(id) === true) {
             if(arrows.get(id) === 1) {
-                document.getElementById(id).setAttribute('src', 'resources/images/arrow_open.svg');
+                document.getElementById(id).setAttribute('src', 'resources/images/util/arrow_open.svg');
                 arrows.set(id, 0);
                 document.getElementById(target).style.display = 'grid';
             } else if(arrows.get(id) === 0) {
-                document.getElementById(id).setAttribute('src', 'resources/images/arrow_closed.svg');
+                document.getElementById(id).setAttribute('src', 'resources/images/util/arrow_closed.svg');
                 arrows.set(id, 1);
                 document.getElementById(target).style.display = 'none';
             }
