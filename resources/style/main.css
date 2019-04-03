@@ -15,24 +15,19 @@ body {
 }
 
 #wrap {
-  background: #fff none repeat scroll 0 0;
+  background: rgba(200, 200, 200, 0.5);
   width: 90%;
-  margin: 1% auto;
+  margin: 0 auto 50px auto;
   max-width: 700px;
   padding: 10px;  border: 1px solid black;
-  -webkit-box-shadow: -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
   z-index: 1;
 }
 
 .box {
   border: 1px solid black;
+  background: rgba(235, 235, 235, 0.8);
   margin: 15px 0;
   text-align: center;
-  -webkit-box-shadow: -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: -4px 4px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
 .box:first-child {
@@ -50,15 +45,16 @@ body {
   justify-content:center;
   align-items:center;
   width:100%;
-  height:200px;
+  height:300px;
 }
 
 #titleImage {
+  background: rgba(215, 215, 215, 0.6);
   background-image: url("../images/icon/fp_green_512x512.png");
   background-size: 100% 100%;
-  width: 180px;
-  height: 180px;
-  border: 1px dashed black;
+  width: 200px;
+  height: 200px;
+  border: 2px dashed black;
   border-radius: 50%;
 }
 
@@ -152,6 +148,7 @@ iframe {
 
 .thumbnail {
   text-align: center;
+  background: white;
   border: 1px solid black;
   height: 100px;
   width: 100px;
@@ -183,7 +180,7 @@ iframe {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: rgb(195, 195, 195);
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -225,6 +222,10 @@ input:checked + .slider:before {
 @media only screen and (max-width: 600px) {
   .project {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .title {
+    height:200px;
+    margin: 5% auto;
   }
   #content, #backgroundSwap, iframe {
     display: none; 
