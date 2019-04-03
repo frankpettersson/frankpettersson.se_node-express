@@ -16,26 +16,28 @@
     <div id="bg"></div>
     <div id="wrapwrap" width="100%" height="100%">
         <div class="title">
-            <div class="titleImage"></div>                                                              
+            <div id="titleImage"></div>                                                              
         </div>
         <div id="wrap">
-            <div class="darkMobile">
-                <div class="boxHeader">Dark mode</div>
-                <ul>
-                    <li>
-                        <label id="darkMode" class="switch" for="darkSwitch">
-                            <input type="checkbox" id="darkSwitch">
-                            <span class="slider round"></span>
-                        </label>
-                    </li>
-                </ul>
-            </div>
-            <div class="box" id="content">
-                <div class="etc">
-                    <div class="boxHeader">Content</div>
+            <div class="box" id="top">
+                <div id="content">
+                    <div class="etc">
+                        <div class="boxHeader">Content</div>
+                        <ul>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#backgroundSwap">Background</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="dark">
+                    <div class="boxHeader">Dark mode</div>
                     <ul>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#backgroundSwap">Background</a></li>
+                        <li>
+                            <label id="darkMode" class="switch" for="darkSwitch">
+                                <input type="checkbox" id="darkSwitch">
+                                <span class="slider round"></span>
+                            </label>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -201,6 +203,7 @@
     </div>
     <script src="resources/js/main.js" async></script>
     <script>
+        window.outerWidth = window.innerWidth;
         window.onload = function() {
             var iframe = document.createElement('iframe');
             iframe.title = 'Background Animation';
@@ -224,7 +227,7 @@
                 document.documentElement["offsetHeight"]
             );
             document.getElementById('background').width = (width)+'px';
-            document.getElementById('background').height = (height)+'px';     
+            document.getElementById('background').height = (height)+'px';
         };
         function backgroundSwap(bg) {
             document.getElementById('background').src = bg;
