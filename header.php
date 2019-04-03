@@ -2,13 +2,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/resources/images/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/resources/images/icon/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/resources/images/icon/favicon-16x16.png">
-    <link rel="manifest" href="/resources/images/icon/site.webmanifest">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/resources/images/icon/safari-pinned-tab.svg" color="#1bc600">
     <link rel="shortcut icon" href="/resources/images/icon/favicon.ico">
     <meta name="apple-mobile-web-app-title" content="frankpettersson.se">
     <meta name="application-name" content="frankpettersson.se">
     <meta name="msapplication-TileColor" content="#00a300">
-    <meta name="msapplication-config" content="/resources/images/icon/browserconfig.xml">
+    <meta name="msapplication-config" content="/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
