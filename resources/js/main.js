@@ -1,3 +1,4 @@
+window.outerWidth = window.innerWidth;
 //Hide & Show Function_________________________________________________________
 //Stores state of arrow direction/hidden or shown
 let arrows = new Map();
@@ -6,7 +7,7 @@ for (let i = 0; i <= 10; i++) {
 }
 //Listens for click
 let selectedArrow = document.getElementsByClassName('arrows');
-for (let i = 0; i <= 6; i++) {
+for (let i = 0; i <= 7; i++) {
     selectedArrow[i].addEventListener('click', function arrow() {
         let id = event.target.getAttribute('id');
         let target = event.target.parentElement.nextElementSibling.getAttribute('id');

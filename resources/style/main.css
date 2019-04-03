@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
@@ -136,12 +135,6 @@ iframe {
   height: 100px;
   width: 100px;
   margin: auto;
-}
-
-.thumbnail img {
-  height: 100px;
-  width: 100%;
-  max-width: 100px;
 }
 
 #projects ul li ul li {
