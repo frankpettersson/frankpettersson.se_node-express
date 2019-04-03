@@ -227,7 +227,7 @@ input:checked + .slider:before {
     height:200px;
     margin: 5% auto;
   }
-  #content, #backgroundSwap, iframe {
+  #content, #backgroundSwap {
     display: none; 
   }
   #bg {
