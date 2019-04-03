@@ -44,7 +44,7 @@ document.getElementById('darkMode').addEventListener('click', function darkMode(
         if (width <= 600) {
             document.getElementById('wrapwrap').style.background = 'rgb(30, 30, 30)';
         } else {
-            document.getElementById('background').src = 'projects/graphics/js_canvas/faded_bubbles_dark/index.html';
+            document.getElementById('background').src = 'projects/graphics/js_canvas/faded_bubbles_dark/index.php';
         }
         document.getElementById('wrap').style.background = 'rgb(60, 60, 60)';
         document.getElementById('titleImage').style.border = '1px dashed white';
@@ -55,7 +55,7 @@ document.getElementById('darkMode').addEventListener('click', function darkMode(
         if (width <= 600) {
             document.getElementById('wrapwrap').style.background = 'rgb(255, 255, 255)';
         } else {
-            document.getElementById('background').src = 'projects/graphics/js_canvas/faded_bubbles/index.html';
+            document.getElementById('background').src = 'projects/graphics/js_canvas/faded_bubbles/index.php';
         }
         document.getElementById('wrap').style.background = 'rgb(255, 255, 255)';
         document.getElementById('titleImage').style.border = '1px dashed black';
