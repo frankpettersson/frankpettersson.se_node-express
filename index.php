@@ -1,7 +1,7 @@
-<?php include "header.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php include "header.php" ?>
     <link rel="stylesheet" href="resources/style/main.css">
     <title>frankpettersson.se</title>
 </head>

@@ -1,7 +1,7 @@
-<?php include "../../../../header.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php include "../../../../header.php" ?>
     <script src="canvas.js" async></script>
     <title>Black donut</title>
 </head>

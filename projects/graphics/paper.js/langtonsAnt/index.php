@@ -1,7 +1,7 @@
-<?php include "../../../../header.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php include "../../../../header.php" ?>
     <link rel="stylesheet" href="css/paper.css">
     <script type="text/javascript" src="../js/paper-full.js"></script>
     <script async type="text/paperscript" src="js/paper.js" canvas="paper"></script>
