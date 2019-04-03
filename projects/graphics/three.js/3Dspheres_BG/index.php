@@ -1,9 +1,8 @@
+<?php include "../../../../header.php" ?>
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset=utf-8>
 		<title>Rotating 3D spheres, static</title>
-		<link rel="icon" href="../../../../resources/images/fp_green.png"/>
 		<style>
 			body { margin: 0; }
 			canvas { width: 100%; height: 100% }

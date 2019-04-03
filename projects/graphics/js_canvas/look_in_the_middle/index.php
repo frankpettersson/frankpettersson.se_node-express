@@ -1,7 +1,7 @@
+<?php include "../../../../header.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="../../../../resources/images/fp_green.png" />
     <script src="canvas.js" async></script>
     <title>Look in the middle</title>
 </head>

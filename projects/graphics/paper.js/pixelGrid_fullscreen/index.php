@@ -1,3 +1,4 @@
+<?php include "../../../../header.php" ?>
 <!DOCTYPE html>
 <head>
     <script type="text/javascript" src="../js/paper-full.js"></script>

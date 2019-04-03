@@ -1,7 +1,7 @@
+<?php include "../../../../header.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="../../../../resources/images/fp_green.png"/>
     <script async src="canvas.js"></script>
     <title>Faded bubbles</title>
 </head>

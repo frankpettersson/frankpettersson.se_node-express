@@ -1,11 +1,8 @@
+<?php include "../../../../header.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewpbbort" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/paper.css">
-    <link rel="icon" href="../../../../resources/images/fp_green.png"/>
     <script type="text/javascript" src="../js/paper-full.js"></script>
     <script async type="text/paperscript" src="js/paper.js" canvas="paper"></script>
     <title>Langtons ant attempt</title>
