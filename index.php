@@ -9,10 +9,10 @@
     <div id="bg"></div>
     <div id="wrapwrap" width="100%" height="100%">
         <div class="title">
-            <div id="titleImage"></div>
+            <a href="#"><div id="titleImage"></div></a>
         </div>
         <div id="wrap">
-            <div class="box" id="top">
+            <div class="box half">
                 <div id="content">
                     <div class="etc">
                         <div class="boxHeader">Content</div>
@@ -38,14 +38,14 @@
                 <div class="boxHeader">Projects</div>
                 <ul>
                     <li class="category" id="games">
-                        <img src="resources/images/util/arrow_open.svg" style="width: 12px; height: 12px;" class="arrows" id="arrow0" alt="hide/show">
+                        <img src="resources/images/util/arrow_open.svg" class="arrows" id="arrow0" alt="hide/show">
                         Games
                     </li>
-                    <li id="game" style="display: block">
+                    <li id="game">
                         <ul>
                             <li>
                                 <div>
-                                    <img src="resources/images/util/arrow_open.svg" style="width: 12px; height: 12px;" class="arrows" id="arrow1" alt="hide/show">
+                                    <img src="resources/images/util/arrow_open.svg" class="arrows" id="arrow1" alt="hide/show">
                                     <b>Idle game</b> - 2019-02-25
                                 </div>
                                 <div class="project" id="idle">
@@ -61,7 +61,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <img src="resources/images/util/arrow_open.svg" style="width: 12px; height: 12px;" class="arrows" id="arrow2" alt="hide/show">
+                                    <img src="resources/images/util/arrow_open.svg" class="arrows" id="arrow2" alt="hide/show">
                                     <b>Units creating units</b> - 2019-04-02
                                 </div>
                                 <div class="project" id="units-units">
@@ -74,14 +74,14 @@
                         </ul>
                     </li>
                     <li class="category" id="graphics">
-                        <img src="resources/images/util/arrow_open.svg" id="arrow3" class="arrows" style="width: 12px; height: 12px;" alt="hide/show">
+                        <img src="resources/images/util/arrow_open.svg" id="arrow3" class="arrows" alt="hide/show">
                         Graphics
                     </li>
-                    <li id="graphic" style="display: block">
+                    <li id="graphic">
                         <ul>
                             <li>
                                 <div>
-                                    <img src="resources/images/util/arrow_open.svg" style="width: 12px; height: 12px;" class="arrows" id="arrow4" alt="hide/show">
+                                    <img src="resources/images/util/arrow_open.svg" class="arrows" id="arrow4" alt="hide/show">
                                     <b>PixiJS</b> - 2019-02-28
                                 </div>
                                 <div class="project" id="pixijs">
@@ -101,7 +101,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <img src="resources/images/util/arrow_open.svg" style="width: 12px; height: 12px;" class="arrows" id="arrow5" alt="hide/show">
+                                    <img src="resources/images/util/arrow_open.svg" class="arrows" id="arrow5" alt="hide/show">
                                     <b>Paper.js</b> - 2019-03-01
                                 </div>
                                 <div class="project" id="paperjs">
@@ -129,7 +129,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <img src="resources/images/util/arrow_open.svg" style="width: 12px; height: 12px;" class="arrows" id="arrow6" alt="hide/show">
+                                    <img src="resources/images/util/arrow_open.svg" class="arrows" id="arrow6" alt="hide/show">
                                     <b>three.js</b> - 2019-03-07
                                 </div>
                                 <div class="project" id="threejs">
@@ -145,7 +145,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <img src="resources/images/util/arrow_open.svg" style="width: 12px; height: 12px;" class="arrows" id="arrow7" alt="hide/show">
+                                    <img src="resources/images/util/arrow_open.svg" class="arrows" id="arrow7" alt="hide/show">
                                     <b>JavaScript</b> - 2019-03-22
                                 </div>
                                 <div class="project" id="jscanvas">
@@ -188,9 +188,12 @@
                     <li><a href="#" onclick="backgroundSwap('projects/graphics/three.js/3Dspheres_BG/index.php')">3D spheres</a></li>
                 </ul>
             </div>
-            <div class="box" id="footer">
-                <p>Frank Pettersson - 2019</p>
-                <p>frank.pettersson1@gmail.com</p>
+            <div class="box half" id="footer">
+                <a href="#"><img src="resources/images/icon/android-chrome-192x192.png" alt="fp_logo"></a>
+                <div class="text">
+                    <p>Frank Pettersson - 2019</p>
+                    <p>frank.pettersson1@gmail.com</p>
+                </div>
             </div>
         </div>
     </div>
