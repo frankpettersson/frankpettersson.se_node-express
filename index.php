@@ -50,11 +50,11 @@
                                 </div>
                                 <div class="project" id="idle">
                                     <a href="projects/games/idle/idle_0.3_jquery/">
-                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/idle.png" alt="idle game jquery"></div>
+                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/idle.webp" alt="idle game jquery"></div>
                                         <p class="projectname">Idle game, jQuery</p>
                                     </a>
                                     <a href="projects/games/idle/idle_0.4_no_jquery/">
-                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/idle.png" alt="idle game plain javascript"></div>
+                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/idle.webp" alt="idle game plain javascript"></div>
                                         <p class="projectname">Idle game, plain JavaScript</p>
                                     </a>
                                 </div>
@@ -66,7 +66,7 @@
                                 </div>
                                 <div class="project" id="units-units">
                                     <a href="projects/games/units_create_units/">
-                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/units_creating_units.png" alt="units creating units"></div>
+                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/units_creating_units.webp" alt="units creating units"></div>
                                         <p class="projectname">Units creating units</p>
                                     </a>
                                 </div>
@@ -86,15 +86,15 @@
                                 </div>
                                 <div class="project" id="pixijs">
                                     <a href="projects/graphics/pixi_js/rotatingRectangle/">
-                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/rotating_rectangle.png" alt="rotating rectangle"></div>
+                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/rotating_rectangle.webp" alt="rotating rectangle"></div>
                                         <p class="projectname">Rotating rectangle</p>
                                     </a>
                                     <a href="projects/graphics/pixi_js/rotatingPolygons/">
-                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/rotating_polygon.png" alt="rotating polygon"></div>
+                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/rotating_polygon.webp" alt="rotating polygon"></div>
                                         <p class="projectname">Rotating polygons</p>
                                     </a>
                                     <a href="projects/graphics/pixi_js/randomPolygonPositions/">
-                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/random_polygons.png" alt="random polygons"></div>
+                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/random_polygons.webp" alt="random polygons"></div>
                                         <p class="projectname">Random polygon positions</p>
                                     </a>
                                 </div>
@@ -106,23 +106,23 @@
                                 </div>
                                 <div class="project" id="paperjs">
                                     <a href="projects/graphics/paper.js/bubbles/">
-                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/bubbles_paper.png" alt="bubbkles paper.js"></div>
+                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/bubbles_paper.webp" alt="bubbkles paper.js"></div>
                                         <p class="projectname">Bubbles</p>
                                     </a>
                                     <a href="projects/graphics/paper.js/pixelGrid_blurry/">
-                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/pixels_blurry.png" alt="blurry pixels"></div>
+                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/pixels_blurry.webp" alt="blurry pixels"></div>
                                         <p class="projectname">Pixel grid, blurry</p>
                                     </a>
                                     <a href="projects/graphics/paper.js/pixelGrid_clear/">
-                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/pixels_clear.png" alt="clear pixels"></div>
+                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/pixels_clear.webp" alt="clear pixels"></div>
                                         <p class="projectname">Pixel grid, clear</p>
                                     </a>
                                     <a href="projects/graphics/paper.js/langtonsAttempt/">
-                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/langton_attempt.png" alt="langtons ant attempt"></div>
+                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/langton_attempt.webp" alt="langtons ant attempt"></div>
                                         <p class="projectname">Langtons ant attempt</p>
                                     </a>
                                     <a href="projects/graphics/paper.js/langtonsAnt/">
-                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/langtons_ant.png" alt="langtons ant"></div>
+                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/langtons_ant.webp" alt="langtons ant"></div>
                                         <p class="projectname">Langtons ant</p>
                                     </a>
                                 </div>
@@ -134,11 +134,11 @@
                                 </div>
                                 <div class="project" id="threejs">
                                     <a href="projects/graphics/three.js/3Dspheres/">
-                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/spheres.png" alt="3d spheres with camera controls"></div>
+                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/spheres.webp" alt="3d spheres with camera controls"></div>
                                         <p class="projectname">Rotating 3D spheres, camera controls</p>
                                     </a>
                                     <a href="projects/graphics/three.js/3Dspheres_BG/">
-                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/sphere_BG.png" alt="3d spheres static camera"></div>
+                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/sphere_BG.webp" alt="3d spheres static camera"></div>
                                         <p class="projectname">Rotating 3D spheres, static</p>
                                     </a>
                                 </div>
@@ -150,27 +150,27 @@
                                 </div>
                                 <div class="project" id="jscanvas">
                                     <a href="projects/graphics/js_canvas/colours/">
-                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/colours.png" alt="colour canvas"></div>
+                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/colours.webp" alt="colour canvas"></div>
                                         <p class="projectname">Colours</p>
                                     </a>
                                     <a href="projects/graphics/js_canvas/black_hole/">
-                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/black_hole.png" alt="black hole"></div>
+                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/black_hole.webp" alt="black hole"></div>
                                         <p class="projectname">Black hole</p>
                                     </a>
                                     <a href="projects/graphics/js_canvas/bubbles/">
-                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/bubbles.png" alt="bubbles"></div>
+                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/bubbles.webp" alt="bubbles"></div>
                                         <p class="projectname">Bubbles</p>
                                     </a>
                                     <a href="projects/graphics/js_canvas/faded_bubbles/">
-                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/faded_bubbles.png" alt="faded bubbles"></div>
+                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/faded_bubbles.webp" alt="faded bubbles"></div>
                                         <p class="projectname">Faded bubbles</p>
                                     </a>
                                     <a href="projects/graphics/js_canvas/black_donut/">
-                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/black_donut.png" alt="black donut"></div>
+                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/black_donut.webp" alt="black donut"></div>
                                         <p class="projectname">Black donut</p>
                                     </a>
                                     <a href="projects/graphics/js_canvas/look_in_the_middle/">
-                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/look.png" alt="look in the middle illusion"></div>
+                                        <div class="thumbnail"><img type="image/png"src="resources/images/thumbnail/look.webp" alt="look in the middle illusion"></div>
                                         <p class="projectname">Look in the middle</p>
                                     </a>
                                 </div>
