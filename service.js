@@ -67,20 +67,20 @@ if (!CacheStorage.prototype.match) {
 self.addEventListener('install', function (e) {
   e.waitUntil(
     caches.open('frankpettersson.se').then(function (cache) {
-      return cache.match(event.request).then(function (response) {
-        return response || fetch(event.request).then(function (response) {
-          cache.put(event.request, response.clone());
+      return cache.match(e.request).then(function (response) {
+        return response || fetch(e.request).then(function (response) {
+          cache.put(e.request, response.clone());
           return response;
         });
       });
     })
   );
 });
-self.addEventListener('fetch', function (event) {
-  console.log(event.request.url);
-  event.respondWith(
-    caches.match(event.request).then(function (response) {
-      return response || fetch(event.request);
+self.addEventListener('fetch', function (e) {
+  console.log(e.request.url);
+  e.respondWith(
+    caches.match(e.request).then(function (response) {
+      return response || fetch(e.request);
     })
   );
 });
