@@ -199,5 +199,6 @@
             </div>
         </div>
     </div>
+    <script src="worker.js"></script>
 </body>
 </html>
