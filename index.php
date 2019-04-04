@@ -9,7 +9,7 @@
     <div id="bg"></div>
     <div id="wrapwrap" width="100%" height="100%">
         <div class="title">
-            <a href="#"><div id="titleImage"></div></a>
+            <div id="titleImage"></div>
         </div>
         <div id="wrap">
             <div class="box half">
@@ -189,7 +189,7 @@
                 </ul>
             </div>
             <div class="box half" id="footer">
-                <a href="#"><img src="resources/images/icon/android-chrome-192x192.png" alt="fp_logo"></a>
+                <img src="resources/images/icon/android-chrome-192x192.png" alt="fp_logo">
                 <div class="text">
                     <p>Frank Pettersson - 2019</p>
                     <p>frank.pettersson1@gmail.com</p>

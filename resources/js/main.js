@@ -55,11 +55,11 @@ document.getElementById('darkMode').addEventListener('click', function darkMode(
     } else if (state >= 3) {
         document.getElementById('background').src = 'projects/graphics/js_canvas/faded_bubbles/index.php';
         document.getElementById('wrap').style.background = 'rgba(200, 200, 200, 0.5)';
-        document.getElementById('titleImage').style.background = 'rgba(215, 215, 215, 0.6)'
-        document.querySelectorAll('div.box')[0].style.background = 'rgba(235, 235, 235, 0.8)';
-        document.querySelectorAll('div.box')[1].style.background = 'rgba(235, 235, 235, 0.8)';
-        document.querySelectorAll('div.box')[2].style.background = 'rgba(235, 235, 235, 0.8)';
-        document.querySelectorAll('div.box')[3].style.background = 'rgba(235, 235, 235, 0.8)';
+        document.getElementById('titleImage').style.background = 'rgba(235, 235, 235, 0.6)'
+        document.querySelectorAll('div.box')[0].style.background = 'rgba(255, 255, 255, 0.8)';
+        document.querySelectorAll('div.box')[1].style.background = 'rgba(255, 255, 255, 0.8)';
+        document.querySelectorAll('div.box')[2].style.background = 'rgba(255, 255, 255, 0.8)';
+        document.querySelectorAll('div.box')[3].style.background = 'rgba(255, 255, 255, 0.8)';
         document.getElementById('titleImage').style.border = '2px dashed black';
         document.body.style.color = 'black';
         colorLinks("#000000");

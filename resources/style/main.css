@@ -25,7 +25,7 @@ body {
 
 .box {
   border: 1px solid black;
-  background: rgba(235, 235, 235, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   margin: 15px 0;
   text-align: center;
 }
@@ -49,7 +49,7 @@ body {
 }
 
 #titleImage {
-  background: rgba(215, 215, 215, 0.6);
+  background: rgba(235, 235, 235, 0.6);
   background-image: url("../images/icon/fp_green_512x512.png");
   background-size: 100% 100%;
   width: 200px;
