@@ -3,10 +3,10 @@
 <head>
     <?php include "header.php" ?>
     <link rel="stylesheet" href="resources/style/main.css">
+    <script src="resources/js/main.js" async></script>
     <title>frankpettersson.se</title>
 </head>
 <body>
-    <div id="bg"></div>
     <div id="wrapwrap" width="100%" height="100%">
         <div class="title">
             <div id="titleImage"></div>
@@ -39,14 +39,14 @@
                 <ul>
                     <li class="category" id="games">
                         <img src="resources/images/util/arrow_open.svg" class="arrows" id="arrow0" alt="hide/show">
-                        Games
+                        <b>Games</b>
                     </li>
                     <li id="game">
                         <ul>
                             <li>
                                 <div>
                                     <img src="resources/images/util/arrow_open.svg" class="arrows" id="arrow1" alt="hide/show">
-                                    <b>Idle game</b> - 2019-02-25
+                                    2019-02-25
                                 </div>
                                 <div class="project" id="idle">
                                     <a href="projects/games/idle/idle_0.3_jquery/">
@@ -62,7 +62,7 @@
                             <li>
                                 <div>
                                     <img src="resources/images/util/arrow_open.svg" class="arrows" id="arrow2" alt="hide/show">
-                                    <b>Units creating units</b> - 2019-04-02
+                                    2019-04-02
                                 </div>
                                 <div class="project" id="units-units">
                                     <a href="projects/games/units_create_units/">
@@ -75,14 +75,14 @@
                     </li>
                     <li class="category" id="graphics">
                         <img src="resources/images/util/arrow_open.svg" id="arrow3" class="arrows" alt="hide/show">
-                        Graphics
+                        <b>Graphics</b>
                     </li>
                     <li id="graphic">
                         <ul>
                             <li>
                                 <div>
                                     <img src="resources/images/util/arrow_open.svg" class="arrows" id="arrow4" alt="hide/show">
-                                    <b>PixiJS</b> - 2019-02-28
+                                    2019-02-28
                                 </div>
                                 <div class="project" id="pixijs">
                                     <a href="projects/graphics/pixi_js/rotatingRectangle/">
@@ -102,7 +102,7 @@
                             <li>
                                 <div>
                                     <img src="resources/images/util/arrow_open.svg" class="arrows" id="arrow5" alt="hide/show">
-                                    <b>Paper.js</b> - 2019-03-01
+                                    2019-03-01
                                 </div>
                                 <div class="project" id="paperjs">
                                     <a href="projects/graphics/paper.js/bubbles/">
@@ -130,7 +130,7 @@
                             <li>
                                 <div>
                                     <img src="resources/images/util/arrow_open.svg" class="arrows" id="arrow6" alt="hide/show">
-                                    <b>three.js</b> - 2019-03-07
+                                    2019-03-07
                                 </div>
                                 <div class="project" id="threejs">
                                     <a href="projects/graphics/three.js/3Dspheres/">
@@ -146,7 +146,7 @@
                             <li>
                                 <div>
                                     <img src="resources/images/util/arrow_open.svg" class="arrows" id="arrow7" alt="hide/show">
-                                    <b>JavaScript</b> - 2019-03-22
+                                    2019-03-22
                                 </div>
                                 <div class="project" id="jscanvas">
                                     <a href="projects/graphics/js_canvas/colours/">
@@ -197,7 +197,6 @@
             </div>
         </div>
     </div>
-    <script src="resources/js/main.js" async></script>
     <script>
         window.outerWidth = window.innerWidth;
         window.onload = function() {

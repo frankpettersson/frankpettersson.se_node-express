@@ -1,12 +1,63 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lqDY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lqDY.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lqDY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lqDY.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lqDY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lqDY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
-}
-
-#bg {
-  display: none;
-  height: 100%;
 }
 
 #wrapwrap {
@@ -19,23 +70,15 @@ body {
   width: 90%;
   margin: 0 auto 50px auto;
   max-width: 700px;
-  padding: 10px;  border: 1px solid black;
+  border: 1px solid black;
   z-index: 1;
 }
 
 .box {
   border: 1px solid black;
   background: rgba(255, 255, 255, 0.8);
-  margin: 15px 0;
+  margin: 10px;
   text-align: center;
-}
-
-.box:first-child {
-  margin-top: 0;
-}
-
-.box:last-child {
-  margin-bottom: 0;
 }
 
 .title {
@@ -58,35 +101,39 @@ body {
   border-radius: 50%;
 }
 
-#description p {
-  text-align: left;
-  margin: 10px 5% 16px 5%;
-}
-
 .box ul {
   text-align: left;
 }
 
 .boxHeader {
   text-align: left;
-  margin: 16px 5% 0 5%;
+  margin-left: 25px;
+  margin-top: 15px;
   font-size: 1.5em;
 }
 
 .box.half {
-  width: calc(100% - 20px);
+  width: calc(100% - 22px);
   display: inline-flex;
-  margin: 0;
-  padding: 10px;
+}
+
+.box.half:first-child {
+  margin-bottom: 0;
+}
+
+.box.half:last-child {
+  margin-top: 0;
 }
 
 #dark {
-  width: calc(50% - 5px);
+  width: 50%;
+  margin: 10px;
 }
 
 #content {
-  width: calc(50% - 5px);
+  width: calc(50% - 1px);
   border-right: 1px solid black;
+  margin: 10px;
 }
 
 #game, #graphic {
@@ -112,8 +159,8 @@ ul {
 
 .arrows {
   cursor: pointer;
-  width: 12px; 
-  height: 12px;
+  width: 13px; 
+  height: 13px;
 }
 
 .project {
@@ -123,18 +170,16 @@ ul {
   margin-top: 10px;
 }
 
-.category {
-  margin-top: 5px;
-}
-
 #footer {
-  padding: 10px;
   text-align: left;
 }
 
 #footer-text {
   display: block;
   width: 100%;
+  padding: 5px;
+  margin: 10px;
+  border-left: 1px solid black;
 }
 
 #footer p {
@@ -145,15 +190,7 @@ ul {
 #footer img {
   width: 50px;
   height: 50px;
-  padding-right: 5px;
-  margin-right: 10px;
-  border-right: 1px solid black;
-}
-
-#email {
-  width: 208px;
-  height: 30px;
-  margin: auto;
+  margin: 10px;
 }
 
 iframe { 
@@ -246,16 +283,11 @@ input:checked + .slider:before {
     grid-template-columns: repeat(2, 1fr);
   }
   .title {
-    height:200px;
+    height: 200px;
     margin: 5% auto;
   }
   #content, #backgroundSwap {
     display: none; 
-  }
-  #bg {
-    display: block;
-    width: 100%;
-    position: absolute;
   }
   #wrap {
     margin: 0 auto 2.5% auto;
@@ -267,10 +299,11 @@ input:checked + .slider:before {
     grid-template-columns: repeat(1, 1fr);
   }
   #wrapwrap {
-    width: 99%;
+    width: 100%;
     margin: auto;
   }
   #wrap {
     width: 100%;
+    margin: 0;
   }
 }
