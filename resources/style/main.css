@@ -132,13 +132,13 @@ ul {
   text-align: left;
 }
 
-.box.half .text {
+#footer-text {
   display: block;
-  width: 40%;
+  width: 100%;
 }
 
 #footer p {
-  height: 25px;
+  height: 50%;
   margin: 0;
 }
 
@@ -257,6 +257,9 @@ input:checked + .slider:before {
     width: 100%;
     position: absolute;
   }
+  #wrap {
+    margin: 0 auto 2.5% auto;
+  }
 }
 
 @media only screen and (max-width: 380px) {
@@ -269,6 +272,5 @@ input:checked + .slider:before {
   }
   #wrap {
     width: 100%;
-    margin: 0 auto;
   }
 }
