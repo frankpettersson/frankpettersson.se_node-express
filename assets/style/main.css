@@ -15,11 +15,15 @@ body {
   max-width: 960px;
   margin: 0 auto 50px auto;
   border: 1px solid black;
+  border: 3px ridge #CCCCCC;
+  border-radius: 5px;
   z-index: 1;
 }
 
 .box {
   border: 1px solid black;
+  border: 3px ridge #CCCCCC;  
+  border-radius: 5px;
   background: rgba(255, 255, 255, 0.8);
   margin: 10px;
   text-align: center;
@@ -37,11 +41,11 @@ body {
 
 #titleImage {
   background: rgba(235, 235, 235, 0.6);
-  background-image: url("../images/icon/fp_green_512x512.png");
+  background-image: url("../images/icons/fp_green_512x512.png");
   background-size: 100% 100%;
   width: 200px;
   height: 200px;
-  border: 2px dashed black;
+  border: 3px ridge #CCCCCC;
   border-radius: 50%;
 }
 
@@ -57,7 +61,7 @@ body {
 }
 
 .box.half {
-  width: calc(100% - 22px);
+  width: calc(100% - 26px);
   display: inline-flex;
 }
 
@@ -80,11 +84,6 @@ body {
   margin: 10px;
 }
 
-#game,
-#graphic {
-  display: block;
-}
-
 .etc {
   display: block;
   width: 50%;
@@ -104,15 +103,29 @@ ul {
 
 .arrows {
   cursor: pointer;
-  width: 13px;
-  height: 13px;
+  width: 18px;
+  height: 18px;
 }
 
 .project {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: 1fr;
   margin-right: 25px;
   margin-top: 10px;
+}
+
+.project::before {
+  content: '';
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.project > *:first-child {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
 }
 
 #footer {
@@ -135,8 +148,7 @@ ul {
 }
 
 #footer img {
-  width: 50px;
-  height: 50px;
+  max-height: 50px;
   margin: 10px;
 }
 
@@ -146,19 +158,28 @@ iframe {
   z-index: 0;
 }
 
-.project a {
-  width: 142px;
-  height: 142px;
-  text-align: center;
-}
-
 .thumbnail {
   text-align: center;
-  background: white;
-  border: 1px solid black;
-  height: 100px;
-  width: 100px;
+  border: 3px ridge #CCCCCC;
+  padding: 10px;
+  display: inline-block;
+  height: 120px;
   margin: auto;
+}
+
+.thumbnail:hover {
+  border: 3px ridge #1bc600;
+}
+
+.thumbnail:active {
+  border: 3px groove #1bc600;
+}
+
+.thumbnail img {
+  background: white;
+  border: 1px solid #CCCCCC;
+  height: 100px;
+  padding: 10px;
 }
 
 #projects ul li ul li {
@@ -225,24 +246,15 @@ input:checked+.slider:before {
   border-radius: 50%;
 }
 
-@media only screen and (max-width: 1900px) { 
-  .project {
-    grid-template-columns: repeat(5, 1fr);
-
-  }
-}
-
-@media only screen and (max-width: 1600px) { 
+@media only screen and (max-width: 1700px) { 
   .project {
     grid-template-columns: repeat(4, 1fr);
-
   }
 }
 
-@media only screen and (max-width: 1300px) { 
+@media only screen and (max-width: 1500px) { 
   .project {
     grid-template-columns: repeat(3, 1fr);
-
   }
 }
 

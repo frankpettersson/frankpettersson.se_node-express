@@ -1,10 +1,10 @@
-<link rel="apple-touch-icon" sizes="180x180" href="/resources/images/icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/resources/images/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/resources/images/icon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/resources/images/icon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/icon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/resources/images/icon/safari-pinned-tab.svg" color="#1bc600">
-    <link rel="shortcut icon" href="/resources/images/icon/favicon.ico">
+    <link rel="mask-icon" href="/assets/images/icon/safari-pinned-tab.svg" color="#1bc600">
+    <link rel="shortcut icon" href="/assets/images/icon/favicon.ico">
     <meta name="apple-mobile-web-app-title" content="frankpettersson.se">
     <meta name="application-name" content="frankpettersson.se">
     <meta name="msapplication-TileColor" content="#00a300">

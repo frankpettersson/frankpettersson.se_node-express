@@ -1,4 +1,4 @@
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-    .register('/service.js')
+    .register('/assets/js/service.js')
 }
