@@ -14,5 +14,5 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="frankpettersson.se" content="#FFFFFF">
     <meta name="theme-color" content="#1BC600"/>
-    <meta name="Description" content="Programmer: Frank Pettersson, Category: Programming Portfolio, Programming Language: JavaScript">
+    <meta name="Description" content="Some dude's programming gallery">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
