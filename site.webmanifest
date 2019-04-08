@@ -16,7 +16,7 @@
     ],
     "theme_color": "#1bc600",
     "background_color": "#ffffff",
-    "start_url": "/index.php",
+    "start_url": "/",
     "display": "standalone",
     "orientation": "any"
 }
