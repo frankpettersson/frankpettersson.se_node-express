@@ -3,7 +3,6 @@
 <head>
     <?php include "header.php" ?>
     <link rel="stylesheet" href="assets/style/main.css">
-    <link rel="stylesheet" href="assets/style/font.css">
     <script defer src="worker.js"></script>
     <script defer src="assets/js/events.js"></script>
     <title>frankpettersson.se</title>
@@ -24,7 +23,7 @@
                     <iframe title="animationiframe" id="frontframe" src="projects/graphics/three.js/3Dspheres_BG/" frameborder="0" scrolling="no"></iframe>
                 </div>
                 <div class="box animations">
-                    <div class="boxHeader" style="margin-left:0;text-align:center;">PICK A CANVAS</div>
+                    <div class="boxHeader" style="margin-left:0;text-align:center;"><h2>PICK A CANVAS</h2></div>
                     <div class="category">
                         <div class="grid">
                             <div class="project"><a class="thumbnail"><img type="image/png" data-src="projects/graphics/pixi_js/rotatingRectangle/" src="assets/images/thumbnails/rotating_rectangle.webp" alt="rotating rectangle"></a><p>Rectangle</p></div>
@@ -47,7 +46,7 @@
                     </div>
                 </div>
                 <div class="box" id="projects">
-                    <div class="boxHeader">Projects</div> 
+                    <div class="boxHeader"><h3>Projects</h3></div> 
                     <div class="category">
                         <img src="assets/images/util/triangle.svg" class="arrows inactive" alt="hide/show">
                         <div class="categoryName">Games</div>

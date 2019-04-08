@@ -50,14 +50,22 @@ class Ball {
 
 //___________________________________________________________
 const bubbles = [];
-for (let i = 0; i < 250; i++) {
-    let radius = 4 * Math.random() * (6 - 3) + 3,
+let c = 0;
+let color;
+for (let i = 0; i < 200; i++) {
+    c++;
+    let radius = 4 * Math.random() * (6 - 2) + 2,
         x = Math.floor((Math.random() * (canvas.width + radius)) + (0 - radius)),
         y = Math.floor((Math.random() * (canvas.height + radius)) + (0 - radius)),
         speed = 3,
-        direction = Math.PI * 2,
-        color = "rgba(0, 0, 0,"+radius/Math.clz32(radius)+")",
-        bubble = new Ball(x, y, radius, speed, direction, color);
+        direction = Math.PI * 2;
+    if (c === 10) {
+        c = 0;
+        color = "rgb(27,198,0,1)";
+    } else {
+        color = "rgba(0, 0, 0,"+radius/Math.clz32(radius)+")";
+    }
+    let bubble = new Ball(x, y, radius, speed, direction, color);
     bubbles.push(bubble);
 }
 //___________________________________________________________
@@ -69,7 +77,7 @@ function loop() {
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     for (let i = 0; i < bubbles.length; i++) {
         bubbles[i].update();
-        bubbles[i].x += bubbles[i].radius/Math.clz32(bubbles[i].radius);
+        bubbles[i].y += (bubbles[i].radius/Math.clz32(bubbles[i].radius)) -0.3;
         bubbles[i].draw();
     }
 }
