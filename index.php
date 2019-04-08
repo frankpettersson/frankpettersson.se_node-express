@@ -44,7 +44,7 @@
                 </div>
             </div>
             <div class="box" id="projects">
-                <div class="boxHeader">Projects</div>
+                <div class="boxHeader">Projects</div> 
                 <div class="category">
                     <img src="assets/images/util/triangle.svg" class="arrows inactive" alt="hide/show">
                     <div class="categoryName">Games</div>
