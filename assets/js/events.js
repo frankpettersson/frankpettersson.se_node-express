@@ -20,6 +20,7 @@ let canvasClick = e => e.onclick = e => {
     if (e.target.nodeName.toLowerCase() === "img") {
         let src = e.target.getAttribute('data-src');
         document.getElementById('frontframe').src = src;
+        document.getElementById('thename').innerText = e.target.parentElement.nextElementSibling.innerText;
         window.scrollTo(0, 0);
     }
 }
