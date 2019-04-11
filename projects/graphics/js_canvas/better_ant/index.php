@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <?php include "../../../../header.php" ?>
-    <link rel="icon" href="../../../../resources/images/fp_green.png" />
     <script src="canvas.js" async></script>
 </head>
 <body>

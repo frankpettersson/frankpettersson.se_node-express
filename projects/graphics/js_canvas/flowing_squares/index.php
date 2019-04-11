@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="../../../../../resources/images/fp_green.png" />
+    <?php include "../../../../header.php" ?>
     <script src="lib/shapes.js"></script>
     <script src="canvas.js" async></script>
 </head>
