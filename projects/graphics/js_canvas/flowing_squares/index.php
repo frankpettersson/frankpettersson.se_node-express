@@ -3,10 +3,10 @@
 <head>
     <?php include "../../../../header.php" ?>
     <script src="lib/shapes.js"></script>
-    <script src="canvas.js" async></script>
 </head>
 <body>
     <canvas id="canvas"></canvas>
+    <script src="canvas.js" async></script>
     <style>
         html, body {
             margin: 0;
