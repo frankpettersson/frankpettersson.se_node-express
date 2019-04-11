@@ -12,9 +12,6 @@
             margin: 0;
             height: 100%;
         }
-        body {
-            background: #29498f;
-        }
         #canvas {
             position: absolute;
             width: 100vw;

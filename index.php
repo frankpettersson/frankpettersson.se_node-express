@@ -22,9 +22,9 @@
                 <div class="box iframe">
                     <iframe title="animationiframe" id="frontframe" src="projects/graphics/js_canvas/flowing_squares/" frameborder="0" scrolling="no"></iframe>
                 </div>
-                <h1 id="thename" style="margin:0;margin-bottom:150px;text-align:center;">FLOWING SQUARES</h1>
+                <h1 id="thename">FLOWING SQUARES</h1>
                 <div class="box animations">
-                    <h2 style="margin: 0;margin-top:10px;text-align:center;">PICK A CANVAS</h2>
+                    <h2 style="margin: 0;margin-top:10px;text-align:center;">CHOOSE AN ANIMATION TO VIEW</h2>
                     <div class="category">
                         <div class="grid">
                             <div class="project"><a class="thumbnail"><img type="image/png" data-src="projects/graphics/pixi_js/rotatingRectangle/" src="assets/images/thumbnails/rotating_rectangle.webp" alt="rotating rectangle"></a><p>Rectangle</p></div>
@@ -44,7 +44,8 @@
                             <div class="project"><a class="thumbnail"><img type="image/png" data-src="projects/graphics/js_canvas/black_donut/" src="assets/images/thumbnails/black_donut.webp" alt="black donut"></a><p>Black donut</p></div>
                             <div class="project"><a class="thumbnail"><img type="image/png" data-src="projects/graphics/js_canvas/look_in_the_middle/" src="assets/images/thumbnails/look.webp" alt="look in the middle illusion"></a><p>Point illusion</p></div>
                             <div class="project"><a class="thumbnail"><img type="image/png" data-src="projects/graphics/three.js/hollow_boxes/" src="assets/images/thumbnails/hollow.webp" alt="hollow boxes"></a><p>Hollow boxes</p></div>
-                            <div class="project"><a class="thumbnail"><img type="image/png" data-src="projects/graphics/js_canvas/flowing_squares/" src="assets/images/thumbnails/squares.webp" alt="hollow boxes"></a><p>Flowing squares</p></div>
+                            <div class="project"><a class="thumbnail"><img type="image/png" data-src="projects/graphics/js_canvas/flowing_squares/" src="assets/images/thumbnails/squares.webp" alt="flowing squares"></a><p>Flowing squares</p></div>
+                            <div class="project"><a class="thumbnail"><img type="image/png" data-src="projects/graphics/js_canvas/better_ant/" src="assets/images/thumbnails/bant.webp" alt="better ant"></a><p>Better ant</p></div>
                         </div>
                     </div>
                 </div>
@@ -81,6 +82,7 @@
                             <div class="project"><a class="thumbnail" href="projects/graphics/js_canvas/look_in_the_middle/"><img type="image/png" src="assets/images/thumbnails/look.webp" alt="look in the middle illusion"></a><p>Point illusion</p></div>
                             <div class="project"><a class="thumbnail" href="projects/graphics/three.js/hollow_boxes/"><img type="image/png" src="assets/images/thumbnails/hollow.webp" alt="hollow boxes"></a><p>Hollow boxes</p></div>
                             <div class="project"><a class="thumbnail" href="projects/graphics/js_canvas/flowing_squares/"><img type="image/png" src="assets/images/thumbnails/squares.webp" alt="flowing squares"></a><p>Flowing squares</p></div>
+                            <div class="project"><a class="thumbnail" href="projects/graphics/js_canvas/better_ant/"><img type="image/png" src="assets/images/thumbnails/bant.webp" alt="better ant"></a><p>Better ant</p></div>
                         </div>
                     </div>
                 </div>

@@ -98,6 +98,12 @@ body {
   height: 60vh;
 }
 
+#thename {
+  margin:0;
+  margin-bottom:150px;
+  text-align:center;
+}
+
 .box.animations .category .grid .project p {
   margin: 0;
 }
@@ -356,8 +362,17 @@ input:checked+.slider:before {
 
 @media only screen and (max-width: 600px) {
   .box.iframe {
-    max-height: 40vh;
+    margin: 10px;
+    height: initial;
+    width: initial;
+  }
+  
+  .box.iframe iframe {
     width: 100%;
+  }
+
+  #thename {
+    margin-bottom: 0;
   }
   
   .grid {

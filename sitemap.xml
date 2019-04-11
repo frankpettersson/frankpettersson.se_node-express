@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://frankpettersson.se/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/games/idle/idle_0.4_no_jquery/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/games/idle/idle_0.3_jquery/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/games/units_create_units/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/graphics/pixi_js/rotatingRectangle/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/graphics/pixi_js/rotatingPolygons/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/graphics/pixi_js/randomPolygonPositions/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/graphics/paper.js/bubbles/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/graphics/paper.js/pixelGrid_blurry/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/graphics/paper.js/pixelGrid_clear/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/graphics/paper.js/langtonsAttempt/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/graphics/paper.js/langtonsAnt/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/graphics/three.js/3Dspheres/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/graphics/three.js/3Dspheres_BG/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/graphics/js_canvas/colours/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/graphics/js_canvas/black_hole/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/graphics/js_canvas/bubbles/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/graphics/js_canvas/faded_bubbles/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/graphics/js_canvas/black_donut/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/graphics/js_canvas/look_in_the_middle/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/graphics/three.js/hollow_boxes/</loc>
+  <lastmod>2019-04-11T10:47:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://frankpettersson.se/projects/graphics/js_canvas/flowing_squares/</loc>
+  <lastmod>2019-04-11T09:38:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
