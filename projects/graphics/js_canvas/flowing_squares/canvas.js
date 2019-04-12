@@ -90,6 +90,4 @@ let canvas = {
         }
     }
 }
-document.onload = function () {
-    canvas.init();
-}
+canvas.init();
