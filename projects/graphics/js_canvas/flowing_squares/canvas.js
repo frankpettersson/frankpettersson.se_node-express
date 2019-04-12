@@ -23,7 +23,7 @@ let canvas = {
             this.lastDir[i] = [];
             for (let j = 0; j < 20; j++) {
                 let color = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
-                let box = new Box(this.size*j, this.size*j+(i*this.size), this.size, this.size, color, true);
+                let box = new Box(this.size*j, this.size*j+(i*this.size)+(this.size*2), this.size, this.size, color, true);
                 this.boxes[i].push(box);
                 this.dir[i][j] = 'downright';
                 this.lastDir[i][j] = 'upright';
@@ -90,6 +90,6 @@ let canvas = {
         }
     }
 }
-window.onload = function () {
+document.onload = function () {
     canvas.init();
 }
