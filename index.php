@@ -8,10 +8,9 @@
     <title>frankpettersson.se</title>
 </head>
 <body>
-    <div id="bg">
-        <iframe title="backgroundanimation" src="projects/graphics/js_canvas/faded_bubbles/" frameborder="0" scrolling="no"></iframe>
-    </div>
+
     <div id="wrapwrap" width="100%" height="100%">
+        <div id="wall"></div>
         <header>
             <div class="title">
                 <div id="titleImage"></div>
