@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <?php include "header.php" ?>
+    <link rel="stylesheet" href="assets/style/fonts.css">
     <link rel="stylesheet" href="assets/style/main.css">
-    <script defer src="worker.js"></script>
     <script defer src="assets/js/events.js"></script>
     <title>frankpettersson.se</title>
 </head>
 <body>
-
     <div id="wrapwrap" width="100%" height="100%">
         <div id="wall"></div>
         <header>
