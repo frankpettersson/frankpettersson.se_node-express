@@ -29,14 +29,16 @@ body main #wrap {
   margin: 0 auto 50px auto;
 }
 body main #wrap .box.box-iframe {
-  margin: 10px auto;
-  width: 60vh;
   height: 60vh;
+  width: 60vh;
+  max-width: 95%;
+  margin: 10px auto;
   border: none;
 }
 body main #wrap .box.box-iframe iframe {
   height: calc(60vh - 6px);
   width: calc(60vh - 6px);
+  max-width: 100%;
   margin: auto;
   border: 3px ridge #CCCCCC;
   border-radius: 5px;
