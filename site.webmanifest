@@ -1,8 +1,8 @@
 {
     "name": "frankpettersson.se",
     "short_name": "👌",
-    "description": "JavaScript Graphics",
-    "theme_color": "#1bc600",
+    "description": "JavaScript",
+    "theme_color": "#006dc6",
     "background_color": "#ffffff",
     "start_url": "/",
     "display": "standalone",

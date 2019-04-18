@@ -43,7 +43,7 @@ body #wrap header .box.nav #navLeft #logo {
   width: 100%;
 }
 body #wrap header .box.nav #navLeft #logo #logoImage {
-  background-image: url("../images/icons/fp_green_512x512.png");
+  background-image: url("../images/icons/favicon-310.png");
   background-size: 100% 100%;
   width: 70px;
   margin: auto;
@@ -67,7 +67,7 @@ body #wrap header .box.nav #navRight .link a {
   text-decoration: underline;
 }
 body #wrap header .box.nav #navRight .link a:hover {
-  color: #1bc600;
+  color: #006dc6;
 }
 body #wrap main .box.box-iframe {
   height: 60vh;
@@ -137,15 +137,15 @@ body #wrap main .box .category .grid .project .thumbnail, body #wrap main .box .
 body #wrap main .box .category .grid .project .thumbnail img, body #wrap main .box .category .project-list .project .thumbnail img {
   display: block;
   cursor: pointer;
-  background: #ebebeb;
+  background: black;
   height: 100px;
   padding: 10px;
 }
 body #wrap main .box .category .grid .project .thumbnail-hover-border, body #wrap main .box .category .project-list .project .thumbnail-hover-border {
-  border: 3px ridge #1bc600;
+  border: 3px ridge #006dc6;
 }
 body #wrap main .box .category .grid .project .thumbnail-hover-text, body #wrap main .box .category .project-list .project .thumbnail-hover-text {
-  color: #1bc600;
+  color: #006dc6;
 }
 body #wrap main .box .category .grid .project a, body #wrap main .box .category .project-list .project a {
   cursor: default;
