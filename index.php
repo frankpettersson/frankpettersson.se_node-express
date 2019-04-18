@@ -22,7 +22,7 @@
                 </div>
             </div>
             <div id="canvas" class="box box-iframe">
-                <h1 id="canvas-title">FLOWING SQUARES</h1>
+                <h1 id="canvas-title">BUBBLE BG DARK</h1>
                 <iframe title="canvasiframe" id="frontframe" src="projects/graphics/js_canvas/faded_bubbles_dark/" frameborder="0" scrolling="no"></iframe>
             </div>
             <div id="canvi" class="box box-canvas">
