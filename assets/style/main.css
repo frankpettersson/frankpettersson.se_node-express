@@ -91,7 +91,7 @@ body #wrap main .box .boxHeader {
   margin-top: 15px;
   font-size: 1.5em;
 }
-body #wrap main .box .boxHeader h3 {
+body #wrap main .box .boxHeader h3, body #wrap main .box .boxHeader p {
   margin: 0;
 }
 body #wrap main .box .category {
