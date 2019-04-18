@@ -8,21 +8,25 @@
     <title>frankpettersson.se</title>
 </head>
 <body width="100%" height="100%">
-    <header>
-        <div class="title">
-            <div id="titleImage"></div>
-        </div>
-    </header>
     <main>
-        <div id="wrap">
-            <div class="box box-iframe">
-                <iframe title="animationiframe" id="frontframe" src="projects/graphics/js_canvas/flowing_squares/" frameborder="0" scrolling="no"></iframe>
+        <div id="wrap"> 
+            <div class="box nav">
+                <div id="navLeft">
+                    <div id="logo">
+                        <div id="logoImage"></div>
+                    </div>
+                </div>
+                <div id="navRight">
+                    <span class="link"><a data-show="#canvas">CANVAS</a></span>
+                    <span class="link"><a data-show="#projects"">PROJECTS</a></span>
+                </div>
             </div>
-            <div class="animation-footer">
-                <h1 id="animation-title">FLOWING SQUARES</h1>
+            <div id="canvas" class="box box-iframe">
+                <h1 id="canvas-title">FLOWING SQUARES</h1>
+                <iframe title="canvasiframe" id="frontframe" src="projects/graphics/js_canvas/flowing_squares/" frameborder="0" scrolling="no"></iframe>
             </div>
-            <div class="box box-animation">
-                <h2>CHOOSE AN ANIMATION TO VIEW</h2>
+            <div id="canvi" class="box box-canvas">
+                <h2>PICK A CANVAS</h2>
                 <div class="category">
                     <div class="grid">
                         <div class="project"><div class="thumbnail"><img data-src="projects/graphics/pixi_js/rotatingRectangle/" src="assets/images/thumbnails/rotating_rectangle.webp" alt="rotating rectangle"></div><p>Rectangle</p></div>
@@ -49,7 +53,7 @@
             </div>
             <div class="box" id="projects">
                 <div class="boxHeader"><h3>Projects</h3></div> 
-                <div class="category">
+                <div id="games" class="category">
                     <img src="assets/images/util/triangle.svg" class="arrow" alt="hide/show">
                     <div class="categoryName">Games</div>
                     <div class="grid">
@@ -58,10 +62,10 @@
                         <div class="project"><a class="thumbnail" href="projects/games/units_create_units/"><img src="assets/images/thumbnails/units_creating_units.webp" alt="units creating units"></a><p>Units</p></div>
                     </div>
                 </div>
-                <div class="category">
-                    <img src="assets/images/util/triangle.svg" class="arrow arrow-off" alt="hide/show">
+                <div id="graphics" class="category">
+                    <img src="assets/images/util/triangle.svg" class="arrow" alt="hide/show">
                     <div class="categoryName">Graphics</div>
-                    <div class="grid hide">
+                    <div class="grid">
                         <div class="project"><a class="thumbnail" href="projects/graphics/pixi_js/rotatingRectangle/"><img src="assets/images/thumbnails/rotating_rectangle.webp" alt="rotating rectangle"></a><p>Rectangle</p></div>
                         <div class="project"><a class="thumbnail" href="projects/graphics/pixi_js/rotatingPolygons/"><img src="assets/images/thumbnails/rotating_polygon.webp" alt="rotating polygon"></a><p>Polygon</p></div>
                         <div class="project"><a class="thumbnail" href="projects/graphics/pixi_js/randomPolygonPositions/"><img src="assets/images/thumbnails/random_polygons.webp" alt="random polygons"></a><p>Random polygon</p></div>

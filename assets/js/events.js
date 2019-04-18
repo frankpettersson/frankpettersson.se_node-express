@@ -20,8 +20,22 @@ let canvasClick = e => e.onclick = e => {
     if (e.target.nodeName.toLowerCase() === "img") {
         let src = e.target.getAttribute('data-src');
         document.getElementById('frontframe').src = src;
-        document.getElementById('animation-title').innerText = e.target.parentElement.nextElementSibling.innerText;
+        document.getElementById('canvas-title').innerText = e.target.parentElement.nextElementSibling.innerText;
         window.scrollTo(0, 0);
     }
 }
-[...document.querySelectorAll('.box-animation .category .grid .project .thumbnail')].forEach(canvasClick);
+[...document.querySelectorAll('.box-canvas .category .grid .project .thumbnail')].forEach(canvasClick);
+
+let linkClick = e => e.onclick = e => {
+    let target = e.target.getAttribute('data-show');
+    if (target === '#canvas') {
+        document.querySelector('#projects').style.display = 'none';
+        document.querySelector('#canvas').style.display = 'block';
+        document.querySelector('#canvi').style.display = 'block';
+    } else if (target === '#projects') {
+        document.querySelector('#canvas').style.display = 'none';
+        document.querySelector('#canvi').style.display = 'none';
+        document.querySelector('#projects').style.display = 'block';
+    }
+}
+[...document.querySelectorAll('.link a')].forEach(linkClick);
