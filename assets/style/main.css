@@ -54,6 +54,9 @@ body #wrap header .box.nav #navRight .link a {
 body #wrap header .box.nav #navRight .link a:hover {
   color: #1bc600;
 }
+body #wrap main #canvas, body #wrap main #canvi {
+  display: none;
+}
 body #wrap main .box.box-iframe {
   height: 60vh;
   user-select: none;
@@ -186,10 +189,7 @@ body #wrap main .box .category .project-list .project .thumbnail img {
 }
 body #wrap main .box .category .project-list .project p {
   width: 100%;
-  margin: 10px 5px;
-}
-body #wrap main #projects {
-  display: none;
+  margin-left: 5px;
 }
 body #wrap main #projects .category .project p {
   text-transform: none;
@@ -229,6 +229,12 @@ body #wrap main #projects .category .project p b {
   }
   body #wrap main .box .category .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  body #wrap main .box .category .project-list {
+    grid-auto-rows: 250px;
+  }
+  body #wrap main .box .category .project-list .project p {
+    font-size: 0.9em;
   }
 }
 @media only screen and (max-width: 380px) {

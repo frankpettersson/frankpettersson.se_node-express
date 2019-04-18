@@ -175,7 +175,7 @@
                         <div class="project"><a class="thumbnail" href="projects/graphics/js_canvas/look_in_the_middle/"><img src="assets/images/thumbnails/look.webp" alt="look in the middle illusion"></a>
                             <p>
                                 <b>Point illusion</b> - 2019-03-23<br>
-                                Actually the same one as the one last, difference being is the circle motioned drawing speed. Making for a very slowly adding of blackness with expanding patterns that you barely notice at first.
+                                Same as last, difference being is the circle motioned drawing speed. Making for a very slowly adding of blackness with expanding patterns that you barely notice at first.
                             </p>
                         </div>
                         <div class="project"><a class="thumbnail" href="projects/graphics/three.js/hollow_boxes/"><img src="assets/images/thumbnails/hollow.webp" alt="hollow boxes"></a>
