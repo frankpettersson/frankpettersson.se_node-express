@@ -1,5 +1,6 @@
-#projects {
+#projects, iframe {
   display: none;
+  background: rgba(235, 235, 235, 0.8);
 }
 
 body {
@@ -7,6 +8,16 @@ body {
   position: absolute;
   width: 100%;
   font-family: "Source Sans Pro", sans-serif;
+}
+body #bg {
+  background-image: url("../images/backdrop/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
 }
 body #wrap {
   min-width: 600px;
@@ -51,7 +62,7 @@ body #wrap header .box.nav #navRight .link {
 body #wrap header .box.nav #navRight .link a {
   font-size: 1.3em;
   font-weight: bold;
-  color: black;
+  color: #ebebeb;
   cursor: pointer;
   text-decoration: underline;
 }
@@ -67,7 +78,8 @@ body #wrap main .box.box-iframe #canvas-title {
   position: absolute;
   margin: 0 0 0 5px;
   text-decoration: underline;
-  text-shadow: -1px 1px 0 #FFF, 1px 1px 0 #FFF, 1px -1px 0 #FFF, -1px -1px 0 #FFF;
+  color: white;
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
 body #wrap main .box.box-iframe iframe {
   display: block;
@@ -80,6 +92,7 @@ body #wrap main .box.box-canvas {
 body #wrap main .box.box-canvas h2 {
   margin: 10px 0 0 0;
   text-align: center;
+  color: #ebebeb;
 }
 body #wrap main .box {
   border: 3px ridge #747474;
@@ -124,7 +137,7 @@ body #wrap main .box .category .grid .project .thumbnail, body #wrap main .box .
 body #wrap main .box .category .grid .project .thumbnail img, body #wrap main .box .category .project-list .project .thumbnail img {
   display: block;
   cursor: pointer;
-  background: white;
+  background: #ebebeb;
   height: 100px;
   padding: 10px;
 }
@@ -157,6 +170,9 @@ body #wrap main .box .category .grid:before {
 body #wrap main .box .category .grid *:first-child {
   grid-row: 1/1;
   grid-column: 1/1;
+}
+body #wrap main .box .category .grid .project p {
+  color: #ebebeb;
 }
 body #wrap main .box .category .project-list {
   display: grid;

@@ -8,6 +8,7 @@
     <title>frankpettersson.se</title>
 </head>
 <body width="100%" height="100%">
+    <div id="bg"></div>
     <div id="wrap"> 
         <header>
             <div class="box nav">
@@ -170,7 +171,7 @@
                         <div class="project"><a class="thumbnail" href="projects/graphics/js_canvas/black_donut/"target="_blank" ><img src="assets/images/thumbnails/black_donut.webp" alt="black donut"></a>
                             <p>
                                 <b>Black donut</b> - 2019-03-23<br>
-                                This one I really like, not much to say but, it's cool 😎.
+                                Really like this one, not much to say but, it's cool 😎.
                             </p>
                         </div>
                         <div class="project"><a class="thumbnail" href="projects/graphics/js_canvas/look_in_the_middle/"target="_blank" ><img src="assets/images/thumbnails/look.webp" alt="look in the middle illusion"></a>
