@@ -54,9 +54,6 @@ body #wrap header .box.nav #navRight .link a {
 body #wrap header .box.nav #navRight .link a:hover {
   color: #1bc600;
 }
-body #wrap main #canvas, body #wrap main #canvi {
-  display: none;
-}
 body #wrap main .box.box-iframe {
   height: 60vh;
   user-select: none;
@@ -190,6 +187,9 @@ body #wrap main .box .category .project-list .project .thumbnail img {
 body #wrap main .box .category .project-list .project p {
   width: 100%;
   margin-left: 5px;
+}
+body #wrap main #projects {
+  display: none;
 }
 body #wrap main #projects .category .project p {
   text-transform: none;
