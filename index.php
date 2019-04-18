@@ -54,7 +54,7 @@
             </div>
             <div id="projects" class="box">
                 
-                <div class="boxHeader"><h3>Projects</h3><p>Full versions of my projects.<p><p>Tap/click the thumbnails to view the project.</p></div>
+                <div class="boxHeader"><h3>Projects</h3><p>Full versions of my projects.</p><p>Tap/click the thumbnails to view the project.</p></div>
                 <div id="games" class="category">
                     <img src="assets/images/util/triangle.svg" class="arrow" alt="hide/show">
                     <div class="categoryName">Games</div>
