@@ -4,16 +4,13 @@ body {
   width: 100%;
   font-family: "Source Sans Pro", sans-serif;
 }
-body main #wrap {
+body #wrap {
   min-width: 600px;
   width: 50%;
   max-width: 980px;
   margin: 0 auto 50px auto;
 }
-body main #wrap #projects {
-  display: none;
-}
-body main #wrap .box.nav {
+body #wrap header .box.nav {
   margin: 0 auto 25px auto;
   height: 70px;
   border: none;
@@ -22,178 +19,215 @@ body main #wrap .box.nav {
   display: flex;
   user-select: none;
 }
-body main #wrap .box.nav #navLeft {
+body #wrap header .box.nav #navLeft {
   width: 30%;
   text-align: center;
 }
-body main #wrap .box.nav #navLeft #logo {
+body #wrap header .box.nav #navLeft #logo {
   height: 70px;
   width: 100%;
 }
-body main #wrap .box.nav #navLeft #logo #logoImage {
+body #wrap header .box.nav #navLeft #logo #logoImage {
   background-image: url("../images/icons/fp_green_512x512.png");
   background-size: 100% 100%;
   width: 70px;
   margin: auto;
   height: 100%;
 }
-body main #wrap .box.nav #navRight {
+body #wrap header .box.nav #navRight {
   width: 70%;
 }
-body main #wrap .box.nav #navRight .link {
+body #wrap header .box.nav #navRight .link {
   display: inline-block;
   width: 40%;
   text-align: center;
   top: 50%;
   transform: translateY(100%);
 }
-body main #wrap .box.nav #navRight .link a {
+body #wrap header .box.nav #navRight .link a {
   font-size: 1.3em;
   font-weight: bold;
   color: black;
   cursor: pointer;
   text-decoration: underline;
 }
-body main #wrap .box.nav #navRight .link a:hover {
+body #wrap header .box.nav #navRight .link a:hover {
   color: #1bc600;
 }
-body main #wrap .box.box-iframe {
+body #wrap main #canvas, body #wrap main #canvi {
+  display: none;
+}
+body #wrap main .box.box-iframe {
   height: 60vh;
   user-select: none;
   padding: 0;
 }
-body main #wrap .box.box-iframe #canvas-title {
+body #wrap main .box.box-iframe #canvas-title {
   position: absolute;
   margin: 0 0 0 5px;
   text-decoration: underline;
 }
-body main #wrap .box.box-iframe iframe {
+body #wrap main .box.box-iframe iframe {
   display: block;
   width: 100%;
   height: 60vh;
 }
-body main #wrap .box.box-canvas {
+body #wrap main .box.box-canvas {
   border: none;
 }
-body main #wrap .box.box-canvas h2 {
+body #wrap main .box.box-canvas h2 {
   margin: 10px 0 0 0;
   text-align: center;
 }
-body main #wrap .box {
+body #wrap main .box {
   border: 3px ridge #747474;
   margin: 10px 0;
 }
-body main #wrap .box .boxHeader {
+body #wrap main .box .boxHeader {
   text-align: left;
   margin-left: 25px;
   margin-top: 15px;
   font-size: 1.5em;
 }
-body main #wrap .box .boxHeader h3 {
+body #wrap main .box .boxHeader h3 {
   margin: 0;
 }
-body main #wrap .box .category {
-  padding: 0 20px;
+body #wrap main .box .category {
+  padding: 20px 20px 0 20px;
 }
-body main #wrap .box .category:nth-child(2) {
-  padding-top: 20px;
-}
-body main #wrap .box .category:last-child {
+body #wrap main .box .category:last-child {
   padding-bottom: 20px;
 }
-body main #wrap .box .category .arrow {
+body #wrap main .box .category .arrow {
   cursor: pointer;
   width: 15px;
   height: 15px;
 }
-body main #wrap .box .category .arrow.arrow-off {
+body #wrap main .box .category .arrow.arrow-off {
   transform: rotate(-90deg);
 }
-body main #wrap .box .category .categoryName {
+body #wrap main .box .category .hide {
+  display: none;
+}
+body #wrap main .box .category .categoryName {
   display: inline;
   font-weight: bold;
 }
-body main #wrap .box .category .grid {
+body #wrap main .box .category .grid .project, body #wrap main .box .category .project-list .project {
+  margin: 5px auto;
+}
+body #wrap main .box .category .grid .project .thumbnail, body #wrap main .box .category .project-list .project .thumbnail {
+  position: relative;
+  text-align: center;
+  border: 3px ridge #747474;
+  display: inline-block;
+}
+body #wrap main .box .category .grid .project .thumbnail img, body #wrap main .box .category .project-list .project .thumbnail img {
+  display: block;
+  cursor: pointer;
+  background: white;
+  height: 100px;
+  padding: 10px;
+}
+body #wrap main .box .category .grid .project .thumbnail-hover-border, body #wrap main .box .category .project-list .project .thumbnail-hover-border {
+  border: 3px ridge #1bc600;
+}
+body #wrap main .box .category .grid .project .thumbnail-hover-text, body #wrap main .box .category .project-list .project .thumbnail-hover-text {
+  color: #1bc600;
+}
+body #wrap main .box .category .grid .project a, body #wrap main .box .category .project-list .project a {
+  cursor: default;
+}
+body #wrap main .box .category .grid .project p, body #wrap main .box .category .project-list .project p {
+  margin: 0;
+  text-transform: uppercase;
+}
+body #wrap main .box .category .grid {
+  text-align: center;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-auto-rows: 1fr;
 }
-body main #wrap .box .category .grid:before {
+body #wrap main .box .category .grid:before {
   content: "";
   width: 0;
   padding-bottom: 100%;
   grid-row: 1/1;
   grid-column: 1/1;
 }
-body main #wrap .box .category .grid *:first-child {
+body #wrap main .box .category .grid *:first-child {
   grid-row: 1/1;
   grid-column: 1/1;
 }
-body main #wrap .box .category .grid .project {
-  text-align: center;
-  margin: 5px auto;
+body #wrap main .box .category .project-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 200px;
+  border-bottom: 1px solid black;
 }
-body main #wrap .box .category .grid .project .thumbnail {
-  position: relative;
-  text-align: center;
-  border: 3px ridge #747474;
-  display: inline-block;
+body #wrap main .box .category .project-list:before {
+  content: "";
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1/1;
+  grid-column: 1/1;
 }
-body main #wrap .box .category .grid .project .thumbnail img {
-  cursor: pointer;
-  background: white;
-  height: 100px;
-  padding: 10px;
+body #wrap main .box .category .project-list *:first-child {
+  grid-row: 1/1;
+  grid-column: 1/1;
 }
-body main #wrap .box .category .grid .project .thumbnail-hover-border {
-  border: 3px ridge #1bc600;
+body #wrap main .box .category .project-list .project {
+  width: 100%;
+  display: inline-flex;
 }
-body main #wrap .box .category .grid .project .thumbnail-hover-text {
-  color: #1bc600;
+body #wrap main .box .category .project-list .project .thumbnail {
+  height: 120px;
+  margin: 10px 0 10px 10px;
 }
-body main #wrap .box .category .grid .project a {
-  cursor: default;
+body #wrap main .box .category .project-list .project .thumbnail img {
+  display: inline;
 }
-body main #wrap .box .category .grid .project p {
-  margin: 0;
+body #wrap main .box .category .project-list .project p {
+  width: 100%;
+  margin: 10px 5px;
+}
+body #wrap main #projects .category .project p {
+  text-transform: none;
+}
+body #wrap main #projects .category .project p b {
   text-transform: uppercase;
 }
-body main #wrap .box .category .hide {
-  display: none;
-}
 
+@media only screen and (max-width: 1900px) {
+  body #wrap main .box .category .project-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 @media only screen and (max-width: 1700px) {
-  body main #wrap .box .category .grid {
+  body #wrap main .box .category .grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
 @media only screen and (max-width: 1500px) {
-  body main #wrap .box .category .grid {
+  body #wrap main .box .category .grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 @media only screen and (max-width: 600px) {
-  body header .title {
-    height: 200px;
-    margin: 5% auto;
-  }
-  body main #wrap {
+  body #wrap {
     margin: 0 auto 2.5% auto;
-    min-width: 0;
     width: 95%;
+    min-width: 0;
   }
-  body main #wrap #canvas-title {
-    margin-bottom: 0;
-  }
-  body main #wrap .box.box-iframe {
+  body #wrap main .box.box-iframe {
     margin: 10px;
     height: initial;
     width: initial;
   }
-  body main #wrap .box.box-iframe iframe {
+  body #wrap main .box.box-iframe iframe {
     width: 100%;
   }
-  body main #wrap .box .category .grid {
+  body #wrap main .box .category .grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -202,11 +236,11 @@ body main #wrap .box .category .hide {
     width: 100%;
     margin: auto;
   }
-  body main #wrap {
+  body #wrap {
     width: 100%;
     margin: 0;
   }
-  body main #wrap .box .category .grid {
+  body #wrap main .box .category .grid {
     grid-template-columns: repeat(1, 1fr);
   }
 }
