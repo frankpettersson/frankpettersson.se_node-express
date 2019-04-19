@@ -25,8 +25,8 @@
         </header>
         <main>
             <div id="canvas" class="box box-iframe">
-                <h1 id="canvas-title">BUBBLE BG DARK</h1>
-                <iframe title="canvasiframe" id="frontframe" src="projects/graphics/js_canvas/faded_bubbles_dark/" frameborder="0" scrolling="no"></iframe>
+                <h1 id="canvas-title">LINEAR EXPANSION</h1>
+                <iframe title="canvasiframe" id="frontframe" src="projects/graphics/js_canvas/linear_expansion/" frameborder="0" scrolling="no"></iframe>
             </div>
             <div id="canvi" class="box box-canvas">
                 <h2>PICK A CANVAS</h2>
@@ -50,6 +50,7 @@
                         <div class="project"><div class="thumbnail"><img data-src="projects/graphics/three.js/hollow_boxes/" src="assets/images/thumbnails/hollow.webp" alt="hollow boxes"></div><p>Hollow boxes</p></div>
                         <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/flowing_squares/" src="assets/images/thumbnails/squares.webp" alt="flowing squares"></div><p>Flowing squares</p></div>
                         <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/better_ant/" src="assets/images/thumbnails/bant.webp" alt="better ant"></div><p>Better ant</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/linear_expansion/" src="assets/images/thumbnails/linear.webp" alt="linear expansion"></div><p>Linear expansion</p></div>
                     </div>
                 </div>
             </div>
@@ -196,6 +197,12 @@
                             <p>
                                 <b>Better ant</b> - 2019-04-11<br>
                                 Browsing the web i found <a href="http://rossscrivener.co.uk/projects/langtons-ants/" target="_blank">this</a> demonstration of Langtons Ant(which btw is alot cooler than mine), and noticed the much better performance, so being inspired to improve my attempt I did so. And also changed the color.
+                            </p>
+                        </div>
+                        <div class="project"><a class="thumbnail" href="projects/graphics/js_canvas/linear_expansion/"target="_blank" ><img src="assets/images/thumbnails/linear.webp" alt="linear expansion"></a>
+                            <p>
+                                <b>Linear expansion</b> - 2019-04-19<br>
+                                Now this is epic.
                             </p>
                         </div>
                     </div>
