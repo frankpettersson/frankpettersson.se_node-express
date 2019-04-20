@@ -74,6 +74,4 @@ let canvas = {
         canvas.id.height = document.body.clientHeight;
     }
 }
-window.onload = function() {
-    canvas.init();
-}
+canvas.init();
