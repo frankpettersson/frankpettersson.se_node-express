@@ -5,12 +5,11 @@
 </head>
 <body>
     <canvas></canvas>
-    <script src="assets/js/shapes.js"></script>
-    <script src="main.js" async></script>
     <style>
         body {
             margin: 0;
             height: 100vh;
+            width: 100vw;
             background: black;
         }
         canvas {
@@ -18,5 +17,7 @@
             display: block;
         }
     </style>
+    <script src="assets/js/shapes.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
