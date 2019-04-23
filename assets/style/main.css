@@ -1,3 +1,19 @@
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: none;
+}
+input:focus,
+textarea:focus,
+button:focus,
+select:focus,
+a:focus {
+  outline: none;
+}
+
 body {
   margin: 0px;
   position: absolute;
@@ -20,7 +36,7 @@ body #wrap header .box.nav {
   user-select: none;
 }
 body #wrap header .box.nav #navLeft {
-  width: 30%;
+  width: 40%;
   text-align: center;
 }
 body #wrap header .box.nav #navLeft #logo {
@@ -36,11 +52,11 @@ body #wrap header .box.nav #navLeft #logo img {
   height: 70px;
 }
 body #wrap header .box.nav #navRight {
-  width: 70%;
+  width: 60%;
 }
 body #wrap header .box.nav #navRight .link {
   display: inline-block;
-  width: 40%;
+  width: 50%;
   text-align: center;
   top: 50%;
   transform: translateY(100%);
@@ -48,9 +64,6 @@ body #wrap header .box.nav #navRight .link {
 body #wrap header .box.nav #navRight .link .link-color {
   color: #ff009d;
   transition: all 0.5s;
-}
-body #wrap header .box.nav #navRight .link .link-color:hover {
-  color: black;
 }
 body #wrap header .box.nav #navRight .link a {
   font-size: 1.3em;
