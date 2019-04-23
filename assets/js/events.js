@@ -1,6 +1,6 @@
 let arrowClick = e => e.onclick = e => {
     e.target.classList.toggle('arrow-off');
-    e.target.nextElementSibling.nextElementSibling.classList.toggle('hide')
+    e.target.parentElement.nextElementSibling.classList.toggle('hide');
 }
 [...document.querySelectorAll('.arrow')].forEach(arrowClick);
 
@@ -32,10 +32,13 @@ let linkClick = e => e.onclick = e => {
         document.querySelector('#projects').style.display = 'none';
         document.querySelector('#canvas').style.display = 'block';
         document.querySelector('#canvi').style.display = 'block';
+        e.target.parentElement.nextElementSibling.children[0].classList.toggle('link-color');
     } else if (target === '#projects') {
         document.querySelector('#canvas').style.display = 'none';
         document.querySelector('#canvi').style.display = 'none';
         document.querySelector('#projects').style.display = 'block';
+        e.target.parentElement.previousSibling.children[0].classList.toggle('link-color');
     }
+    e.target.classList.toggle('link-color');
 }
 [...document.querySelectorAll('.link a')].forEach(linkClick);

@@ -1,35 +1,20 @@
-#projects, iframe {
-  display: none;
-  background: rgba(235, 235, 235, 0.8);
-}
-
 body {
   margin: 0px;
   position: absolute;
   width: 100%;
   font-family: "Source Sans Pro", sans-serif;
 }
-body #bg {
-  background-image: url("../images/backdrop/bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -1;
-}
 body #wrap {
   min-width: 600px;
   width: 50%;
   max-width: 980px;
-  margin: 0 auto 50px auto;
+  margin: 0 auto;
 }
 body #wrap header .box.nav {
   margin: 0 auto 25px auto;
   height: 70px;
   border: none;
-  border-bottom: 3px ridge #747474;
+  border-bottom: 5px double #787878;
   padding: 10px;
   display: flex;
   user-select: none;
@@ -41,13 +26,14 @@ body #wrap header .box.nav #navLeft {
 body #wrap header .box.nav #navLeft #logo {
   height: 70px;
   width: 100%;
+  background: #ff009d;
+  transition: all 0.5s;
 }
-body #wrap header .box.nav #navLeft #logo #logoImage {
-  background-image: url("../images/icons/favicon-310.png");
-  background-size: 100% 100%;
-  width: 70px;
-  margin: auto;
-  height: 100%;
+body #wrap header .box.nav #navLeft #logo:hover {
+  background: black;
+}
+body #wrap header .box.nav #navLeft #logo img {
+  height: 70px;
 }
 body #wrap header .box.nav #navRight {
   width: 70%;
@@ -59,15 +45,23 @@ body #wrap header .box.nav #navRight .link {
   top: 50%;
   transform: translateY(100%);
 }
+body #wrap header .box.nav #navRight .link .link-color {
+  color: #ff009d;
+  transition: all 0.5s;
+}
+body #wrap header .box.nav #navRight .link .link-color:hover {
+  color: black;
+}
 body #wrap header .box.nav #navRight .link a {
   font-size: 1.3em;
   font-weight: bold;
-  color: #ebebeb;
+  color: #1e1e1e;
   cursor: pointer;
   text-decoration: underline;
+  transition: all 0.3s;
 }
 body #wrap header .box.nav #navRight .link a:hover {
-  color: #006dc6;
+  color: #ff009d;
 }
 body #wrap main .box.box-iframe {
   height: 60vh;
@@ -90,40 +84,43 @@ body #wrap main .box.box-canvas {
   border: none;
 }
 body #wrap main .box.box-canvas h2 {
-  margin: 10px 0 0 0;
+  margin: 10px 0;
   text-align: center;
-  color: #ebebeb;
+  color: #1e1e1e;
 }
 body #wrap main .box {
-  border: 3px ridge #747474;
-  margin: 10px 0;
+  border: 5px double #787878;
 }
-body #wrap main .box .boxHeader {
-  text-align: left;
-  margin-left: 25px;
-  margin-top: 15px;
-  font-size: 1.5em;
+body #wrap main .box:last-child {
+  margin-bottom: 10px;
 }
-body #wrap main .box .boxHeader h3, body #wrap main .box .boxHeader p {
+body #wrap main .box .boxHeader h3 {
   margin: 0;
+  padding-bottom: 10px;
+  font-size: 2em;
+  text-decoration: underline;
 }
-body #wrap main .box .category {
-  padding: 20px 20px 0 20px;
+body #wrap main .box .category .category-head {
+  border-bottom: 1px solid black;
+  padding: 5px;
+  margin-bottom: 5px;
 }
-body #wrap main .box .category:last-child {
-  padding-bottom: 20px;
-}
-body #wrap main .box .category .arrow {
+body #wrap main .box .category .category-head .arrow {
+  display: inline-block;
+  vertical-align: middle;
   cursor: pointer;
-  width: 15px;
-  height: 15px;
+  height: 17px;
+  width: 17px;
+  transition: all 0.5s;
 }
-body #wrap main .box .category .arrow.arrow-off {
+body #wrap main .box .category .category-head .arrow.arrow-off {
   transform: rotate(-90deg);
 }
-body #wrap main .box .category .categoryName {
-  display: inline;
-  font-weight: bold;
+body #wrap main .box .category .category-head .categoryName {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 600;
+  font-size: 1.2em;
 }
 body #wrap main .box .category .grid .project, body #wrap main .box .category .project-list .project {
   margin: 5px auto;
@@ -131,21 +128,22 @@ body #wrap main .box .category .grid .project, body #wrap main .box .category .p
 body #wrap main .box .category .grid .project .thumbnail, body #wrap main .box .category .project-list .project .thumbnail {
   position: relative;
   text-align: center;
-  border: 3px ridge #747474;
+  border: 5px double #787878;
   display: inline-block;
+  transition: all 0.3s;
 }
 body #wrap main .box .category .grid .project .thumbnail img, body #wrap main .box .category .project-list .project .thumbnail img {
   display: block;
   cursor: pointer;
-  background: black;
+  background: white;
   height: 100px;
   padding: 10px;
 }
 body #wrap main .box .category .grid .project .thumbnail-hover-border, body #wrap main .box .category .project-list .project .thumbnail-hover-border {
-  border: 3px ridge #006dc6;
+  border: 5px double #ff009d;
 }
 body #wrap main .box .category .grid .project .thumbnail-hover-text, body #wrap main .box .category .project-list .project .thumbnail-hover-text {
-  color: #006dc6;
+  color: #ff009d;
 }
 body #wrap main .box .category .grid .project a, body #wrap main .box .category .project-list .project a {
   cursor: default;
@@ -153,6 +151,7 @@ body #wrap main .box .category .grid .project a, body #wrap main .box .category 
 body #wrap main .box .category .grid .project p, body #wrap main .box .category .project-list .project p {
   margin: 0;
   text-transform: uppercase;
+  transition: all 0.3s;
 }
 body #wrap main .box .category .grid {
   text-align: center;
@@ -172,14 +171,12 @@ body #wrap main .box .category .grid *:first-child {
   grid-column: 1/1;
 }
 body #wrap main .box .category .grid .project p {
-  color: #ebebeb;
+  color: #1e1e1e;
 }
 body #wrap main .box .category .project-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 170px;
-  border-bottom: 1px solid black;
-  margin: 0 20px;
 }
 body #wrap main .box .category .project-list:before {
   content: "";
@@ -202,12 +199,23 @@ body #wrap main .box .category .project-list .project .thumbnail {
 body #wrap main .box .category .project-list .project p {
   width: 100%;
   margin: 0 5px;
+  font-size: 0.9em;
+}
+body #wrap main .box .category .project-list .project p b {
+  text-decoration: underline;
 }
 body #wrap main .box .category .project-list .project p a {
   cursor: pointer;
 }
 body #wrap main .box .category .hide {
   display: none;
+}
+body #wrap main #canvi {
+  padding: 10px;
+}
+body #wrap main #projects {
+  display: none;
+  padding: 20px 30px 0 30px;
 }
 body #wrap main #projects .category .project p {
   text-transform: none;
@@ -254,6 +262,9 @@ body #wrap main #projects .category .project p b {
   }
   body #wrap main .box .category .project-list .project p {
     font-size: 0.85em;
+  }
+  body #wrap main .box .category .project-list .project p i {
+    font-size: 0.95em;
   }
 }
 @media only screen and (max-width: 380px) {
