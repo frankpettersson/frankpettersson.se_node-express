@@ -62,7 +62,8 @@
                         <div class="categoryName">GAMES</div>
                     </div>
                     <div class="project-list">
-                        <div class="project"><a class="thumbnail" href="projects/games/idle/idle_0.4_no_jquery/"target="_blank" rel="noopener noreferrer"><img src="assets/images/thumbnails/idle.webp" alt="idle game plain javascript"></a>
+                        <div class="project">
+                        <a class="thumbnail" href="projects/games/idle/idle_0.4_no_jquery/"target="_blank" rel="noopener noreferrer"><img src="assets/images/thumbnails/idle.webp" alt="idle game plain javascript"></a>
                             <p>
                                 <b>Idle game</b><i> - 2019-02-25</i><br>
                                 My first "real" game. You click on a button to get gold and then with that gold purchase units to collect even more gold for you.
