@@ -26,19 +26,27 @@ let canvasClick = e => e.onclick = e => {
 }
 [...document.querySelectorAll('.box-canvas .category .grid .project .thumbnail')].forEach(canvasClick);
 
+let activeLink = 'canvas';
 let linkClick = e => e.onclick = e => {
     let target = e.target.getAttribute('data-show');
     if (target === '#canvas') {
         document.querySelector('#projects').style.display = 'none';
         document.querySelector('#canvas').style.display = 'block';
         document.querySelector('#canvi').style.display = 'block';
-        e.target.parentElement.nextElementSibling.children[0].classList.toggle('link-color');
+        if (activeLink === 'projects') {
+            e.target.parentElement.nextElementSibling.children[0].classList.toggle('link-color');
+            e.target.classList.toggle('link-color');
+            activeLink = 'canvas';
+        }
     } else if (target === '#projects') {
         document.querySelector('#canvas').style.display = 'none';
         document.querySelector('#canvi').style.display = 'none';
         document.querySelector('#projects').style.display = 'block';
-        e.target.parentElement.previousSibling.children[0].classList.toggle('link-color');
+        if (activeLink === 'canvas') {
+            e.target.parentElement.previousSibling.children[0].classList.toggle('link-color');
+            e.target.classList.toggle('link-color');
+            activeLink = 'projects';
+        }
     }
-    e.target.classList.toggle('link-color');
 }
 [...document.querySelectorAll('.link a')].forEach(linkClick);
