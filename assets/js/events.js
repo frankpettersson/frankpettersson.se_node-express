@@ -59,12 +59,12 @@ let linkClick = e => e.addEventListener('click', e => {
 //MOBILE ONTOUCH TEXT AND THUMBNAIL COLOR CHANGE
 let mobileTouchStart = e => e.addEventListener('touchstart', e => {
     e.target.classList.toggle('thumbnail-hover-text');
-});
+}, {passive: true});
 [...document.querySelectorAll('.project')].forEach(mobileTouchStart);
 
 let mobileTouchEnd = e => e.addEventListener('touchend', e => {
     e.target.classList.toggle('thumbnail-hover-text');
-});
+}, {passive: true});
 [...document.querySelectorAll('.project')].forEach(mobileTouchEnd);
 
 //MOBILE ONTOUCH TEXT AND THUMBNAIL COLOR CHANGE
