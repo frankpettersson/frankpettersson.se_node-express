@@ -99,7 +99,7 @@ body #wrap main .box.box-iframe iframe {
   display: block;
   border: 5px double #787878;
   width: calc(100% - 10px);
-  height: 60vh;
+  height: calc(60vh - 10px);
 }
 body #wrap main .box.box-canvas {
   border: none;
