@@ -86,6 +86,7 @@ body #wrap main {
 body #wrap main .box.box-iframe {
   height: 60vh;
   user-select: none;
+  overflow: hidden;
 }
 body #wrap main .box.box-iframe #canvas-title {
   position: absolute;
@@ -97,7 +98,7 @@ body #wrap main .box.box-iframe #canvas-title {
 body #wrap main .box.box-iframe iframe {
   display: block;
   border: 5px double #787878;
-  width: 100%;
+  width: calc(100% - 10px);
   height: 60vh;
 }
 body #wrap main .box.box-canvas {
