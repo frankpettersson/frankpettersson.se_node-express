@@ -28,12 +28,14 @@ body #wrap {
   max-width: 980px;
   margin: 0 auto;
 }
+body #wrap header {
+  border-bottom: 5px double #787878;
+}
 body #wrap header .box.nav {
-  margin: 0 auto 25px auto;
+  margin: 0 auto;
   height: 70px;
   border: none;
-  border-bottom: 5px double #787878;
-  padding: 10px;
+  padding: 10px 5px;
   display: flex;
   user-select: none;
 }
@@ -44,11 +46,11 @@ body #wrap header .box.nav #navLeft {
 body #wrap header .box.nav #navLeft #logo {
   height: 70px;
   width: 100%;
-  background: #ff009d;
+  background-color: #ff009d;
   transition: all 0.5s;
 }
 body #wrap header .box.nav #navLeft #logo:hover {
-  background: black;
+  background-color: black;
 }
 body #wrap header .box.nav #navLeft #logo img {
   height: 70px;
@@ -78,10 +80,12 @@ body #wrap header .box.nav #navRight .link a {
 body #wrap header .box.nav #navRight .link a:hover {
   color: #ff009d;
 }
+body #wrap main {
+  margin: 20px 0 0 0;
+}
 body #wrap main .box.box-iframe {
   height: 60vh;
   user-select: none;
-  padding: 0;
 }
 body #wrap main .box.box-iframe #canvas-title {
   position: absolute;
@@ -97,8 +101,10 @@ body #wrap main .box.box-iframe iframe {
 }
 body #wrap main .box.box-canvas {
   border: none;
+  padding: 0;
 }
 body #wrap main .box.box-canvas h2 {
+  border-bottom: 5px double #787878;
   margin: 10px 0;
   text-align: center;
   color: #1e1e1e;
@@ -107,7 +113,7 @@ body #wrap main .box {
   border: 5px double #787878;
 }
 body #wrap main .box:last-child {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 body #wrap main .box .boxHeader h3 {
   margin: 0;
@@ -150,7 +156,7 @@ body #wrap main .box .category .grid .project .thumbnail, body #wrap main .box .
 body #wrap main .box .category .grid .project .thumbnail img, body #wrap main .box .category .project-list .project .thumbnail img {
   display: block;
   cursor: pointer;
-  background: white;
+  background-color: white;
   height: 100px;
   padding: 10px;
 }
@@ -225,9 +231,6 @@ body #wrap main .box .category .project-list .project p a {
 body #wrap main .box .category .hide {
   display: none;
 }
-body #wrap main #canvi {
-  padding: 10px;
-}
 body #wrap main #projects {
   display: none;
   padding: 20px 30px 0 30px;
@@ -237,6 +240,34 @@ body #wrap main #projects .category .project p {
 }
 body #wrap main #projects .category .project p b {
   text-transform: uppercase;
+}
+body #wrap footer {
+  border-top: 5px double #787878;
+}
+body #wrap footer #footer-content {
+  margin: 0 auto;
+  height: 60px;
+  border: none;
+  padding: 10px 5px;
+  display: flex;
+  user-select: none;
+  text-align: center;
+}
+body #wrap footer #footer-content #footer-logo {
+  background-color: #ff009d;
+  margin-left: 5%;
+  width: 50%;
+  transition: all 0.5s;
+}
+body #wrap footer #footer-content #footer-logo:hover {
+  background-color: black;
+}
+body #wrap footer #footer-content #footer-text {
+  width: 40%;
+}
+body #wrap footer #footer-content #footer-text p {
+  margin: 0;
+  padding: 20px 0;
 }
 
 @media only screen and (max-width: 1900px) {

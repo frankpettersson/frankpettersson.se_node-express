@@ -13,7 +13,7 @@
             <div class="box nav">
                 <div id="navLeft">
                     <div id="logo">
-                        <img src="assets/images/icons/favicon-114.png" alt="logo">
+                        <a href="https://frankpettersson.se"><img src="assets/images/icons/favicon-114.png" alt="logo"></a>
                     </div>
                 </div>
                 <div id="navRight">
@@ -214,6 +214,16 @@
                 </div>
             </div>
         </main>
+        <footer>
+            <div id="footer-content">
+                <div id="footer-logo">
+                    <a href="https://frankpettersson.se"><img src="assets/images/icons/favicon-60.png" alt="footer-logo"></a>
+                </div>
+                <div id="footer-text">
+                    <a href="mailto:frank.pettersson1@gmail.com" target="_top"><p>mail</p></a>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
