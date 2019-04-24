@@ -55,7 +55,7 @@
             </div>
             <div id="projects" class="box">
                 <div class="boxHeader">
-                    <h3>Projects</h3>
+                    <h3>FULL PROJECTS</h3>
                 </div>
                 <div id="games" class="category">
                     <div class="category-head">
@@ -220,7 +220,7 @@
                     <a href="https://frankpettersson.se"><img src="assets/images/icons/favicon-60.png" alt="footer-logo"></a>
                 </div>
                 <div id="footer-text">
-                    <a href="mailto:frank.pettersson1@gmail.com" target="_top"><p>mail</p></a>
+                    <a href="mailto:frank.pettersson1@gmail.com" target="_top">MAIL</a>
                 </div>
             </div>
         </footer>
