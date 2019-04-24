@@ -27,28 +27,29 @@
                 <iframe title="canvasiframe" id="frontframe" src="projects/graphics/js_canvas/linear_expansion/" frameborder="0" scrolling="no"></iframe>
             </div>
             <div id="canvi" class="box box-canvas">
-                <h2>PICK A CANVAS</h2>
+                <h2>PROJECT PREVIEW</h2>
                 <div class="category">
                     <div class="grid">
-                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/linear_expansion/" src="assets/images/thumbnails/linear.png" alt="linear expansion"></div><p>Linear expansion</p></div>
-                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/better_ant/" src="assets/images/thumbnails/bant.png" alt="better ant"></div><p>Better ant</p></div>
-                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/flowing_squares/" src="assets/images/thumbnails/squares.png" alt="flowing squares"></div><p>Flowing squares</p></div>
-                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/three.js/hollow_boxes/" src="assets/images/thumbnails/hollow.png" alt="hollow boxes"></div><p>Hollow boxes</p></div>
-                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/look_in_the_middle/" src="assets/images/thumbnails/look.png" alt="look in the middle illusion"></div><p>Point illusion</p></div>
-                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/black_donut/" src="assets/images/thumbnails/black_donut.png" alt="black donut"></div><p>Black donut</p></div>
-                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/faded_bubbles_dark/" src="assets/images/thumbnails/faded_bubbles_dark.png" alt="faded bubbles"></div><p>Bubble BG Dark</p></div>
-                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/faded_bubbles/" src="assets/images/thumbnails/faded_bubbles.png" alt="faded bubbles"></div><p>Bubble BG</p></div>
-                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/black_hole/" src="assets/images/thumbnails/black_hole.png" alt="black hole"></div><p>Black hole</p></div>
-                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/colours/" src="assets/images/thumbnails/colours.png" alt="colour canvas"></div><p>Colours spinning</p></div>
-                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/three.js/3Dspheres_BG/" src="assets/images/thumbnails/sphere_BG.png" alt="3d spheres static camera"></div><p>3D Shapes BG</p></div>
-                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/three.js/3Dspheres/" src="assets/images/thumbnails/spheres.png" alt="3d spheres with camera controls"></div><p>3D Shapes</p></div>
-                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/paper.js/langtonsAnt/" src="assets/images/thumbnails/langtons_ant.png" alt="langtons ant"></div><p>Langtons ant</p></div>
-                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/paper.js/langtonsAttempt/" src="assets/images/thumbnails/langton_attempt.png" alt="langtons ant attempt"></div><p>Langtons failure</p></div>
-                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/paper.js/pixelGrid_clear/" src="assets/images/thumbnails/pixels_clear.png" alt="clear pixels"></div><p>Clear pixels</p></div>
-                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/paper.js/pixelGrid_blurry/" src="assets/images/thumbnails/pixels_blurry.png" alt="blurry pixels"></div><p>Blurry pixels</p></div>
-                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/pixi_js/randomPolygonPositions/" src="assets/images/thumbnails/random_polygons.png" alt="random polygons"></div><p>Random polygon</p></div>
-                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/pixi_js/rotatingPolygons/" src="assets/images/thumbnails/rotating_polygon.png" alt="rotating polygon"></div><p>Polygon</p></div>
-                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/pixi_js/rotatingRectangle/" src="assets/images/thumbnails/rotating_rectangle.png" alt="rotating rectangle"></div><p>Rectangle</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/linear_expansion/" src="assets/images/thumbnails/linear.png" alt="linear expansion preview"></div><p>Linear expansion</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/better_ant/" src="assets/images/thumbnails/bant.png" alt="better ant preview"></div><p>Better ant</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/flowing_squares/" src="assets/images/thumbnails/squares.png" alt="flowing squares preview"></div><p>Flowing squares</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/three.js/hollow_boxes/" src="assets/images/thumbnails/hollow.png" alt="hollow boxes preview"></div><p>Hollow boxes</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/look_in_the_middle/" src="assets/images/thumbnails/look.png" alt="point illusion preview"></div><p>Point illusion</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/black_donut/" src="assets/images/thumbnails/black_donut.png" alt="black donut preview"></div><p>Black donut</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/faded_bubbles_dark/" src="assets/images/thumbnails/faded_bubbles_dark.png" alt="faded bubbles dark preview"></div><p>Bubble BG Dark</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/faded_bubbles/" src="assets/images/thumbnails/faded_bubbles.png" alt="faded bubbles preview"></div><p>Bubble BG</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/black_hole/" src="assets/images/thumbnails/black_hole.png" alt="black hole preview"></div><p>Black hole</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/colours/" src="assets/images/thumbnails/colours.png" alt="colour canvas preview"></div><p>Colours spinning</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/three.js/3Dspheres_BG/" src="assets/images/thumbnails/sphere_BG.png" alt="3d spheres static camera preview"></div><p>3D Shapes BG</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/three.js/3Dspheres/" src="assets/images/thumbnails/spheres.png" alt="3d spheres with camera controls preview"></div><p>3D Shapes</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/paper.js/langtonsAnt/" src="assets/images/thumbnails/langtons_ant.png" alt="langtons ant preview"></div><p>Langtons ant</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/paper.js/langtonsAttempt/" src="assets/images/thumbnails/langton_attempt.png" alt="langtons ant attempt preview"></div><p>Langtons failure</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/paper.js/pixelGrid_clear/" src="assets/images/thumbnails/pixels_clear.png" alt="clear pixels preview"></div><p>Clear pixels</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/paper.js/pixelGrid_blurry/" src="assets/images/thumbnails/pixels_blurry.png" alt="blurry pixels preview"></div><p>Blurry pixels</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/pixi_js/randomPolygonPositions/" src="assets/images/thumbnails/random_polygons.png" alt="random polygons preview"></div><p>Random polygon</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/pixi_js/rotatingPolygons/" src="assets/images/thumbnails/rotating_polygon.png" alt="rotating polygon preview"></div><p>Polygon</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/pixi_js/rotatingRectangle/" src="assets/images/thumbnails/rotating_rectangle.png" alt="rotating rectangle preview"></div><p>Rectangle</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/games/units_create_units/" src="assets/images/thumbnails/units_creating_units.png" alt="units creating units preview"></div><p>Units</p></div>
                     </div>
                 </div>
             </div>
