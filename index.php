@@ -23,13 +23,16 @@
         </header>
         <main>
             <div id="canvas" class="box box-iframe">
-                <h1 id="canvas-title">LINEAR EXPANSION</h1>
-                <iframe title="canvasiframe" id="frontframe" src="projects/graphics/js_canvas/linear_expansion/" frameborder="0" scrolling="no"></iframe>
+                <h1 id="canvas-title">SPINNING BOXES</h1>
+                <iframe title="canvasiframe" id="frontframe" src="projects/graphics/js_canvas/spinning_boxes/" frameborder="0" scrolling="no"></iframe>
             </div>
             <div id="canvi" class="box box-canvas">
                 <h2>PROJECT PREVIEW</h2>
                 <div class="category">
                     <div class="grid">
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/spinning_boxes/" src="assets/images/thumbnails/spinning_boxes.png" alt="spinning boxes preview"></div><p>Spinning boxes</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/triangle_stop-motion/" src="assets/images/thumbnails/triangle_motion.png" alt="triangle stop-motion preview"></div><p>Rocking triangles</p></div>
+                        <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/paths_of_triangles/" src="assets/images/thumbnails/paths_of_triangles.png" alt="paths of triangles preview"></div><p>Triangle paths</p></div>
                         <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/linear_expansion/" src="assets/images/thumbnails/linear.png" alt="linear expansion preview"></div><p>Linear expansion</p></div>
                         <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/better_ant/" src="assets/images/thumbnails/bant.png" alt="better ant preview"></div><p>Better ant</p></div>
                         <div class="project"><div class="thumbnail"><img data-src="projects/graphics/js_canvas/flowing_squares/" src="assets/images/thumbnails/squares.png" alt="flowing squares preview"></div><p>Flowing squares</p></div>
@@ -217,7 +220,7 @@
         <footer>
             <div id="footer-content">
                 <div id="footer-logo">
-                    <a href="https://frankpettersson.se"><img src="assets/images/icons/favicon-60x60.png" alt="footer-logo"></a>
+                    <a href="https://frankpettersson.se"><img src="assets/images/icons/favicon-114x114.png" alt="footer-logo"></a>
                 </div>
                 <div id="footer-text">
                     <a href="mailto:frank.pettersson1@gmail.com" target="_top">MAIL</a>
