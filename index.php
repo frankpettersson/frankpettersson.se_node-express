@@ -13,7 +13,7 @@
             <div class="box nav">
                 <div id="navLeft">
                     <div id="logo">
-                        <a href="https://frankpettersson.se"><img src="assets/images/icons/favicon-114.png" alt="logo"></a>
+                        <a href="https://frankpettersson.se"><img src="assets/images/icons/favicon-114x114.png" alt="logo"></a>
                     </div>
                 </div>
                 <div id="navRight">
@@ -217,7 +217,7 @@
         <footer>
             <div id="footer-content">
                 <div id="footer-logo">
-                    <a href="https://frankpettersson.se"><img src="assets/images/icons/favicon-60.png" alt="footer-logo"></a>
+                    <a href="https://frankpettersson.se"><img src="assets/images/icons/favicon-60x60.png" alt="footer-logo"></a>
                 </div>
                 <div id="footer-text">
                     <a href="mailto:frank.pettersson1@gmail.com" target="_top">MAIL</a>
