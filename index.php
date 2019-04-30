@@ -120,7 +120,7 @@
                         <div class="project"><a class="thumbnail" href="projects/graphics/paper.js/pixelGrid_blurry/"target="_blank" rel="noopener noreferrer"><img src="assets/images/thumbnails/pixels_blurry.png" alt="blurry pixels"></a>
                             <p>
                                 <b>Blurry pixels</b><i> - 2019-03-01</i><br>
-                                Trying another library: <a href="http://paperjs.org/" target="_blank" rel="noopener noreferrer">paper.js</a> which I use for the next 3 projects. Played around with squares, pixel-grids and colours, the blurry effect is actually me not scaling the squares the right amount, albeit the bug, cool effect.
+                                Trying another library: <a href="http://paperjs.org/" target="_blank" rel="noopener noreferrer">paper.js</a> which I use for the next 3 projects. Played around with squares, pixel-grids and colours, the blurry effect is actually me not scaling the squares the right amount, albeit buggy, cool effect.
                             </p>
                         </div>
                         <div class="project"><a class="thumbnail" href="projects/graphics/paper.js/pixelGrid_clear/"target="_blank" rel="noopener noreferrer"><img src="assets/images/thumbnails/pixels_clear.png" alt="clear pixels"></a>
