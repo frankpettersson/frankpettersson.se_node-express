@@ -58,7 +58,7 @@ function updateUI(color) {
     //NAVBAR LINK COLOR CHANGES
     let linkClick = e => e.addEventListener('click', e => {
         let target = e.target.getAttribute('data-show');
-        if (target === 0) {
+        if (target == 0) {
             document.querySelectorAll('.link a')[0].style.color = color;
             document.querySelectorAll('.link a')[1].style.color = 'rgb(30, 30, 30)';
             document.querySelectorAll('.link a')[2].style.color = 'rgb(30, 30, 30)';
@@ -67,7 +67,7 @@ function updateUI(color) {
             document.querySelector('#canvas').style.display = 'block';
             document.querySelector('#canvi').style.display = 'block';
             activeLink = 0;
-        } else if (target === 1) {
+        } else if (target == 1) {
             document.querySelectorAll('.link a')[0].style.color = 'rgb(30, 30, 30)';
             document.querySelectorAll('.link a')[1].style.color = color;
             document.querySelectorAll('.link a')[2].style.color = 'rgb(30, 30, 30)';
@@ -77,7 +77,7 @@ function updateUI(color) {
             document.querySelector('#settings').style.display = 'none';
             document.querySelector('#projects').style.display = 'block';
             activeLink = 1;
-        } else if (target === 2) {
+        } else if (target == 2) {
             document.querySelectorAll('.link a')[0].style.color = 'rgb(30, 30, 30)';
             document.querySelectorAll('.link a')[1].style.color = 'rgb(30, 30, 30)';
             document.querySelectorAll('.link a')[2].style.color = color;
@@ -92,9 +92,9 @@ function updateUI(color) {
     });
     [...document.querySelectorAll('.link a')].forEach(linkClick);
 
-    let linkOver = e => e.addEventListener('mouseover', e => {if (e.target.getAttribute('data-show') !== activeLink) e.target.style.color = color});
+    let linkOver = e => e.addEventListener('mouseover', e => {if (e.target.getAttribute('data-show') != activeLink) e.target.style.color = color});
     [...document.querySelectorAll('.link a')].forEach(linkOver);
-    let linkOut = e => e.addEventListener('mouseout', e => {if (e.target.getAttribute('data-show') !== activeLink) e.target.style.color = 'rgb(30, 30, 30)'});
+    let linkOut = e => e.addEventListener('mouseout', e => {if (e.target.getAttribute('data-show') != activeLink) e.target.style.color = 'rgb(30, 30, 30)'});
     [...document.querySelectorAll('.link a')].forEach(linkOut);
 }
 
