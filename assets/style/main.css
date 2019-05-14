@@ -55,9 +55,6 @@ body #wrap header .box.nav #navLeft #logo {
   background-color: #ff009d;
   transition: all 0.5s;
 }
-body #wrap header .box.nav #navLeft #logo:hover {
-  background-color: black;
-}
 body #wrap header .box.nav #navLeft #logo img {
   height: 70px;
 }
@@ -82,9 +79,6 @@ body #wrap header .box.nav #navRight .link a {
   cursor: pointer;
   text-decoration: underline;
   transition: all 0.3s;
-}
-body #wrap header .box.nav #navRight .link a:hover {
-  color: #ff009d;
 }
 body #wrap main {
   margin: 20px 0;
@@ -155,12 +149,6 @@ body #wrap main .box .category .grid .project .thumbnail img, body #wrap main .b
   background-color: white;
   height: 100px;
   padding: 10px;
-}
-body #wrap main .box .category .grid .project .thumbnail-hover-border, body #wrap main .box .category .project-list .project .thumbnail-hover-border {
-  border: 5px double #ff009d;
-}
-body #wrap main .box .category .grid .project .thumbnail-hover-text, body #wrap main .box .category .project-list .project .thumbnail-hover-text {
-  color: #ff009d;
 }
 body #wrap main .box .category .grid .project a, body #wrap main .box .category .project-list .project a {
   cursor: default;
@@ -328,6 +316,39 @@ body #wrap main #projects .category .project p b {
 body #wrap main #settings {
   display: none;
 }
+body #wrap main #settings .boxHeader h2 {
+  margin: 0;
+}
+body #wrap main #settings .settings-list .setting {
+  border-top: 5px double #787878;
+  padding: 5px 0;
+}
+body #wrap main #settings .settings-list .setting h3 {
+  margin: 0 0 10px 0;
+}
+body #wrap main #settings .settings-list .setting .settings-box {
+  display: inline-block;
+}
+body #wrap main #settings .settings-list .setting .settings-box .button {
+  float: right;
+  width: 100px;
+  height: 30px;
+  border: 5px double #787878;
+  background-color: #dddddd;
+  text-align: center;
+  cursor: pointer;
+}
+body #wrap main #settings .settings-list .setting .settings-box .button:active {
+  background-color: #cccccc;
+}
+body #wrap main #settings .settings-list .setting .settings-box .button p {
+  margin: 0;
+  padding: 5px 0;
+}
+body #wrap main #settings .settings-list .setting .settings-box input {
+  height: 36px;
+  margin-right: 10px;
+}
 body #wrap footer {
   border-top: 5px double #787878;
 }
@@ -346,9 +367,6 @@ body #wrap footer #footer-content #footer-logo {
   width: 40%;
   transition: all 0.5s;
 }
-body #wrap footer #footer-content #footer-logo:hover {
-  background-color: black;
-}
 body #wrap footer #footer-content #footer-logo img {
   height: 70px;
 }
@@ -362,9 +380,6 @@ body #wrap footer #footer-content #footer-text a {
   color: #1e1e1e;
   text-decoration: underline;
   transition: all 0.3s;
-}
-body #wrap footer #footer-content #footer-text a:hover {
-  color: #ff009d;
 }
 
 /*# sourceMappingURL=main.css.map */
