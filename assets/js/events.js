@@ -1,3 +1,7 @@
+//UI COLOR
+let uiColor = localStorage.getItem('UI-COLOR');
+console.log(uiColor);
+
 //HIDE/SHOW PROJECT CATEGORY ARROW
 let arrowClick = e => e.addEventListener('click', e => {
     e.target.classList.toggle('arrow-off');
