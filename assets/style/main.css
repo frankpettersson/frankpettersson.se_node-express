@@ -53,52 +53,52 @@ body #wrap header .box.nav {
   display: flex;
   user-select: none;
 }
-body #wrap header .box.nav #navLeft {
+body #wrap header .box.nav #nav-left {
   width: 40%;
   text-align: center;
 }
 @media only screen and (max-width: 600px) {
-  body #wrap header .box.nav #navLeft {
+  body #wrap header .box.nav #nav-left {
     width: calc(95% - 80px);
     position: absolute;
   }
 }
-body #wrap header .box.nav #navLeft #logo {
+body #wrap header .box.nav #nav-left #logo {
   height: 70px;
   width: 100%;
   background-color: #ff009d;
   transition: all 0.5s;
 }
-body #wrap header .box.nav #navLeft #logo img {
+body #wrap header .box.nav #nav-left #logo img {
   height: 70px;
 }
-body #wrap header .box.nav #navRight {
+body #wrap header .box.nav #nav-right {
   width: 60%;
 }
 @media only screen and (max-width: 600px) {
-  body #wrap header .box.nav #navRight {
+  body #wrap header .box.nav #nav-right {
     width: calc(100%);
   }
 }
-body #wrap header .box.nav #navRight .mobile-links {
+body #wrap header .box.nav #nav-right .mobile-links {
   display: none;
   position: relative;
   z-index: 2;
 }
 @media only screen and (max-width: 600px) {
-  body #wrap header .box.nav #navRight .mobile-links {
+  body #wrap header .box.nav #nav-right .mobile-links {
     display: block;
     height: 70px;
     text-align: center;
   }
-  body #wrap header .box.nav #navRight .mobile-links .menu-icon {
+  body #wrap header .box.nav #nav-right .mobile-links .menu-icon {
     cursor: pointer;
     padding: 33.5px 20px 48.5px 20px;
     float: right;
     position: relative;
     user-select: none;
   }
-  body #wrap header .box.nav #navRight .mobile-links .menu-icon .navicon {
+  body #wrap header .box.nav #nav-right .mobile-links .menu-icon .navicon {
     background: #333;
     display: block;
     height: 3px;
@@ -106,7 +106,7 @@ body #wrap header .box.nav #navRight .mobile-links {
     transition: background 0.2s ease-out;
     width: 30px;
   }
-  body #wrap header .box.nav #navRight .mobile-links .menu-icon .navicon:before, body #wrap header .box.nav #navRight .mobile-links .menu-icon .navicon:after {
+  body #wrap header .box.nav #nav-right .mobile-links .menu-icon .navicon:before, body #wrap header .box.nav #nav-right .mobile-links .menu-icon .navicon:after {
     background: #333;
     content: "";
     display: block;
@@ -115,32 +115,32 @@ body #wrap header .box.nav #navRight .mobile-links {
     transition: all 0.2s ease-out;
     width: 100%;
   }
-  body #wrap header .box.nav #navRight .mobile-links .menu-icon .navicon:before {
+  body #wrap header .box.nav #nav-right .mobile-links .menu-icon .navicon:before {
     top: -8px;
   }
-  body #wrap header .box.nav #navRight .mobile-links .menu-icon .navicon:after {
+  body #wrap header .box.nav #nav-right .mobile-links .menu-icon .navicon:after {
     top: 8px;
   }
-  body #wrap header .box.nav #navRight .mobile-links .menu-btn {
+  body #wrap header .box.nav #nav-right .mobile-links .menu-btn {
     display: none;
   }
-  body #wrap header .box.nav #navRight .mobile-links .menu-btn:checked ~ .link-mobile {
+  body #wrap header .box.nav #nav-right .mobile-links .menu-btn:checked ~ .link-mobile {
     max-height: 150px;
     visibility: visible;
   }
-  body #wrap header .box.nav #navRight .mobile-links .menu-btn:checked ~ .menu-icon .navicon {
+  body #wrap header .box.nav #nav-right .mobile-links .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
   }
-  body #wrap header .box.nav #navRight .mobile-links .menu-btn:checked ~ .menu-icon .navicon:before {
+  body #wrap header .box.nav #nav-right .mobile-links .menu-btn:checked ~ .menu-icon .navicon:before {
     transform: rotate(45deg);
   }
-  body #wrap header .box.nav #navRight .mobile-links .menu-btn:checked ~ .menu-icon .navicon:after {
+  body #wrap header .box.nav #nav-right .mobile-links .menu-btn:checked ~ .menu-icon .navicon:after {
     transform: rotate(-45deg);
   }
-  body #wrap header .box.nav #navRight .mobile-links .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, body #wrap header .box.nav #navRight .mobile-links .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  body #wrap header .box.nav #nav-right .mobile-links .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, body #wrap header .box.nav #nav-right .mobile-links .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
-  body #wrap header .box.nav #navRight .mobile-links .link-mobile {
+  body #wrap header .box.nav #nav-right .mobile-links .link-mobile {
     float: right;
     clear: both;
     max-height: 0;
@@ -153,17 +153,17 @@ body #wrap header .box.nav #navRight .mobile-links {
     border-bottom: none;
     transition: all 0.3s;
   }
-  body #wrap header .box.nav #navRight .mobile-links .link-mobile:last-child {
+  body #wrap header .box.nav #nav-right .mobile-links .link-mobile:last-child {
     border-bottom: 5px double #787878;
   }
-  body #wrap header .box.nav #navRight .mobile-links .link-mobile a {
+  body #wrap header .box.nav #nav-right .mobile-links .link-mobile a {
     font-size: 1.3em;
     font-weight: bold;
     text-decoration: underline;
     color: #1e1e1e;
   }
 }
-body #wrap header .box.nav #navRight .link {
+body #wrap header .box.nav #nav-right .link {
   display: inline-block;
   width: 33.333333%;
   text-align: center;
@@ -171,11 +171,11 @@ body #wrap header .box.nav #navRight .link {
   transform: translateY(100%);
 }
 @media only screen and (max-width: 600px) {
-  body #wrap header .box.nav #navRight .link {
+  body #wrap header .box.nav #nav-right .link {
     display: none;
   }
 }
-body #wrap header .box.nav #navRight .link a {
+body #wrap header .box.nav #nav-right .link a {
   font-size: 1.3em;
   font-weight: bold;
   color: #1e1e1e;
@@ -406,7 +406,7 @@ body #wrap main #projects {
 }
 body #wrap main #projects .boxHeader h3 {
   margin: 0 0 0 5px;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 body #wrap main #projects .category {
   border-top: 5px double #787878;
@@ -477,34 +477,50 @@ body #wrap main #settings .buttons .button p {
 body #wrap footer {
   border-top: 5px double #787878;
 }
-body #wrap footer #footer-content {
+body #wrap footer .box.footer {
   margin: 0 auto;
   height: 70px;
   border: none;
   padding: 10px 5px;
   display: flex;
   user-select: none;
+}
+body #wrap footer .box.footer #footer-left {
+  width: 40%;
   text-align: center;
 }
-body #wrap footer #footer-content #footer-logo {
+body #wrap footer .box.footer #footer-left #footer-logo {
+  height: 70px;
+  width: 100%;
   background-color: #ff009d;
-  margin: 0 10% 0 0;
-  width: 40%;
   transition: all 0.5s;
 }
-body #wrap footer #footer-content #footer-logo img {
+body #wrap footer .box.footer #footer-left #footer-logo img {
   height: 70px;
 }
-body #wrap footer #footer-content #footer-text {
-  width: 40%;
-  padding: 17px 0;
+body #wrap footer .box.footer #footer-right {
+  width: 60%;
 }
-body #wrap footer #footer-content #footer-text a {
+body #wrap footer .box.footer #footer-right .footer-link {
+  height: 70px;
+  width: 50%;
+  display: inline-block;
+}
+body #wrap footer .box.footer #footer-right .footer-link a {
+  display: table;
+  margin: 0 auto;
+}
+body #wrap footer .box.footer #footer-right .footer-link a p {
+  margin: 0;
   font-size: 1.3em;
   font-weight: bold;
   color: #1e1e1e;
   text-decoration: underline;
-  transition: all 0.3s ease-out;
+  padding: 22px 0;
+}
+body #wrap footer .box.footer #footer-right .footer-link a img {
+  height: 50px;
+  padding: 10px 0;
 }
 
 /*# sourceMappingURL=main.css.map */
