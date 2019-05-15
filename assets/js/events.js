@@ -8,15 +8,26 @@ if (UI_COLOR !== null) {
 
 //SET UI COLOR
 let activeLink = 0;
-document.querySelector('.setting .settings-box .button').addEventListener('click', () => {
+document.querySelector('#save').addEventListener('click', () => {
     let newUIColor = document.querySelector('#select-ui-color').value;
     document.querySelectorAll('.link a')[activeLink].style.color = newUIColor;
+    document.querySelector('#current-ui-color').innerText = newUIColor;
+    document.querySelector('#current-ui-color').style.color = newUIColor;
     updateUI(newUIColor);
+});
+
+document.querySelector('#reset').addEventListener('click', () => {
+    document.querySelectorAll('.link a')[activeLink].style.color ='#ff009d';
+    document.querySelector('#current-ui-color').innerText = '#ff009d';
+    document.querySelector('#current-ui-color').style.color = '#ff009d';
+    updateUI('#ff009d');
 });
 
 //UPDATE UI COLOR
 document.querySelectorAll('.link a')[activeLink].style.color = UI_COLOR;
 document.querySelectorAll('.link-mobile a')[activeLink].style.color = UI_COLOR;
+document.querySelector('#current-ui-color').innerText = UI_COLOR;
+document.querySelector('#current-ui-color').style.color = UI_COLOR;
 
 function updateUI(color) {
     localStorage.setItem('UI-COLOR', color);

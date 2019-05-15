@@ -431,33 +431,49 @@ body #wrap main #settings .boxHeader h2 {
 }
 body #wrap main #settings .settings-list .setting {
   border-top: 5px double #787878;
-  padding: 5px 0;
+  padding: 10px 0;
+  display: flex;
 }
-body #wrap main #settings .settings-list .setting h3 {
-  margin: 0 0 10px 0;
+body #wrap main #settings .settings-list .setting .setting-title {
+  margin-right: 5px;
+  padding-right: 5px;
+  border-right: 5px double #787878;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body #wrap main #settings .settings-list .setting .setting-title h3 {
+  margin: 0;
 }
 body #wrap main #settings .settings-list .setting .settings-box {
-  display: inline-block;
+  position: relative;
 }
-body #wrap main #settings .settings-list .setting .settings-box .button {
-  float: right;
+body #wrap main #settings .settings-list .setting .settings-box input {
+  height: 36px;
+}
+body #wrap main #settings .settings-list .setting .settings-box p {
+  margin: 0;
+  font-weight: bold;
+}
+body #wrap main #settings .buttons {
+  display: flex;
+  margin-top: 10px;
+}
+body #wrap main #settings .buttons .button {
   width: 100px;
   height: 30px;
+  margin-right: 10px;
   border: 5px double #787878;
   background-color: #dddddd;
   text-align: center;
   cursor: pointer;
 }
-body #wrap main #settings .settings-list .setting .settings-box .button:active {
+body #wrap main #settings .buttons .button:active {
   background-color: #cccccc;
 }
-body #wrap main #settings .settings-list .setting .settings-box .button p {
+body #wrap main #settings .buttons .button p {
   margin: 0;
   padding: 5px 0;
-}
-body #wrap main #settings .settings-list .setting .settings-box input {
-  height: 36px;
-  margin-right: 10px;
 }
 body #wrap footer {
   border-top: 5px double #787878;
