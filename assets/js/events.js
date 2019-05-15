@@ -138,4 +138,4 @@ let canvasClick = e => e.addEventListener('click', e => {
         window.scrollTo(0, 0);
     }
 });
-[...document.querySelectorAll('.box-canvas .category .grid .project .thumbnail')].forEach(canvasClick);
+[...document.querySelectorAll('#canvi .category .grid .project .thumbnail')].forEach(canvasClick);
