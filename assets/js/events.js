@@ -16,6 +16,7 @@ document.querySelector('.setting .settings-box .button').addEventListener('click
 
 //UPDATE UI COLOR
 document.querySelectorAll('.link a')[activeLink].style.color = UI_COLOR;
+document.querySelectorAll('.link-mobile a')[activeLink].style.color = UI_COLOR;
 
 function updateUI(color) {
     localStorage.setItem('UI-COLOR', color);
@@ -62,6 +63,9 @@ function updateUI(color) {
             document.querySelectorAll('.link a')[0].style.color = color;
             document.querySelectorAll('.link a')[1].style.color = 'rgb(30, 30, 30)';
             document.querySelectorAll('.link a')[2].style.color = 'rgb(30, 30, 30)';
+            document.querySelectorAll('.link-mobile a')[0].style.color = color;
+            document.querySelectorAll('.link-mobile a')[1].style.color = 'rgb(30, 30, 30)';
+            document.querySelectorAll('.link-mobile a')[2].style.color = 'rgb(30, 30, 30)';
             document.querySelector('#projects').style.display = 'none';
             document.querySelector('#settings').style.display = 'none';
             document.querySelector('#canvas').style.display = 'block';
@@ -71,6 +75,9 @@ function updateUI(color) {
             document.querySelectorAll('.link a')[0].style.color = 'rgb(30, 30, 30)';
             document.querySelectorAll('.link a')[1].style.color = color;
             document.querySelectorAll('.link a')[2].style.color = 'rgb(30, 30, 30)';
+            document.querySelectorAll('.link-mobile a')[0].style.color = 'rgb(30, 30, 30)';
+            document.querySelectorAll('.link-mobile a')[1].style.color = color;
+            document.querySelectorAll('.link-mobile a')[2].style.color = 'rgb(30, 30, 30)';
             document.querySelector('#canvas').style.display = 'none';
             document.querySelector('#canvas').style.display = 'none';
             document.querySelector('#canvi').style.display = 'none';
@@ -81,6 +88,9 @@ function updateUI(color) {
             document.querySelectorAll('.link a')[0].style.color = 'rgb(30, 30, 30)';
             document.querySelectorAll('.link a')[1].style.color = 'rgb(30, 30, 30)';
             document.querySelectorAll('.link a')[2].style.color = color;
+            document.querySelectorAll('.link-mobile a')[0].style.color = 'rgb(30, 30, 30)';
+            document.querySelectorAll('.link-mobile a')[1].style.color = 'rgb(30, 30, 30)';
+            document.querySelectorAll('.link-mobile a')[2].style.color = color;
             document.querySelector('#canvas').style.display = 'none';
             document.querySelector('#canvas').style.color = 'rgb(30, 30, 30)';
             document.querySelector('#canvi').style.display = 'none';
@@ -91,11 +101,14 @@ function updateUI(color) {
         }
     });
     [...document.querySelectorAll('.link a')].forEach(linkClick);
+    [...document.querySelectorAll('.link-mobile a')].forEach(linkClick);
 
     let linkOver = e => e.addEventListener('mouseover', e => {if (e.target.getAttribute('data-show') != activeLink) e.target.style.color = color});
     [...document.querySelectorAll('.link a')].forEach(linkOver);
+    [...document.querySelectorAll('.link-mobile a')].forEach(linkOver);
     let linkOut = e => e.addEventListener('mouseout', e => {if (e.target.getAttribute('data-show') != activeLink) e.target.style.color = 'rgb(30, 30, 30)'});
     [...document.querySelectorAll('.link a')].forEach(linkOut);
+    [...document.querySelectorAll('.link-mobile a')].forEach(linkOut);
 }
 
 //HIDE/SHOW PROJECT CATEGORY ARROW

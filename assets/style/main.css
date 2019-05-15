@@ -36,6 +36,7 @@ body #wrap {
 }
 body #wrap header {
   border-bottom: 5px double #787878;
+  z-index: 1;
 }
 body #wrap header .box.nav {
   margin: 0 auto;
@@ -49,6 +50,12 @@ body #wrap header .box.nav #navLeft {
   width: 40%;
   text-align: center;
 }
+@media only screen and (max-width: 600px) {
+  body #wrap header .box.nav #navLeft {
+    width: calc(95% - 80px);
+    position: absolute;
+  }
+}
 body #wrap header .box.nav #navLeft #logo {
   height: 70px;
   width: 100%;
@@ -61,6 +68,94 @@ body #wrap header .box.nav #navLeft #logo img {
 body #wrap header .box.nav #navRight {
   width: 60%;
 }
+@media only screen and (max-width: 600px) {
+  body #wrap header .box.nav #navRight {
+    width: calc(100%);
+  }
+}
+body #wrap header .box.nav #navRight .mobile-links {
+  display: none;
+  position: relative;
+  z-index: 2;
+}
+@media only screen and (max-width: 600px) {
+  body #wrap header .box.nav #navRight .mobile-links {
+    display: block;
+    height: 70px;
+    text-align: center;
+  }
+  body #wrap header .box.nav #navRight .mobile-links .menu-icon {
+    cursor: pointer;
+    padding: 33.5px 20px 48.5px 20px;
+    float: right;
+    position: relative;
+    user-select: none;
+  }
+  body #wrap header .box.nav #navRight .mobile-links .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 3px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 30px;
+  }
+  body #wrap header .box.nav #navRight .mobile-links .menu-icon .navicon:before, body #wrap header .box.nav #navRight .mobile-links .menu-icon .navicon:after {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+  body #wrap header .box.nav #navRight .mobile-links .menu-icon .navicon:before {
+    top: -8px;
+  }
+  body #wrap header .box.nav #navRight .mobile-links .menu-icon .navicon:after {
+    top: 8px;
+  }
+  body #wrap header .box.nav #navRight .mobile-links .menu-btn {
+    display: none;
+  }
+  body #wrap header .box.nav #navRight .mobile-links .menu-btn:checked ~ .link-mobile {
+    max-height: 150px;
+    visibility: visible;
+  }
+  body #wrap header .box.nav #navRight .mobile-links .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  body #wrap header .box.nav #navRight .mobile-links .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(45deg);
+  }
+  body #wrap header .box.nav #navRight .mobile-links .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(-45deg);
+  }
+  body #wrap header .box.nav #navRight .mobile-links .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, body #wrap header .box.nav #navRight .mobile-links .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  body #wrap header .box.nav #navRight .mobile-links .link-mobile {
+    float: right;
+    clear: both;
+    max-height: 0;
+    visibility: hidden;
+    padding: 10px;
+    background: #ffffff;
+    width: 150px;
+    border: 5px double #787878;
+    border-top: none;
+    border-bottom: none;
+    transition: all 0.3s;
+  }
+  body #wrap header .box.nav #navRight .mobile-links .link-mobile:last-child {
+    border-bottom: 5px double #787878;
+  }
+  body #wrap header .box.nav #navRight .mobile-links .link-mobile a {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #1e1e1e;
+  }
+}
 body #wrap header .box.nav #navRight .link {
   display: inline-block;
   width: 33.333333%;
@@ -68,9 +163,10 @@ body #wrap header .box.nav #navRight .link {
   top: 50%;
   transform: translateY(100%);
 }
-body #wrap header .box.nav #navRight .link .link-color {
-  color: #ff009d;
-  transition: all 0.5s;
+@media only screen and (max-width: 600px) {
+  body #wrap header .box.nav #navRight .link {
+    display: none;
+  }
 }
 body #wrap header .box.nav #navRight .link a {
   font-size: 1.3em;
@@ -78,10 +174,11 @@ body #wrap header .box.nav #navRight .link a {
   color: #1e1e1e;
   cursor: pointer;
   text-decoration: underline;
-  transition: all 0.3s;
+  transition: all 0.3s ease-out;
 }
 body #wrap main {
   margin: 20px 0;
+  z-index: 0;
 }
 body #wrap main .box.box-iframe {
   height: 60vh;
@@ -141,7 +238,7 @@ body #wrap main .box .category .grid .project .thumbnail, body #wrap main .box .
   text-align: center;
   border: 5px double #787878;
   display: inline-block;
-  transition: all 0.3s;
+  transition: all 0.3s ease-out;
 }
 body #wrap main .box .category .grid .project .thumbnail img, body #wrap main .box .category .project-list .project .thumbnail img {
   display: block;
@@ -156,7 +253,7 @@ body #wrap main .box .category .grid .project a, body #wrap main .box .category 
 body #wrap main .box .category .grid .project p, body #wrap main .box .category .project-list .project p {
   margin: 0;
   text-transform: uppercase;
-  transition: all 0.3s;
+  transition: all 0.3s ease-out;
 }
 body #wrap main .box .category .grid {
   text-align: center;
@@ -379,7 +476,7 @@ body #wrap footer #footer-content #footer-text a {
   font-weight: bold;
   color: #1e1e1e;
   text-decoration: underline;
-  transition: all 0.3s;
+  transition: all 0.3s ease-out;
 }
 
 /*# sourceMappingURL=main.css.map */
