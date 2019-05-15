@@ -36,7 +36,15 @@ body #wrap {
 }
 body #wrap header {
   border-bottom: 5px double #787878;
+  background: white;
+  top: 0;
   z-index: 1;
+}
+@media only screen and (max-width: 600px) {
+  body #wrap header {
+    position: fixed;
+    width: 95%;
+  }
 }
 body #wrap header .box.nav {
   margin: 0 auto;
@@ -179,6 +187,11 @@ body #wrap header .box.nav #navRight .link a {
 body #wrap main {
   margin: 20px 0;
   z-index: 0;
+}
+@media only screen and (max-width: 600px) {
+  body #wrap main {
+    margin-top: 110px;
+  }
 }
 body #wrap main .box.box-iframe {
   height: 60vh;
