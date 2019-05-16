@@ -14,24 +14,25 @@
           <div id="nav-left">
             <div id="logo"><a href="https://frankpettersson.se"><img src="assets/images/icons/favicon-114x114.png" alt="logo"></a></div>
           </div>
-          <div id="nav-right"><span class="link"><a data-show="0">CANVAS</a></span><span class="link"><a data-show="1">PROJECTS</a></span><span class="link"><a data-show="2">SETTINGS</a></span>
-            <div class="mobile-links">
+          <div id="nav-right"><span class="link"><a data-show="0">PROJECTS</a></span><span class="link"><a data-show="1">DESCRIPTIONS</a></span><span class="link"><a data-show="2">SETTINGS</a></span>
+            <div class="nav-mobile">
               <input class="menu-btn" id="menu-btn" type="checkbox">
               <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-              <div class="link-mobile"><a data-show="0">CANVAS</a></div>
-              <div class="link-mobile"><a data-show="1">PROJECTS</a></div>
-              <div class="link-mobile"><a data-show="2">SETTINGS</a></div>
+              <div class="mobile-links">
+                <div class="mobile-link"><a data-show="0">PROJECTS</a></div>
+                <div class="mobile-link"><a data-show="1">DESCRIPTIONS</a></div>
+                <div class="mobile-link"><a data-show="2">SETTINGS</a></div>
+              </div>
             </div>
           </div>
         </div>
       </header>
       <main>
-        <div class="box box-iframe" id="canvas">
-          <h1 id="canvas-title">FLOWING SQUARES</h1>
-          <iframe id="frontframe" src="projects/graphics/js_canvas/flowing_squares/" title="canvasiframe" frameborder="0" scrolling="no"></iframe>
+        <div class="box" id="project-iframe">
+          <h1 id="project-title">FLOWING SQUARES</h1>
+          <iframe id="frontframe" src="projects/graphics/js_canvas/flowing_squares/" title="projectiframe" frameborder="0" scrolling="no"></iframe>
         </div>
-        <div class="box box-canvas" id="canvi">
-          <h2>CANVAS PREVIEW</h2>
+        <div class="box" id="projects">
           <div class="category">
             <div class="grid">
               <div class="project">
@@ -167,10 +168,7 @@
             </div>
           </div>
         </div>
-        <div class="box" id="projects">
-          <div class="boxHeader">
-            <h3>FULLSCREEN PROJECT + DETAILS</h3>
-          </div>
+        <div class="box" id="descriptions">
           <div class="category" id="games">
             <div class="category-head"><img class="arrow" src="assets/images/util/triangle.svg" alt="hide/show">
               <div class="categoryName">GAMES</div>
@@ -291,18 +289,69 @@
           </div>
         </div>
         <div class="box" id="settings">
-          <div class="boxHeader">
+          <div class="box-header">
             <h2>SETTINGS</h2>
           </div>
           <div class="settings-list">
             <div class="setting">
               <div class="setting-title">
-                <h3>UI</h3>
-                <h3>Color</h3>
+                <h3>UI COLOR</h3>
               </div>
               <div class="settings-box">
                 <input id="select-ui-color" type="color">
                 <p id="current-ui-color"></p>
+              </div>
+            </div>
+            <div class="setting">
+              <div class="setting-title">
+                <h3>LANDING PAGE</h3>
+              </div>
+              <div class="settings-box">
+                <select id="select-landing-page" name="select-landing-page">
+                  <option value="PROJECTS">PROJECTS</option>
+                  <option value="DESCRIPTIONS">DESCRIPTIONS</option>
+                  <option value="SETTINGS">SETTINGS</option>
+                </select>
+                <p id="current-landing-page"></p>
+              </div>
+            </div>
+            <div class="setting">
+              <div class="setting-title">
+                <h3>DEFAULT PREVIEW</h3>
+              </div>
+              <div class="settings-box">
+                <div class="settings-inner-top"><img id="current-default-project-image" src="" alt=""></div>
+                <div class="settings-inner-bot">
+                  <select id="select-default-project" name="select-default-project">
+                    <option value="projects/graphics/js_canvas/spinning_boxes/index.html" label="SPINNING BOXES"></option>
+                    <option value="projects/graphics/js_canvas/triangle_stop-motion/index.html" label="ROCKING TRIANGLES"></option>
+                    <option value="projects/graphics/js_canvas/paths_of_triangles/index.html" label="TRIANGLE PATHS"></option>
+                    <option value="projects/graphics/js_canvas/linear_expansion/index.html" label="LINEAR EXPANSION"></option>
+                    <option value="projects/graphics/js_canvas/better_ant/index.html" label="BETTER ANT"></option>
+                    <option value="projects/graphics/js_canvas/flowing_squares/index.html" label="FLOWING SQUARES"></option>
+                    <option value="projects/graphics/three.js/hollow_boxes/index.html" label="HOLLOW BOXES"></option>
+                    <option value="projects/graphics/js_canvas/look_in_the_middle/index.html" label="POINT ILLUSION"></option>
+                    <option value="projects/graphics/js_canvas/black_donut/index.html" label="BLACK DONUT"></option>
+                    <option value="projects/graphics/js_canvas/faded_bubbles_dark/index.html" label="BUBBLE BG DARK"></option>
+                    <option value="projects/graphics/js_canvas/faded_bubbles/index.html" label="BUBBLE BG"></option>
+                    <option value="projects/graphics/js_canvas/black_hole/index.html" label="BLACK HOLE"></option>
+                    <option value="projects/graphics/js_canvas/colours/index.html" label="COLOURS"></option>
+                    <option value="projects/graphics/three.js/3Dspheres_BG/index.html" label="3D SHAPES BG"></option>
+                    <option value="projects/graphics/three.js/3Dspheres/index.html" label="3D SHAPES"></option>
+                    <option value="projects/graphics/paper.js/langtonsAnt/index.html" label="LANGTONS ANT"></option>
+                    <option value="projects/graphics/paper.js/langtonsAttempt/index.html" label="LANGTONS FAILURE"></option>
+                    <option value="projects/graphics/paper.js/pixelGrid_clear/index.html" label="CLEAR PIXELS"></option>
+                    <option value="projects/graphics/paper.js/pixelGrid_blurry/index.html" label="BLURRY PIXELS"></option>
+                    <option value="projects/graphics/paper.js/bubbles/index.html" label="BUBBLES"></option>
+                    <option value="projects/graphics/pixi_js/randomPolygonPositions/index.html" label="SHAKY TRIANGLES"></option>
+                    <option value="projects/graphics/pixi_js/rotatingPolygons/index.html" label="POLYGON"></option>
+                    <option value="projects/graphics/pixi_js/rotatingRectangle/index.html" label="RECTANGLE"></option>
+                    <option value="projects/games/idle/idle/index.html" label="IDLE"></option>
+                    <option value="projects/games/idle/idle_jquery/index.html" label="IDLE JQUERY"></option>
+                    <option value="projects/games/units/index.html" label="UNITS"></option>
+                  </select>
+                  <p id="current-default-project"></p>
+                </div>
               </div>
             </div>
           </div>
@@ -321,7 +370,7 @@
           <div id="footer-left">
             <div id="footer-logo"><a href="https://frankpettersson.se"><img src="assets/images/icons/favicon-114x114.png" alt="footer-logo"></a></div>
           </div>
-          <div id="footer-right"><span class="footer-link"><a href="https://github.com/frankpettersson/frankpettersson.se" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/GitHub-Mark-64px.png" alt="github"></a></span><span class="footer-link"><a href="mailto:frank.pettersson1@gmail.com" target="_top"> 
+          <div id="footer-right"><span class="footer-link"><a href="https://github.com/frankpettersson/frankpettersson.se" target="_blank" rel="noopener noreferrer"><img src="assets/images/icons/GitHub-Mark-64px.png" alt="github"></a></span><span class="footer-link"><a href="mailto:frank.pettersson1@gmail.com" target="_top">
                 <p>MAIL</p></a></span></div>
         </div>
       </footer>
