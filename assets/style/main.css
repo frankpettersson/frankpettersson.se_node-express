@@ -426,12 +426,6 @@ body #wrap main #projects {
   margin-top: 20px;
   padding: 0;
 }
-body #wrap main #projects .box-header h2 {
-  border-bottom: 5px double #787878;
-  padding: 0 0 5px 0;
-  margin: 0 0 20px 0;
-  text-align: center;
-}
 body #wrap main #descriptions {
   margin-top: 20px;
 }
@@ -483,9 +477,6 @@ body #wrap main #settings .settings-list .setting .settings-box p {
 body #wrap main #settings .settings-list .setting .settings-box .settings-inner-top img {
   margin-right: 10px;
   border: 5px double #787878;
-}
-body #wrap main #settings .settings-list .setting .settings-box .settings-inner-bot input {
-  height: 36px;
 }
 body #wrap main #settings .settings-list .setting .settings-box .settings-inner-bot p {
   margin: 0;
