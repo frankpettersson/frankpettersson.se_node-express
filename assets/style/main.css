@@ -52,7 +52,7 @@ body #wrap header {
     width: 95%;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 300px) {
   body #wrap header {
     width: 100%;
   }
@@ -210,11 +210,6 @@ body #wrap main {
 @media only screen and (max-width: 1050px) {
   body #wrap main {
     margin-top: 110px;
-  }
-}
-@media only screen and (max-width: 300px) {
-  body #wrap main .box {
-    padding: 10px;
   }
 }
 body #wrap main .box .category .category-head {
@@ -445,6 +440,11 @@ body #wrap main #descriptions .category .project p {
 }
 body #wrap main #descriptions .category .project p b {
   text-transform: uppercase;
+}
+@media only screen and (max-width: 300px) {
+  body #wrap main #settings {
+    padding: 5px;
+  }
 }
 body #wrap main #settings .settings-list .setting {
   border-bottom: 5px double #787878;
