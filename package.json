@@ -1,0 +1,33 @@
+{
+  "name": "frankpettersson.se",
+  "version": "1.0.0",
+  "description": "JavaScript canvas/game gallery, made by me!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankpettersson/frankpettersson.se.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Node",
+    "CSS",
+    "HTML"
+  ],
+  "author": "Frank Pettersson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frankpettersson/frankpettersson.se/issues"
+  },
+  "homepage": "https://github.com/frankpettersson/frankpettersson.se#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.13.0"
+  },
+  "dependencies": {
+    "express": "^4.17.0"
+  }
+}
